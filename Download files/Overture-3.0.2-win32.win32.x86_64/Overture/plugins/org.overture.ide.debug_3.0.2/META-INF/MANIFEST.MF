@@ -1,0 +1,1463 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.overture.ide.debug
+Bundle-SymbolicName: org.overture.ide.debug;singleton:=true
+Require-Bundle: org.eclipse.debug.core;visibility:=reexport,org.eclips
+ e.ui.console,org.eclipse.debug.ui;visibility:=reexport,org.eclipse.sw
+ t;visibility:=reexport,org.eclipse.jface,org.eclipse.ui,org.eclipse.u
+ i.editors,org.eclipse.jface.text,org.eclipse.ui.ide,com.ibm.icu,org.e
+ clipse.core.expressions,org.overture.ide.core,org.overture.ide.builde
+ rs.vdmj,org.overture.ide.ui;visibility:=reexport
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Eclipse-BuddyPolicy: registered
+Bundle-Vendor: Overture
+Export-Package: org.overture.ide.debug.core,org.overture.ide.debug.cor
+ e.dbgp,org.overture.ide.debug.core.launching,org.overture.ide.debug.c
+ ore.model,org.overture.ide.debug.ui.launchconfigurations,org.overture
+ .ide.debug.ui.launching,org.overture.ide.debug.utils,org.overture.int
+ erpreter,org.overture.interpreter.assistant,org.overture.interpreter.
+ assistant.definition,org.overture.interpreter.assistant.expression,or
+ g.overture.interpreter.assistant.module,org.overture.interpreter.assi
+ stant.pattern,org.overture.interpreter.assistant.statement,org.overtu
+ re.interpreter.assistant.type,org.overture.interpreter.ast.expression
+ s,org.overture.interpreter.commands,org.overture.interpreter.debug,or
+ g.overture.interpreter.eval,org.overture.interpreter.messages,org.ove
+ rture.interpreter.messages.rtlog,org.overture.interpreter.messages.rt
+ log.nextgen,org.overture.interpreter.runtime,org.overture.interpreter
+ .runtime.state,org.overture.interpreter.runtime.validation,org.overtu
+ re.interpreter.scheduler,org.overture.interpreter.traces,org.overture
+ .interpreter.util,org.overture.interpreter.values
+Bundle-Version: 3.0.2
+Bundle-Name: org.overture.ide.debug
+Bundle-Localization: plugin
+Bundle-ClassPath: .,jars/interpreter.jar,jars/pog.jar
+Bundle-Activator: org.overture.ide.debug.core.VdmDebugPlugin
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.0
+Eclipse-BundleShape: dir
+
+Name: org/overture/ide/debug/core/model/internal/AbstractVdmBreakpoint
+ .class
+SHA-256-Digest: RmiYTcmTSVs9TsYlRwU5PZn7gU7Agxiwb5yb5F/02NI=
+
+Name: org/overture/ide/debug/core/model/internal/VdmStackFrame$VdmVari
+ ableContainer.class
+SHA-256-Digest: n6yx1odrzIgz2dKelcRiPES+KzOYHiCqxGqdSHwG8zQ=
+
+Name: src/main/java/org/overture/ide/debug/ui/messages.properties
+SHA-256-Digest: ZbcxSHM7FMwzwwTYbKiadK6SEX3Ya8pHB+At/3Csnls=
+
+Name: org/overture/ide/debug/core/model/IDebugLaunchConstants.class
+SHA-256-Digest: VVshE2opFAeJavBTJTf6EDMFv5WHTN9JCPgKlCifu3I=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpRawPacket.class
+SHA-256-Digest: V3iWU+lSIyOvw/uahsrnfynLf1kCGZbVTp9GU6IojeQ=
+
+Name: org/overture/ide/debug/internal/ui/viewers/update/VdmDebugTarget
+ Proxy.class
+SHA-256-Digest: jhEZ2ZzBlwRO0uHtw4vluYlGBdz5XZijCkxJ/z3BHgE=
+
+Name: org/overture/ide/debug/core/launching/VdmSourceLocatorDirector.c
+ lass
+SHA-256-Digest: 8VQl7PUIQlmCchow5moKF8uEhyx1k2Wz5mKI15AzbeQ=
+
+Name: org/overture/ide/debug/ui/launchconfigurations/MethodSearchEngin
+ e.class
+SHA-256-Digest: 3TUuha5NC8/NKjoIPwtb+ec/doT1hBcrEmsWq3Ih1ok=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpDebugg
+ er.class
+SHA-256-Digest: LnDrY2UXVsORsNIYpXdmt/oV38rxCyTqaTubK6nbfqg=
+
+Name: org/overture/ide/debug/core/model/VdmDebugState.class
+SHA-256-Digest: uowNcGF6ai/3QqhAIwk/rXoN6nzZKREcxHbox9ujixE=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpDebugingEngine.cla
+ ss
+SHA-256-Digest: T6zQwlMqbwQA9TLD6beOBlTlVRfPqfDpprXkEaM3xxE=
+
+Name: org/overture/ide/debug/ui/launching/VdmRuntimeChecksLaunchConfig
+ urationTab.class
+SHA-256-Digest: reO95av7+px31Fgod7X8mxYX1ZfhBjRR2xYMJ2JkJVU=
+
+Name: org/overture/ide/debug/core/dbgp/internal/managers/DbgpStreamMan
+ ager.class
+SHA-256-Digest: nkQi5HeVq9TugySbSkZ3exnvjkihuZ5+LG2h2MpFi4o=
+
+Name: org/overture/ide/debug/core/model/IVdmValue.class
+SHA-256-Digest: nm6XJOTXP1qwoolESpgl5eygOIz3N4atyWuSrIERs/4=
+
+Name: org/overture/ide/debug/core/model/IVdmLineBreakpoint.class
+SHA-256-Digest: /2nXdYShYH01ES8UfCHq83ohwR5xTyQDR7+dWOnAWe8=
+
+Name: org/overture/ide/debug/ui/propertypages/BreakpointConditionEdito
+ r.class
+SHA-256-Digest: v7o1EKafpSKD9d+80xHpGLzWsfv01As3yMkX7x+QWX4=
+
+Name: org/overture/ide/debug/core/model/internal/VdmBreakpointManager.
+ class
+SHA-256-Digest: 4jUviueFPJ62Tk7MxfB0FlKRfkV5a+GhkwI9DhBKErg=
+
+Name: org/overture/ide/debug/core/VdmVariableNameComparator.class
+SHA-256-Digest: A90yG4ihD/asMHLkHWT9ItsdXl8iBn3xcCReKbwOuYA=
+
+Name: org/overture/ide/debug/core/model/internal/VdmValue.class
+SHA-256-Digest: stkuu0FN0YWL7jxtbG4UUvzS6uc0gJUtedLl+yVm8fM=
+
+Name: org/overture/ide/debug/core/model/internal/VdmConsoleInputListen
+ er.class
+SHA-256-Digest: ORAxTQGq0GD86PRao4IVjlGjpndsIM6LByIazuwHBGk=
+
+Name: org/overture/ide/debug/ui/propertypages/VdmBreakpointPropertyPag
+ e$4.class
+SHA-256-Digest: aD9YFe4I7sOvDM5NFFotUsTO+xtfzZACh/ToF4AbpgM=
+
+Name: org/overture/ide/debug/core/model/internal/eval/VdmEvaluationCom
+ mand.class
+SHA-256-Digest: aepfleMaPhHbzdRhAKNU2YFIySbkhRpLEp13z15YzzU=
+
+Name: org/overture/ide/debug/ui/actions/VdmLineBreakpointPropertiesRul
+ erActionDelegate.class
+SHA-256-Digest: JbYhv6UKKBloSrDx3SbgSsB239ve2G6p+oGmUw4Vuyc=
+
+Name: org/overture/ide/debug/ui/VdmStreamProxy$1.class
+SHA-256-Digest: iffnrlYiRU20g/6X8HLH8tUhWmLJ8v86oFBkAJPjj8I=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpNotification.class
+SHA-256-Digest: m9Ks/NlfJ787A5hHgbd4JcGQ8FEB39XekLr9xvDDe0U=
+
+Name: org/overture/ide/debug/core/dbgp/exceptions/DbgpDebuggingEngineE
+ xception.class
+SHA-256-Digest: 2WqC2qsyEenwMYbBr61Dzm/MckCYKg/dm8zSa99nwgQ=
+
+Name: org/overture/ide/debug/core/ExtendedDebugEventDetails.class
+SHA-256-Digest: 85uO3GtXIA5FLHk4CPq8ex8Q6fQ4VQQUebUp1V965dc=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpDebugg
+ er$2.class
+SHA-256-Digest: WD7uEhNL1QZ40xjHn19VUriGMVEfyFrNJx4wO8L5iJA=
+
+Name: org/overture/ide/debug/ui/messages.properties
+SHA-256-Digest: ZbcxSHM7FMwzwwTYbKiadK6SEX3Ya8pHB+At/3Csnls=
+
+Name: org/overture/ide/debug/core/model/internal/eval/VdmEvaluationEng
+ ine$1.class
+SHA-256-Digest: z69GzevFcwc5NgJUlmGMs9U5L23xg0E6GmdlQpuCPDw=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab$1.class
+SHA-256-Digest: yt/ly0okWNUMJ56KyY1fAYRDLxt4cL+A243MHgqboNw=
+
+Name: org/overture/ide/debug/core/model/IVdmBreakpointPathMapper.class
+SHA-256-Digest: yD0LH9hmbp80y+ALROGur2bNGQixoHCU7hA5kPLotJA=
+
+Name: org/overture/ide/debug/core/dbgp/internal/utils/DbgpXmlEntityPar
+ ser.class
+SHA-256-Digest: xrjFxLW8RHPfOGiqL3lU49Q59+n7vyxZUMM79iofcmc=
+
+Name: org/overture/ide/debug/logging/LogContentProvider.class
+SHA-256-Digest: 9aqDI5PdhgPniPSVDy/HyRhWBAh4EA6Nyq+Biw8GT0k=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpSessionInfo.class
+SHA-256-Digest: 6Gc82sbsHPqn9Mnt75vbc33sSFnWZRC0dGJE5Dj6qXc=
+
+Name: org/overture/ide/debug/core/dbgp/DbgpServer$DbgpSessionJob.class
+SHA-256-Digest: GOhJtNekBYADr42VUaTyN/n866A5BvmRwfSTnOE0yV4=
+
+Name: org/overture/ide/debug/core/model/internal/VdmVariableWrapper.cl
+ ass
+SHA-256-Digest: Er+thvFyqOwOvZKEH1mZurs862RDyzKlW5uSWy+MCrg=
+
+Name: org/overture/ide/debug/preferences/WorkbenchPreferencePage1.clas
+ s
+SHA-256-Digest: ysWTJnR+9LyphNayJgTGITy5OX9wXH9xPLvmI8CrKeQ=
+
+Name: org/overture/ide/debug/ui/propertypages/BreakpointConditionEdito
+ r$2.class
+SHA-256-Digest: fAzhNx5r7iPdV//ke2acnaGDHiHw9ogHPApoqAUN2NM=
+
+Name: org/overture/ide/debug/core/model/IVdmStack.class
+SHA-256-Digest: WwP9rDBoG8dhky70igDcJPI3rVXFe6FckJFi9NfGgDQ=
+
+Name: org/overture/ide/debug/core/model/IVdmVariable.class
+SHA-256-Digest: 0uyHt7KjmktyH96mFIv77KKRdvICWUR/tpaMvTlvxEs=
+
+Name: org/overture/ide/debug/core/model/internal/VdmThreadManager$2.cl
+ ass
+SHA-256-Digest: S+1xO9qShdEAJL/dJ5d85A0LBY9s1jAxgy5k0gX5NHU=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpStepOv
+ erOperation.class
+SHA-256-Digest: 9GJMBBpik3G1ZtmFTXCIuKt0kEfaL79Lc2z7BB6JyK4=
+
+Name: org/overture/ide/debug/ui/VdmDebugConsole$StreamListener.class
+SHA-256-Digest: MxGjAlsE6Uku/Z9E8O4wWh9Wy3JO4RUGybPrr/3Atkw=
+
+Name: org/overture/ide/debug/core/model/internal/VdmStack.class
+SHA-256-Digest: mREy/L5SeAuicGQHY+MQnTIDo6i53ZX/AHxjDoswZOc=
+
+Name: org/overture/ide/debug/utils/JarClassSelector$1.class
+SHA-256-Digest: K3K1fY+0/Wc+kDJjrfXCYz5WaO+G4Q+3/+aqod9cDCI=
+
+Name: org/overture/ide/debug/utils/communication/IDebugThreadProxyCall
+ back.class
+SHA-256-Digest: 47ljYfNU3nifQCLPgvjyb3ysoaWL1IOtmJTNRyPcc/o=
+
+Name: org/overture/ide/debug/logging/DebugLogExecutionControlFilter.cl
+ ass
+SHA-256-Digest: PynOWp0ioixQype54W63vCjJtKaQxUtjxolGz1U5JI4=
+
+Name: org/overture/ide/debug/core/model/internal/VdmThreadStateManager
+ $IStateChangeHandler.class
+SHA-256-Digest: iMQ0Eop5QV6MZW0PwyrIJjFzlCh98sytbI2nxYD4Mfs=
+
+Name: org/overture/ide/debug/core/dbgp/DbgpServer.class
+SHA-256-Digest: io/GxXr+n8RiKwOGOK22NJmD6wLR06OJ7zj7xPFhD74=
+
+Name: org/overture/ide/debug/core/model/HashVdmType.class
+SHA-256-Digest: O2UyTWtsqHVA+c0Dh5PRDKcyerFlN2a+J0Vc4wxLqNw=
+
+Name: org/overture/ide/debug/core/launching/ILaunchStatusHandler.class
+SHA-256-Digest: FF5TCRuAui2kx3MM3NMyHZPc/xgSvoUnR3gBrOu0+Og=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab$WidgetListener.class
+SHA-256-Digest: Ib7f21dfeWb7ENnFKG3Z6LiCYWBuKJsehenCnQqr6c0=
+
+Name: org/overture/ide/debug/utils/StrUtils.class
+SHA-256-Digest: sj/OZxa65zFT7yWVKMzmLARHTD8kpa8PJaIv5Bk6qSw=
+
+Name: org/overture/ide/debug/ui/actions/VdmEvaluationAction.class
+SHA-256-Digest: 6zIdOnpaN0gk2OjxBDDDBy99NnWuFtYZADKcBER3LVc=
+
+Name: org/overture/ide/debug/ui/ProcessConsolePageParticipant$EOFHandl
+ er.class
+SHA-256-Digest: w7ip6Zk78Mj6HFZjSYFTJI9Y+22F+AJ0Nc0GvuaOYn8=
+
+Name: org/overture/ide/debug/core/model/IVdmBreakpoint.class
+SHA-256-Digest: fTGwsZVgFVnqTEtSEUDpTf5fufNNvwXuuVONf/LCoX0=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpSpawnpoin
+ tCommands$DbgpSpawnpointString.class
+SHA-256-Digest: qAy3NA2Mu8l712yOqmZIjGVdDXY6ChDit+olyEVpgV4=
+
+Name: org/overture/ide/debug/core/model/IVdmStackFrame.class
+SHA-256-Digest: olTN2MHTh6deY7panbUZfTo95pFRrbR5nSbEavq4+/Y=
+
+Name: org/overture/ide/debug/utils/communication/AsyncCaller.class
+SHA-256-Digest: 0mG0Rpj/Gd/uFwAWjo6su1iISo1ekq8p4NtlWi3vYns=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogView$4.class
+SHA-256-Digest: rJdSu/3RoOafyv3Ap/I6LfTL66eY8a1KuqoM+iOE7v4=
+
+Name: org/overture/ide/debug/core/dbgp/internal/breakpoints/DbgpBreakp
+ oint.class
+SHA-256-Digest: OM/oOD0sIlBwi1UI9d0yXRSNRqevde29umDol5aL7wU=
+
+Name: org/overture/ide/debug/core/dbgp/internal/IDbgpDebugingEngine.cl
+ ass
+SHA-256-Digest: EfT3/HCoRiXoO8DoefEO7eReKiE0o9bBC3+6FcQL054=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpDebugg
+ er$4.class
+SHA-256-Digest: 9nA2aQzab2IWhFyUbM3j95fiqulGgjmuVvNJIoxXbMc=
+
+Name: org/overture/ide/debug/core/dbgp/internal/packets/DbgpPacketRece
+ iver$PacketWaiter.class
+SHA-256-Digest: 2dBog3AwQ7Dz752HdT0aeVGbfufz95TiQmkpZvy5dXA=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpSessionInfo.class
+SHA-256-Digest: m470tP0bajfpRn91nFjlugx271TVP42+CwU1cTNIyNs=
+
+Name: org/overture/ide/debug/utils/ProcessConsolePrinter.class
+SHA-256-Digest: XF91CmVRT14EDNk/AJ003JKBY8UcEk2CuSHq967N+9I=
+
+Name: org/overture/ide/debug/ui/ProcessConsolePageParticipant$1.class
+SHA-256-Digest: BhxlAvKFuf1GxSWv3URrTGGhBkIhO3gX1ZU1YSVYHx0=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpStreamCommands.cl
+ ass
+SHA-256-Digest: y1rgom4Kq9joiXzfZfWIeRMLnODRWm3GzJcOuB3cwLc=
+
+Name: org/overture/ide/debug/core/model/internal/VdmThreadManager$IThr
+ eadBoolean.class
+SHA-256-Digest: ViIWEPPHPOqXMqWVSHSAttG/Mh6eK9YX3gjdeQzHMyE=
+
+Name: org/overture/ide/debug/core/VdmDebugManager.class
+SHA-256-Digest: RgCNpi6qnNi+5aqXLPeCuXXRpm9MYbjQCBaqcf+1afM=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpStackComm
+ ands.class
+SHA-256-Digest: 2/nTg/hjsJqD67H5tArSRsbWMC6gOAk4Gq7I8alHoLw=
+
+Name: org/overture/ide/debug/core/model/internal/UnknownVariable.class
+SHA-256-Digest: ylj7kW6BPe3GMyl9KCCUXfYfYhFo3Z/1E0KHcfWyQN0=
+
+Name: org/overture/ide/debug/ui/propertypages/VdmLineBreakpointPropert
+ yPage$1.class
+SHA-256-Digest: HvLfx48MJ35XwUeHiYMOlv3ZokGrYcOZx0JTbB4e03E=
+
+Name: org/overture/ide/debug/logging/LogView$7.class
+SHA-256-Digest: zWkPYobgi4NRIfSNXrHEy8gXXli63mqHVDzFGne0hWU=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab.class
+SHA-256-Digest: a+eWxfNJBWFoR6s1IxzlDKUElIVdJPHgZRFlL7/yS2I=
+
+Name: org/overture/ide/debug/core/model/eval/EvaluatedVdmExpression.cl
+ ass
+SHA-256-Digest: BYIdgBoFU+N2HtYu5AvDXSKYlYXRNXdi6YKJozvl2Rk=
+
+Name: org/overture/ide/debug/core/VdmDebugPlugin$DbgpServicePreference
+ Updater.class
+SHA-256-Digest: npDCAhC0ajGfc37QD1F91QT0InjYKBkwX9VCYEfJgvg=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpSpawnpoint.class
+SHA-256-Digest: jUwU/FDwnoBjTWjzDrjGXsXXfc8d8xjo76PSFEkAJSE=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpContextCo
+ mmands.class
+SHA-256-Digest: XGrEYdfOVE3zRbE25+rbHzWhDgOazCYDso2Atu5dDtk=
+
+Name: org/overture/ide/debug/core/dbgp/DbgpServerException.class
+SHA-256-Digest: jQUDOr7ouKiTADQifuxUFCCtBk+wvVU4p6N4ZFgt8gM=
+
+Name: org/overture/ide/debug/core/model/ArrayVdmType.class
+SHA-256-Digest: fY2TBU+nzUK781fhSDhpUZ9J+367/8vM21jOM5tQ5VY=
+
+Name: org/overture/ide/debug/core/model/ISourceOffsetLookup.class
+SHA-256-Digest: bd63hzmiHuJi8pFz60f8JhbptP4gCaafZPP8vgckWW0=
+
+Name: org/overture/ide/debug/utils/communication/DBGPErrorType.class
+SHA-256-Digest: 0UkVZkbcXSjgiZrZEGoxbHFNkLlIqPU38q3YENsXtrI=
+
+Name: org/overture/ide/debug/core/dbgp/breakpoints/IDbgpWatchBreakpoin
+ t.class
+SHA-256-Digest: NSd9xjgFXDw5bP1yBr5Qc0/5FA9jdqtmvoruNaZl9b8=
+
+Name: org/overture/ide/debug/core/dbgp/internal/breakpoints/DbgpWatchB
+ reakpoint.class
+SHA-256-Digest: AF4QC+8jBycetgsN1Mqgv2FWsvTj+RngVRW7UrPUIkU=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpStackLevel.class
+SHA-256-Digest: pj4meKh6dLA+DW8nr2Ck2BEecP2T4cQ/BWvn3CBI9fk=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpSuspen
+ dOperation.class
+SHA-256-Digest: 7hhknCtbSMMYiBKF76d3DXB1Id4VdhujYzNFmyzy9Ec=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpStackComm
+ ands$1.class
+SHA-256-Digest: TPVN/zIA7p/1oATqtqwerifLHx43+I1PLxbX3GQgIPA=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpSession.class
+SHA-256-Digest: CBAmXmH56I+CeWmYzharNr3GEZOzYA1kMVZGJ6sMyFg=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogView$6.class
+SHA-256-Digest: UV9/4Ly9w7umTBu6yxEGtMTQXNGY0cJUa0nH9siarWI=
+
+Name: org/overture/ide/debug/ui/log/Messages.class
+SHA-256-Digest: 0UcRc0CVcYnInazz5i2xomYb6Oe53J/4+Z8mX63YI3o=
+
+Name: org/overture/ide/debug/ui/launching/VdmDevelopLaunchConfiguratio
+ nTab.class
+SHA-256-Digest: 4EvoMQuPohoE3g7EuH2KpGJUyxA9Kg4RLNO0i4Cw/mI=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpServerListener.class
+SHA-256-Digest: H6OEuxJgUb1J+CVSpJRiwzJaO8tQL6zbDnE+6/7HpNM=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpCommands.class
+SHA-256-Digest: 4+omWo8qnhkDxjudJmNMJRyi8wz4wrcTIpwx0DRXwZY=
+
+Name: org/overture/ide/debug/core/model/IVdmDebugThreadConfigurator.cl
+ ass
+SHA-256-Digest: osYJv4K96emdemzkQMGgWaxsfVFZ6fH22a5YVX/z4fE=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpThreadAcceptor.class
+SHA-256-Digest: 1Wh1ezLwLttfr4xFKBpseU/ATwjSpjERaTokUWK3Rtw=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpRawListener.class
+SHA-256-Digest: /RH/dCVEy30LrnfNi3cYq5PK9VlZyUZNoiwh2z67vpA=
+
+Name: org/overture/ide/debug/core/model/IVdmType.class
+SHA-256-Digest: plw4V+vE7V3KYJTD7nvSWO3xbKfQAqya+dCAM7+nuU8=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpFeatureCo
+ mmands.class
+SHA-256-Digest: GTIgiXQWtLcU4eQBfun9zyTEwc7+ioEGHmzSKaxcTH4=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab$MergedModuleVdmOutlineTreeContentProvider.class
+SHA-256-Digest: 8CmGK73tg6XZzL832jKpN/DttpS7Xcpb2pJUduBHyXU=
+
+Name: org/overture/ide/debug/core/ConsoleFactoryDebug.class
+SHA-256-Digest: JA5bowpNdZfEIvk3RkokhwmY8B/AJ1bVDp8clCa91WI=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpStatus.class
+SHA-256-Digest: gf2DRYeCwNKk/P1EtRtscaDDfw9BDW0hStEj7nJtPEE=
+
+Name: org/overture/ide/debug/utils/DebuggerProperties$DebuggerProperty
+ $ValueType.class
+SHA-256-Digest: 6VD98ddCSkb5W90cjSRnkqAFYuJUeDwaWZvNdaiyrB8=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpResume
+ Operation.class
+SHA-256-Digest: M9T3Lp2HjkY7GTScffnnZk3tOolyTEA61io3oZ/fI/I=
+
+Name: org/overture/ide/debug/utils/DebuggerProperties.class
+SHA-256-Digest: BtrsgVdsRcOn9KCA+tVA3pC049/7fYo2lULtYmn07U0=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpExtendedC
+ ommands.class
+SHA-256-Digest: eIuWEoWbs3WwkYUR+MMvI12IWh7q1qDNK9QI1RkWf7I=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmLaunchConfigurati
+ onTabGroup.class
+SHA-256-Digest: 8whb7tKizuc9aBkCU9SYWSUJA/Qg+oicJ4ns9J9exGs=
+
+Name: org/overture/ide/debug/utils/communication/DBGPProxyException.cl
+ ass
+SHA-256-Digest: sOsh1BmxzeiJsTNj0PJy/bef1x/nWsy1o0cNE6ccfTU=
+
+Name: org/overture/ide/debug/core/model/internal/IVdmThreadManagerList
+ ener.class
+SHA-256-Digest: 0ScLOoY8iKwz4HpUo2bFMeqabgTgbG7BWQXF8wSSCtI=
+
+Name: org/overture/ide/debug/core/dbgp/internal/utils/DbgpXmlParser.cl
+ ass
+SHA-256-Digest: pzUSV26HNsQMe4QXQ5gaa/CMJaSBG16NOK61IHNUne0=
+
+Name: src/main/java/org/overture/ide/debug/ui/log/messages.properties
+SHA-256-Digest: 2D8jXQ1T8OCFUOPZsPEw1yL6WC5kdTUOmacNGfYp7ng=
+
+Name: build.properties
+SHA-256-Digest: EK/i6gcgb1kK3qrda5QEWfTSpTX5+A4Ve/0BpYHPa/U=
+
+Name: org/overture/ide/debug/ui/launchconfigurations/LauncherMessages.
+ class
+SHA-256-Digest: YQIflN2e4rPM/5MoNSseBie9eYeMjrM426VjDt0xMfQ=
+
+Name: org/overture/ide/debug/core/model/internal/VdmStackFrame.class
+SHA-256-Digest: 1Q3j6tLKamZ0BDIGj9KMoBDxlI/xQeAzdair+vYZw58=
+
+Name: org/overture/ide/debug/core/launching/debug/DbgpConstants.class
+SHA-256-Digest: TUSraBn5ITf7ogaGePg+r6EEBGAikKVZe4Jsp9WOqbg=
+
+Name: org/overture/ide/debug/core/dbgp/internal/breakpoints/DbgpLineBr
+ eakpoint.class
+SHA-256-Digest: hb0R1s3tZrfXJhb+VVomnqpsUT3acGJFqaSm/iHri64=
+
+Name: org/overture/ide/debug/logging/DebugLogCopyAction.class
+SHA-256-Digest: Nyno7d7MDii3iIihoPldYTj8qoLlTT8Y+8DAVnNd4CA=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpWorkingThread.clas
+ s
+SHA-256-Digest: CprtXqAMTn7qrYQDR0aOcoBA+4XELTYlmouyQ2+c5JY=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogView.class
+SHA-256-Digest: NeOnkU74IH00WKvPs3W2XnAVUk2Gi/LWGdA2GHDD5UY=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogView$8.class
+SHA-256-Digest: pepjHYJs87IxsKKtwxbcT4GsiUtrVgTzWhAJqCZVlKs=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpCoreCommands.clas
+ s
+SHA-256-Digest: IfrTqcmIRdYNC+4Nm7a6Esrd5lnI9DyPMHPuxJbvJZo=
+
+Name: org/overture/ide/debug/ui/launching/VdmDevelopLaunchConfiguratio
+ nTab$WidgetListener.class
+SHA-256-Digest: kXwDXznPbbcyGGAy9TPm+z1gLKqOC/8G/kSUBbKrsJI=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpBreakpoin
+ tCommands.class
+SHA-256-Digest: yQ0gPx0FEQGoBirg9l41exoxjqQZSzihjhQTgcmPUOk=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpDebugg
+ er$5.class
+SHA-256-Digest: NPf+ZXPN2CLaZ3mzByrp9VTlMDNPJplgG6Lbrvnyqe0=
+
+Name: org/overture/ide/debug/utils/DebuggerProperties$DebuggerProperty
+ .class
+SHA-256-Digest: LKbvCV4BTSBtHVwhRaKfcgvmdOE4W+kX6BCAZrRgYoA=
+
+Name: org/overture/ide/debug/ui/log/messages.properties
+SHA-256-Digest: 2D8jXQ1T8OCFUOPZsPEw1yL6WC5kdTUOmacNGfYp7ng=
+
+Name: org/overture/ide/debug/core/model/internal/VdmWatchpoint.class
+SHA-256-Digest: jzWgr4tSaZRNs7DAO0AHNVGx9wRjKoukpRjSGNcLow0=
+
+Name: org/overture/ide/debug/core/dbgp/DbgpRawListener.class
+SHA-256-Digest: KjQUGTSoZOJnCjDBQzw3Q463u876wj5ulgz9oloXAEE=
+
+Name: org/overture/ide/debug/logging/LogLabelProvider.class
+SHA-256-Digest: B9n7kgwTo+bn8HlPEDqioSuN8RbbeBKGTBBgXnlL+aI=
+
+Name: org/overture/ide/debug/ui/actions/VdmWatchAction.class
+SHA-256-Digest: fgZz/VP/YUC6+alTgMk1f2CcDc4Kf2ZCG4oPAd6YzlU=
+
+Name: org/overture/ide/debug/internal/ui/views/launch/LaunchViewMessag
+ es.properties
+SHA-256-Digest: l/CM9cooBt1n6YAEwKMtiHyqNB21yC22+QIj7cibwTM=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpDebugingEngine$2.c
+ lass
+SHA-256-Digest: 9p8Ersmpp+e8Ax0EgLga4zLqTlr/WJ+mdIYAWBMCUMM=
+
+Name: org/overture/ide/debug/logging/LogView$6.class
+SHA-256-Digest: c6ol4QWEcdVF8qQ2CqCNvPjAnLLT5/2Nd7rMBwM4wco=
+
+Name: org/overture/ide/debug/core/model/ComplexVdmType.class
+SHA-256-Digest: 1xRm7XsRGse/1hmeZ7qYHKF00wO1YSqIYpMX1VE1zoI=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpDataTypeC
+ ommands.class
+SHA-256-Digest: WHBouXqjjvTk+nTvHrmNuSL4UCyCR677C32AUKDSROs=
+
+Name: org/overture/ide/debug/core/model/IRefreshableVdmVariable.class
+SHA-256-Digest: gR02EQOe/eTdE0W1Px+ZEPeYZlw4MicK10wY37drfww=
+
+Name: icons/cview16/vdmpp_file_tsk.png
+SHA-256-Digest: o4VFKVta+Ju6QtFOy/S90XaKfknIoDzRramSm337CDs=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpContinuationComma
+ nds.class
+SHA-256-Digest: mTUx0J45qEqGPwOQUKBERJacinSD/fGxu0Eqduui0UY=
+
+Name: org/overture/ide/debug/core/dbgp/breakpoints/IDbgpLineBreakpoint
+ .class
+SHA-256-Digest: BZJFQeK7TjTVQighw9rdLzXTWvCYN00rcPql6c8STts=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogLabelProvider.class
+SHA-256-Digest: Sle9cqXj6Jy6mAJ4+8plqMq0QY4akTFHqkcspT7NB40=
+
+Name: org/overture/ide/debug/core/dbgp/internal/IDbgpTerminationListen
+ er.class
+SHA-256-Digest: 0NkzLFaHAjYgxKWQhHvBY459DuVF9wDckepD0yLhfmc=
+
+Name: org/overture/ide/debug/core/model/internal/RemoteVdmDebugTarget.
+ class
+SHA-256-Digest: lVkyPnaiLEIx+xIYi31bPDAQViN5rVsG+MqRoCJXGA4=
+
+Name: org/overture/ide/debug/core/model/internal/VdmLineBreakpoint$1.c
+ lass
+SHA-256-Digest: 2rahtHNKHYc8UL6nQoX1hIokZ7y9HBelyyoh+SxhOBQ=
+
+Name: org/overture/ide/debug/core/dbgp/exceptions/DbgpIOException.clas
+ s
+SHA-256-Digest: O7QZkxRXY/JRlle0BLUKY7fZy2PEbaOddO0GqDiGH7Q=
+
+Name: org/overture/ide/debug/ui/VdmDebugConsole$1.class
+SHA-256-Digest: bRvwVpxziSKCFamPaf934VXtcwRyj8K7C3ugBJm57MI=
+
+Name: org/overture/ide/debug/core/IDebugOptions$StringOption.class
+SHA-256-Digest: 6Oh0stMeBDleTCfN6vlxCzImSLDInjW+Vpz5SbUdVGw=
+
+Name: icons/eview16/debug_vdm.png
+SHA-256-Digest: ZS6mO5Lk0D6EvB0sYNo406mQocQ1oPCFjVGua+M5mRE=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpContextCommands.c
+ lass
+SHA-256-Digest: odH8goKmDulrj+Ig03OtqXmb49ucjBG24kF0No8hEBg=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpCoreComma
+ nds.class
+SHA-256-Digest: cF9FCIOkmxQXikil0RTEpxvdQwiuEHTKUkjzGKm/8pM=
+
+Name: org/overture/ide/debug/utils/xml/XMLOpenTagNode.class
+SHA-256-Digest: W8OmH7VO1tNQ8xLel/8ENWi5lMlyhFu95deuErodxOY=
+
+Name: org/overture/ide/debug/core/dbgp/internal/packets/IDbgpRawLogger
+ .class
+SHA-256-Digest: hxs17+j5EcfIQzVcE9d4vJN+J/0KHj3NG5L+6sDgZ8c=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpSession.class
+SHA-256-Digest: EesnLb/YFJeN+qgu/43n+Ur5oWFMF8B5EmW0u2+OYYI=
+
+Name: org/overture/ide/debug/logging/LogView$5.class
+SHA-256-Digest: 2Dva5A3TNeDaRTYHzqjdrS3RdY1VkXZ84xRRpzacqgo=
+
+Name: org/overture/ide/debug/logging/LogView$1.class
+SHA-256-Digest: qh3Xfdp3nW60XDiXeKs119XonPVNQZ74spRa+tAUlbE=
+
+Name: org/overture/ide/debug/core/model/internal/VdmLineBreakpoint.cla
+ ss
+SHA-256-Digest: xUVY8jOZIPHa/lwyEvcrZGFdL68HOAdhTsqhrxErqIs=
+
+Name: org/overture/ide/debug/core/dbgp/internal/packets/DbgpNotifyPack
+ et.class
+SHA-256-Digest: sT5oZJ1qmOr1I8Zyz4nWdcJS7C93S7GSl921iXxSvtY=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogManager.class
+SHA-256-Digest: Dmg6J73gdA1rMXcxUO1vFEzXs40gLTTyGuiCIgpLcEM=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpContinuat
+ ionCommands.class
+SHA-256-Digest: /+s/9n4A0JoWJvJulwBsSFXxjz7vbsLmszkwYCfuUnI=
+
+Name: org/overture/ide/debug/logging/LogView$4.class
+SHA-256-Digest: 6wstpA+YGIiKypfsxWnQBdkIptNgIlYNi7TDKmN2nXQ=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpOperat
+ ion$IResultHandler.class
+SHA-256-Digest: Bu+hO76p9cPdhER7xb4tHhi21lJ9DK6Wbn7Aohw0578=
+
+Name: org/overture/ide/debug/utils/ClassPathCollector.class
+SHA-256-Digest: iBlFSL7DcpdU+vlHeb6ZW7aJLb0y1BwEq3GKVfmru8Y=
+
+Name: org/overture/ide/debug/core/model/internal/VdmValueProxy.class
+SHA-256-Digest: 4o8LGbdhFRop1Tm0KYpJZBpfcTZtxkjgZHE+0GrvuNo=
+
+Name: org/overture/ide/debug/core/model/DefaultDebugOptions.class
+SHA-256-Digest: 5q7RAQRCQcrUBeq+AO8oRBQztGuLsqvN6SoSgZGpgHA=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpStatusCom
+ mands.class
+SHA-256-Digest: OskXDs/q+CEMMBdt5FLIRhycgrSB5VP0653Y8K0jghM=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpStreamCom
+ mands.class
+SHA-256-Digest: 8zgRuSrC6dpWI2Nl7mijOk+MviTnDjemur8lsFLxpBU=
+
+Name: org/overture/ide/debug/core/model/internal/VdmDebugTarget.class
+SHA-256-Digest: 9rc6JX9v6Jv7U/z+KErkjY3Ft64wrGrIVVAGeFB8Rhk=
+
+Name: org/overture/ide/debug/core/launching/DebugSessionAcceptor.class
+SHA-256-Digest: CtQEpBy1AJ9yG8zEeJvR1c6KyJJZTb/urmlan6QDRT8=
+
+Name: org/overture/ide/debug/core/IDebugConstants.class
+SHA-256-Digest: 1H/kXvzamjfbpWgovvZfsxM0zglNzvS9QAqWJ9EL2Ok=
+
+Name: org/overture/ide/debug/internal/ui/viewers/update/VdmModelProxyF
+ actory.class
+SHA-256-Digest: UizbFZ1lrPjJU9rAVBnr424df5+iL3B6KNgkwHPyMTU=
+
+Name: org/overture/ide/debug/logging/LogView.class
+SHA-256-Digest: mHeENgZ3rhtQ/0OD2ChDQxCWdhaKXnvLjYkUUUhEiNE=
+
+Name: org/overture/ide/debug/core/model/eval/IVdmEvaluationResult.clas
+ s
+SHA-256-Digest: TC8lU+BQZ3c2u6B+Xi/eznzjux4iYSN4kXIu4ci9sUg=
+
+Name: org/overture/ide/debug/utils/CharOperation.class
+SHA-256-Digest: 3UcyIsvh0HEWS53v3nuAQX201HBBsEhBWnAyqqExWqg=
+
+Name: org/overture/ide/debug/core/model/internal/eval/NoEvaluationResu
+ lt.class
+SHA-256-Digest: S1JI8h54CtqVHZEY24EGWsq7SMrdctmur1JkA7nnF20=
+
+Name: org/overture/ide/debug/core/model/internal/VdmBreakpointPathMapp
+ er.class
+SHA-256-Digest: 1As8phTZjyy/gL/c3qnYH0JUFsZuobHNxFJQiveaisA=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpDebugg
+ er$1.class
+SHA-256-Digest: crcXrDRT1rghClfQk5uZKkluhr9Gn/CnMVWNNYuU1K4=
+
+Name: org/overture/ide/debug/logging/LogItem.class
+SHA-256-Digest: hSLF1OHeZS25baDN1a6SN4UUpWY9bHMPn22VuMYuNTE=
+
+Name: org/overture/ide/debug/core/model/IVdmDebugElement.class
+SHA-256-Digest: 8qydANcVA8t7fnuivsHB88Y4hofaL579CuIr8KuEUHA=
+
+Name: org/overture/ide/debug/core/dbgp/internal/packets/DbgpPacketRece
+ iver$ResponcePacketWaiter.class
+SHA-256-Digest: xDmisdefMw/R8Hpg5/cHngGo2Jj1l5gwuHvmSPMfzOk=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpOvertureC
+ ommands.class
+SHA-256-Digest: CEXpwDCUYKn6NBYTSK9SYe3xKXlp9769oJF1sxGC3uU=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpSessionListener.class
+SHA-256-Digest: KKSsegcsZfMefbd3MVeY/eKmViAADHMumqX0IduEuQs=
+
+Name: org/overture/ide/debug/core/dbgp/DbgpBaseCommands.class
+SHA-256-Digest: 3yjCUPD0dpdbRqEftEeIYnSLRtlcg51iW1HOXH0JlI8=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpDataTypeCommands.
+ class
+SHA-256-Digest: lWzhmF75QsmK+U5YtrL8pzKwYozZANqTm7LQWSrxZ7g=
+
+Name: org/overture/ide/debug/core/model/internal/NoWatchExpressionResu
+ lt.class
+SHA-256-Digest: y1yXJSsfWayMTi15KogwfI1IYK2yXA1YzR19LPCoqTo=
+
+Name: org/overture/ide/debug/core/model/internal/VdmTypeFactory.class
+SHA-256-Digest: c0Y271xh4skx+sEfnBiY0feT64Ta9QDk4krrqi1F81Q=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpDebugging
+ EngineCommunicator.class
+SHA-256-Digest: 0jPPKNBnbcb5OgNxWm+5K4sBZC3tmJvGRGj5nLtEk/Q=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpSpawnpoin
+ tCommands$AbstractSpawnpoint.class
+SHA-256-Digest: f+tsp4/KhxAIOG1gFxknoq1tEZ5v0FmUUqhdXonbEaY=
+
+Name: org/overture/ide/debug/logging/LogView$3.class
+SHA-256-Digest: 4yEH4jf1tAjVatkYdW7iyvQvX4C+QDa7K1SvSLMfyrw=
+
+Name: org/overture/ide/debug/core/dbgp/breakpoints/IDbgpConditionalBre
+ akpoint.class
+SHA-256-Digest: hET5QcvfqaHrd4x2KCOI3iW5cJO6aT15fPe9d3h9m4o=
+
+Name: org/overture/ide/debug/ui/launching/VmArgumentsLaunchConfigurati
+ onTab.class
+SHA-256-Digest: vJDJRyF2chyMfphWCVXjJYwjs+siYTg4LOMIKrAnrZs=
+
+Name: org/overture/ide/debug/core/dbgp/exceptions/DbgpOpertionCanceled
+ Exception.class
+SHA-256-Digest: uqpLi2NtPb+sP+nz8ySrjy6AONGwoWX3q3IaXV1T5Cg=
+
+Name: org/overture/ide/debug/ui/actions/WatchCommand.class
+SHA-256-Digest: s9/GMo3E7ozeYIPrOKsSDngt1IVQUu57ljDtGLgRqB0=
+
+Name: org/overture/ide/debug/core/model/eval/IVdmEvaluationListener.cl
+ ass
+SHA-256-Digest: +lNCZULcwLQPgX5I0/VHgfZU/ezVu4tCiCeFp8eGtPE=
+
+Name: org/overture/ide/debug/core/dbgp/exceptions/DbgpProtocolExceptio
+ n.class
+SHA-256-Digest: O0G8sXmylYV9wCeBvPBVWDfIbv+dXbX8bbuYG6XO9gU=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpStatusInterpreterT
+ hreadState.class
+SHA-256-Digest: h17Cw2rtBljr9DBvLEsMlpHc3MmpQj3Jr9xh1vKePM0=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpProperty.class
+SHA-256-Digest: k3x7wfkVoCrUi8DCQUsXyqK75+l07lnY3lRy198ZfkI=
+
+Name: org/overture/ide/debug/logging/LogView$2.class
+SHA-256-Digest: BRQNhMtOTJVt6mStqM+HV9y0AMnNGNGH3UAGYG5KHH4=
+
+Name: org/overture/ide/debug/core/dbgp/internal/utils/Util.class
+SHA-256-Digest: q17BliYKm6cCDKRolidM3cOfX2oLg4sRGY65UskfGrw=
+
+Name: org/overture/ide/debug/core/model/internal/VdmThread$1.class
+SHA-256-Digest: vZpe8q+tZFLDDNl24GNgY2slI1n+6umtbuYxZCw78M8=
+
+Name: org/overture/ide/debug/ui/launchconfigurations/DebugTypeSelectio
+ nDialog$DebugTypeDetailsLabelProvider.class
+SHA-256-Digest: qU5sGim1zZE2wcDbp18ZpSK14gry/CpmokuUZ+rcBOY=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogItem.class
+SHA-256-Digest: EsAZNXqVMmP+MxKLlmiBGa8LxC1WNN8Y7MoK0RTJcgM=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpStepIn
+ toOperation.class
+SHA-256-Digest: SrejMP5zFNEhR6jl/2obOWhD+PKMeTV6oMlW4m/q4TY=
+
+Name: org/overture/ide/debug/ui/model/VdmBreakpointAdapterFactory.clas
+ s
+SHA-256-Digest: qyR+99+/RtnhNrX0UjXpBAe7lKsTRheFNEZSbI9G4TI=
+
+Name: org/overture/ide/debug/core/model/internal/VdmThread.class
+SHA-256-Digest: uv2mPjVXCF9ZlGVtSmqFErxXyJy4s+/HwpyUOaOgjkY=
+
+Name: org/overture/ide/debug/core/launching/debug/DbgpConnectionConfig
+ .class
+SHA-256-Digest: OHljoDHuwXnMj5PG19x9Pnsyd1n20CCvM5ThCVmszD4=
+
+Name: plugin.xml
+SHA-256-Digest: 6Y50Ce7c13oZhm49/QXZJMv3oeCxtuYjY4XUhShR4xs=
+
+Name: org/overture/ide/debug/utils/ExecutableAnalysis.class
+SHA-256-Digest: 1uA2mqZkH83qidjZDy+wsVCWKQiEcIS/JOndPe27Gk4=
+
+Name: org/overture/ide/debug/logging/LogView$8.class
+SHA-256-Digest: m15yJvYXgc0kbIm1kpSDR8CqwD0g7P53jylwFFU0g5I=
+
+Name: org/overture/ide/debug/ui/actions/VdmEvaluationAction$ObjectReso
+ lver.class
+SHA-256-Digest: +VQS6Ch2faHQsWCIha3bOxJQLSYUo9ZOwmSmMH1sUSQ=
+
+Name: org/overture/ide/debug/ui/launchconfigurations/DebugTypeSelectio
+ nDialog$1.class
+SHA-256-Digest: w2ML3xu43u5qXjiYcAwxslpecG4AhIlcq+yrTC1K+XI=
+
+Name: org/overture/ide/debug/ui/model/SourceViewerEditorManager.class
+SHA-256-Digest: 1uhfhQFy58Wqrc2niW97JQF9nUtnK+opwmRKN4u/cGE=
+
+Name: org/overture/ide/debug/utils/xml/XMLNode.class
+SHA-256-Digest: 5KWyOd5v+MFAXq71fE2kBnV8dN1ZE4U/LDw01HS5FdI=
+
+Name: org/overture/ide/debug/utils/ui/DebuggerPropertiesManager$1.clas
+ s
+SHA-256-Digest: qNhGAjisSyi0t0hBRigRkXZpcSOlx/+jGUxPBXA+clY=
+
+Name: org/overture/ide/debug/ui/launchconfigurations/DebugTypeSelectio
+ nDialog$DebugTypeSelectionHistory.class
+SHA-256-Digest: 5Bt/Nt6JfsG+uIaElxxrKVZRutf9wF9qTCzWxIukrJY=
+
+Name: org/overture/ide/debug/utils/xml/XMLTextNode.class
+SHA-256-Digest: BnNvPUd4YlBPDwMDqa/scF9uA40HrAR6F61LIQzovfE=
+
+Name: org/overture/ide/debug/core/model/AtomicVdmType.class
+SHA-256-Digest: K2eFvp/GnFnh0wjrvG70FggntYMMyFVAjLJtTHQzLSI=
+
+Name: org/overture/ide/debug/core/dbgp/internal/packets/DbgpStreamPack
+ et.class
+SHA-256-Digest: RECieGV05xstGQoARmkDi8fubuL3CTTg6XtmilBk6j4=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogCopyAction.class
+SHA-256-Digest: B8Ri60CQC8s6i6n6Sbl00X7jP7Ypn+nxTjqVAlBXPrg=
+
+Name: org/overture/ide/debug/utils/VdmProjectClassPathCollector.class
+SHA-256-Digest: vBWlS5wBYVrFlWcOTlGBW+zqJZ9d75bjavbKqwUyCKY=
+
+Name: org/overture/ide/debug/ui/propertypages/BreakpointConditionEdito
+ r$3.class
+SHA-256-Digest: ePmGY2M9Rrq2Z3YUgSsua/330QdBQ4olcvknbZqVOpo=
+
+Name: org/overture/ide/debug/ui/DebugConsoleManager$1.class
+SHA-256-Digest: Ip19WpU7F6rJ5BRIKc2uc5ySTcbfzOb27R8hpQbclsI=
+
+Name: org/overture/ide/debug/core/IDebugOptions$IntegerOption.class
+SHA-256-Digest: Los5jb+4oQnnGpBSypI3a7RC9LdcN+36MO9glbuGly4=
+
+Name: org/overture/ide/debug/core/launching/VdmLaunchConfigurationDele
+ gate.class
+SHA-256-Digest: Hr3MTZjxTLTANbTt3hDHiUge+RXgYr5cu6KZlKKK29g=
+
+Name: org/overture/ide/debug/core/model/internal/IVdmStreamProxy.class
+SHA-256-Digest: fTvHwN/azanJo5GhauxTZn/JdZgPBhYnyghi/OeyjFY=
+
+Name: org/overture/ide/debug/core/dbgp/internal/breakpoints/DbgpReturn
+ Breakpoint.class
+SHA-256-Digest: yJh6+rguK9xoBW4cqz6qJsrzcX0Hzubn73YQGiGax74=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpFeature.class
+SHA-256-Digest: 5/HNnhHN7WZ9n8YeLI4eiay9pyX1Yi8dBm4nE9W/o9Q=
+
+Name: org/overture/ide/debug/core/model/VdmDebugState$DebugState.class
+SHA-256-Digest: 2/L6sQrS94cC7UaDL+XIWCCJPt+IB+kFH0I0Rt4rqi8=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogView$5.class
+SHA-256-Digest: RV1nbuY9u6tUMQPcIwphIZjZUDdfwJL/1vKOr0J9n+I=
+
+Name: org/overture/ide/debug/core/model/internal/DbgpService$1.class
+SHA-256-Digest: cbiHz0642r3EzjRSstss7uSzW5iLhYIeZqrJ8iBl08Y=
+
+Name: org/overture/ide/debug/core/dbgp/exceptions/DbgpException.class
+SHA-256-Digest: wyTuoK3LwCNBXTdUhhjpsCu3eBwAUeXwYeSkuKHHbaM=
+
+Name: org/overture/ide/debug/core/model/internal/VdmThreadStateManager
+ .class
+SHA-256-Digest: /aRxlzLvvU1vJqlfxLb3QjxZiW+xLmUTKihyJ9Y73Ak=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab$ModuleNameFinder.class
+SHA-256-Digest: XDWTKajQn4zBYnKJ7j67wAbSe90rSQPfVRWJxFykwUI=
+
+Name: org/overture/ide/debug/core/model/internal/DbgpService.class
+SHA-256-Digest: wAUMHuqJBRMmxG/BiJ2zSHjVG1ZFxALGmACCk7BIbwk=
+
+Name: org/overture/ide/debug/core/dbgp/internal/managers/DbgpNotificat
+ ionManager.class
+SHA-256-Digest: Bp7t2Nj1Z6fGQsgLMHz4UUiRJ1Jon4boVjXGeqfdr+I=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpRawPacket.class
+SHA-256-Digest: 1e7IiCtsTRkoNdclXKnA62rO3a+IT/woy7e8HBmnPdM=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpOperat
+ ion.class
+SHA-256-Digest: UtcZ9Rbpjk8G3ywI6pOT5GDRrM0ok+zTuInRjQHYj+o=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogContentProvider.class
+SHA-256-Digest: R0NFIAx/+LN0/iP0lVmaX3+fZ8eT0NZ0Kumv102trwM=
+
+Name: org/overture/ide/debug/ui/propertypages/VdmBreakpointPropertyPag
+ e$3.class
+SHA-256-Digest: v3OHb/07NGk/5wXWqYDhwfMngDVLAigrMYnk51lwm/w=
+
+Name: org/overture/ide/debug/core/model/internal/VdmThreadManager$3.cl
+ ass
+SHA-256-Digest: 5zaAY3SCUuE005uO9UDwxgxslTSvpto5bbxapc9G/BY=
+
+Name: org/overture/ide/debug/core/model/internal/VdmWatchpoint$1.class
+SHA-256-Digest: /mt7MOIebr9U64HtM2TTsRsmU8lbm/U/afS6aKJZqh8=
+
+Name: org/overture/ide/debug/core/model/internal/eval/VdmEvaluationRes
+ ult.class
+SHA-256-Digest: JR/GlYgRpGxEBe6CncviUgrpK6RtKCRqQSu3semLpho=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpStepRe
+ turnOperation.class
+SHA-256-Digest: V2oHchgsL4rw1RXWOPsN1QLgZ989nw1FatbI1pELNA4=
+
+Name: org/overture/ide/debug/ui/launching/VdmRuntimeChecksLaunchConfig
+ urationTab$WidgetListener.class
+SHA-256-Digest: 62m1bIxML6zGnqqzafWrtvhtTWdT8CmtiS1OCbS+Y08=
+
+Name: org/overture/ide/debug/core/IDbgpService.class
+SHA-256-Digest: tKi1VqLNJZ5mS8w2AkgLZZ/bvALpvFt2+xuCn9aTVYk=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpExtendedCommands.
+ class
+SHA-256-Digest: xR6sSD6RySKaajIaEBKl8mIHZcul7yAdV/VsTb24Qdo=
+
+Name: org/overture/ide/debug/core/dbgp/internal/packets/DbgpPacketRece
+ iver.class
+SHA-256-Digest: SxPUvV1rl2sue+n1sU7gOlWLfX5Q/RT3FiVc1JoR3ug=
+
+Name: org/overture/ide/debug/core/model/IVdmExecution.class
+SHA-256-Digest: 9zIPAEqgh+KHAdv4AWVZwEMBwQLf0jz5dVIsKiuMerI=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpOvertureCommands.
+ class
+SHA-256-Digest: GgsrtnVPLyxwsPN6Ab0ucnYUtwHGkQ93tkYJxD0pAzs=
+
+Name: icons/dtool16/watch_exp.gif
+SHA-256-Digest: aTem4ZQTahrwS7Igzhkiptnr+LUjJh4n0I+6QA/G7Pk=
+
+Name: org/overture/ide/debug/core/dbgp/internal/packets/DbgpResponsePa
+ cket.class
+SHA-256-Digest: biwkd5ezkfAIte16i8/Rl/Thb/LXMyLWkNvQLauDhKA=
+
+Name: org/overture/ide/debug/core/model/IVdmBreakpointListener.class
+SHA-256-Digest: zA5NdOsiD+EueR+KVF073ionYGZfDh6f5muLuLcXAYQ=
+
+Name: org/overture/ide/debug/core/model/internal/VdmWatchExpressionDel
+ egate.class
+SHA-256-Digest: qGdlQvPOrjzUaszPHxtpDoyxu5tHuCBASoGSiz1xSH8=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpDebugg
+ er$3.class
+SHA-256-Digest: j99en2fqQCSQ3IbSuMy+Ehf+PLJLupWtXzKzSJn48hQ=
+
+Name: org/overture/ide/debug/utils/VdmWordFinder.class
+SHA-256-Digest: GDGp7G4iI6ut2uo0fdhiUYup4oLHoT/lfJI0RTLKfVg=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab$2.class
+SHA-256-Digest: 8xn2kWMZywYZ50killyF/XSuwAFwGza6qIyZMtp16YY=
+
+Name: org/overture/ide/debug/core/model/internal/operations/IDbgpDebug
+ gerFeedback.class
+SHA-256-Digest: PmAqcNqYrDUeMWCU91LKKlM1FVzVgYfih+lVpR7GOtw=
+
+Name: org/overture/ide/debug/core/dbgp/internal/breakpoints/DbgpCallBr
+ eakpoint.class
+SHA-256-Digest: p8QS0NVZFdJbA5FydczhQo8YqneZV726EKQSh4edQtA=
+
+Name: org/overture/ide/debug/ui/model/VdmDebugModelPresentation.class
+SHA-256-Digest: azhrnzWFCkpdszN8DaUM8MywnVU+hkr8LEHkJr0xCvc=
+
+Name: org/overture/ide/debug/ui/DebugPerspectiveFactory.class
+SHA-256-Digest: nMs5K7uITnn7JnP1SlqvDZ/2bP3DGiFxFNW+eMgr348=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpSourceCom
+ mands.class
+SHA-256-Digest: sRnuvkAX3FC9VGDvb9BRJFlMFTh+PG189ChExcxdYpA=
+
+Name: org/overture/ide/debug/core/dbgp/breakpoints/IDbgpCallBreakpoint
+ .class
+SHA-256-Digest: ldIPWr2nplu3JeIpyJ838RRRjCSuXIcS9+p4aVaZK5U=
+
+Name: org/overture/ide/debug/core/model/internal/VariableNameComparato
+ r.class
+SHA-256-Digest: 5U9DX+USLse9bR2QuTZUXtAv0gCQYnFWgxS7ub7UwOA=
+
+Name: org/overture/ide/debug/ui/actions/VdmEvaluationAction$1.class
+SHA-256-Digest: JepjpB6QGi+9lm490AecmdCKkBASTVD6Hopl+B+aVoM=
+
+Name: org/overture/ide/debug/core/model/internal/IVdmThreadManager.cla
+ ss
+SHA-256-Digest: ilUgydRU4nYzvToGkaxNd+SWbYIKzwp0ltUpHtFod6s=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpStatusCommands.cl
+ ass
+SHA-256-Digest: GyrskPpMVsZ1eamegKpSMvnnTMYF1DkleOAolt+q+A4=
+
+Name: org/overture/ide/debug/core/dbgp/internal/breakpoints/DbgpExcept
+ ionBreakpoint.class
+SHA-256-Digest: jzSNY74o+TAQeRtmBKANneYdAYYcLUkfKeud0/sGRQQ=
+
+Name: org/overture/ide/debug/core/IDebugOptions$BooleanOption.class
+SHA-256-Digest: Q3D8x85JdEKsOY0tUvPnGMGl4FissKbrroHn69iyF0w=
+
+Name: org/overture/ide/debug/ui/VdmEvaluationContextManager$1.class
+SHA-256-Digest: ey1f5+g8vQ4We021CmAGwLJriIRu4gHWGS9xKgLXcno=
+
+Name: org/overture/ide/debug/core/launching/VdmSourceLookupParticipant
+ .class
+SHA-256-Digest: NtOMgLb43UAbINcjTq0bXxQq1yESypxd/0ZT5uHmhPs=
+
+Name: org/overture/ide/debug/ui/actions/VdmBreakpointPropertiesRulerAc
+ tion$1.class
+SHA-256-Digest: seaCliEyqJoGvm8487fYC4zs+GvN4TfCZqjywI452Kw=
+
+Name: org/overture/ide/debug/ui/actions/VdmBreakpointPropertiesRulerAc
+ tion.class
+SHA-256-Digest: 4vbFFtYZpuklJB8KZe4xMd0dgAhm1mywcdKQkvufoB8=
+
+Name: org/overture/ide/debug/ui/launchconfigurations/DebugTypeSelectio
+ nDialog$DebugTypeLabelProvider.class
+SHA-256-Digest: PZMj+gTaQniDAD3wljoeExahmtpeWt3b9I99fsl7Y4k=
+
+Name: org/overture/ide/debug/core/launching/ILaunchStatusHandlerExtens
+ ion.class
+SHA-256-Digest: pdkTzIUVRmEvzbaPQW8iAWwWitMv/3V61moKViVy1m8=
+
+Name: org/overture/ide/debug/core/model/internal/VdmThreadManager$1.cl
+ ass
+SHA-256-Digest: /Ye9urOr8xFqKB/6AAcSeiGtXqa9Q95yo5ksdmgTUxQ=
+
+Name: org/overture/ide/debug/ui/VdmStreamProxy.class
+SHA-256-Digest: gFYnLOGkVWCb18uxUW0Jm2F5bvWGHJqlEx5DQplu5AA=
+
+Name: org/overture/ide/debug/core/dbgp/internal/packets/DbgpPacket.cla
+ ss
+SHA-256-Digest: nr990JGqMXmPgIBkjzhEoEPcXXXYCNLQ+8wTdAVttJY=
+
+Name: org/overture/ide/debug/core/model/internal/VdmWatchExpressionDel
+ egate$ListenerAdpater.class
+SHA-256-Digest: tmB1v5YYKg1ts0PdjTOb+YgIO6SuJ40pp+VE7mt7aPs=
+
+Name: org/overture/ide/debug/ui/launching/VmArgumentsLaunchConfigurati
+ onTab$WidgetListener.class
+SHA-256-Digest: TR7QfVXBAKMM3Xj8od44cMRlDRr2/PADKZMIAaAk9/g=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpDebugingEngine$1.c
+ lass
+SHA-256-Digest: Hv9HSbrxJ71HeO8uUfixb4JOYLt33/vqBqCxbpNaot8=
+
+Name: org/overture/ide/debug/core/model/eval/IVdmEvaluationCommand.cla
+ ss
+SHA-256-Digest: NPyAl/hPdYTv7fqSHWG6W4XzenquIq1xugdMX4Pp5DQ=
+
+Name: org/overture/ide/debug/core/dbgp/internal/packets/DbgpPacketSend
+ er.class
+SHA-256-Digest: fHTArZ7/259bBd+TgWxW7YEvT4RUGzg0habj+NVECXY=
+
+Name: org/overture/ide/debug/core/model/internal/VdmVariableWrapperVal
+ ue.class
+SHA-256-Digest: iqTCIBIILleGGKgtKNv961sUjyg5BLD7MqbLqNw4nUs=
+
+Name: org/overture/ide/debug/ui/propertypages/VdmBreakpointPropertyPag
+ e.class
+SHA-256-Digest: t+UUC/gnVQRCcXBlN8rjNaL4VkewdF95Fklt3ph2LX8=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogManager$1.class
+SHA-256-Digest: 8QzSnsTyuzOYuK4IC7BfF3BwAs7eeQRulGx4CF/Ixi8=
+
+Name: org/overture/ide/debug/ui/DebugPerspectiveFactory$IInternalDebug
+ UIConstants.class
+SHA-256-Digest: /B8ZDLmsYOFa+XbL9I5WjcPRFpCvSG+V9Bgnt/P9Qo8=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpOperat
+ ion$1.class
+SHA-256-Digest: 8PXM63rFdAMHWd4++epEcZwQ+2hYUcJHq8dlq5szbPw=
+
+Name: org/overture/ide/debug/core/model/IVdmDebugTargetListener.class
+SHA-256-Digest: Da53TByW9uupTmOMYy7uvbiBBMR/GFpiiiKDCuK71dY=
+
+Name: org/overture/ide/debug/ui/launchconfigurations/DebugTypeSelectio
+ nDialog$DebugTypeItemsFilter.class
+SHA-256-Digest: cPxGC/glAcIuDlUY5LJs9r64IvhgN+HcTivOZ8SqJq0=
+
+Name: org/overture/ide/debug/core/launching/DebugSessionAcceptor$NopLa
+ unchStatusHandler.class
+SHA-256-Digest: 0LHOtBxyD1JneQtDq7mfjErpelvRFcQ7DW6kiy8OgZg=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpNotificationManager.class
+SHA-256-Digest: wGRKOKwgf90aEHej/T6EOn9Xy0ACNV0TW+aIl8WUjvs=
+
+Name: org/overture/ide/debug/core/DebugOption.class
+SHA-256-Digest: wQZMpjuKKqbpKEq38uZUNyJ/R6/DFSUxPuUsIym1z+A=
+
+Name: org/overture/ide/debug/ui/VdmDebugConsole.class
+SHA-256-Digest: nvsxKgavAoxwQmJG6H7Xvkl8SF5JP/SM8SxsHT4nNWQ=
+
+Name: org/overture/ide/debug/ui/launchconfigurations/VdmLaunchShortcut
+ $1.class
+SHA-256-Digest: 2S5HbvJolL0rCeopy5q9ixE7f7TbRQm2DrFpT52Owv0=
+
+Name: org/overture/ide/debug/core/model/internal/VdmDebugTarget$1.clas
+ s
+SHA-256-Digest: rWstP1FUnWn/shivxmU+g179Zjc4dauw7CLWqhVFmQg=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpTermination.class
+SHA-256-Digest: DTNnPQg+n42AX5BpijXREkFcMnpFey7F9b5IgmrpdxA=
+
+Name: org/overture/ide/debug/core/dbgp/breakpoints/DbgpBreakpointConfi
+ g.class
+SHA-256-Digest: /KtNc/UWsj7/UxbFRGGj7mRkKrwdeIcA7KF85TjT8p4=
+
+Name: org/overture/ide/debug/ui/ProcessConsolePageParticipant.class
+SHA-256-Digest: 7Iv9nERy/3EQulhLxhJ0Nf8dnMj5hcyJnK5EGgry0+I=
+
+Name: org/overture/ide/debug/utils/JarClassSelector.class
+SHA-256-Digest: +gE4AHcsCrbsLZ87FMUvatsdNAUTvJ11gFHfeJdyuss=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpNotification.class
+SHA-256-Digest: q3sytkO7c3kv+Zj3IoR9qT+bcSRk+7NjIS6Qb6Avc+A=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpTransactionManager
+ .class
+SHA-256-Digest: /p1WSHoF0nVhqcNYgmx4Hn7haoBMAr1J139XZ1ktUM0=
+
+Name: org/overture/ide/debug/utils/PackageUtils.class
+SHA-256-Digest: rj8nq4xtXnljAdhIBufJI/ynq0lQVG8AENz/m6T+T+U=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpSourceCommands.cl
+ ass
+SHA-256-Digest: kTf0zJMWjLkyloRwHMdeP/OwY4VD6KPLTZzwYsK5hig=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpStreamFilter.class
+SHA-256-Digest: Tc6lHvQjzYt6S5CzlgoyoJ+lTq95+g30C2RmSgRmRMI=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpDebugg
+ er$6.class
+SHA-256-Digest: /+rcDrKquLjd2f2+cKOYMdFA18pF7u/iwQj3sorTQD4=
+
+Name: org/overture/ide/debug/core/model/internal/AbstractVdmBreakpoint
+ $PerSessionInfo.class
+SHA-256-Digest: tsdjHx6YOgCrX1CMknhqKE+FIdrd0LuAlyAoEW5TxLA=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpSpawnpointCommand
+ s.class
+SHA-256-Digest: 0d15yzazyotfL/31Cfkvde+ALb/aar77tujgg/mD9Ho=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogView$7.class
+SHA-256-Digest: U8Ij1B0BG/2coj86F7ToJenrWiUiZ2JNm3/dbiAI7mY=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpStatus.class
+SHA-256-Digest: rGILmz9u1Ah8CyEnLRQl+JTdqAbwyfVQ+UbuU6N2WW0=
+
+Name: org/overture/ide/debug/core/model/IVdmThread.class
+SHA-256-Digest: X0FJlBN6PzP7lY+Z6Er+RU7br2NCpc3PM9eqBI4i0l0=
+
+Name: org/overture/ide/debug/core/model/internal/StrUtils.class
+SHA-256-Digest: 3s96F8ofLXIILlWeixwbyTE4reVnJSOobWtslhwli7k=
+
+Name: org/overture/ide/debug/ui/model/VdmLineBreakpointAdapter.class
+SHA-256-Digest: zt0jfz++Z7OvtCxTrAKX1uRkvQO/3FDzksZBtUuAZGU=
+
+Name: org/overture/ide/debug/ui/VdmEvaluationContextManager.class
+SHA-256-Digest: cCVAR1UJEKTrL5/VyacqNpib6sCyIC7uCKc4CCgXbZ8=
+
+Name: org/overture/ide/debug/core/model/internal/VdmBreakpointManager$
+ TemporaryBreakpoint.class
+SHA-256-Digest: WTEkV775PuwYx0g2uKw+B+6ZzpCle1I59hFwOsFVBzg=
+
+Name: org/overture/ide/debug/core/model/IVdmMethodEntryBreakpoint.clas
+ s
+SHA-256-Digest: eVe+jC1J7YKnfr09OVmXecy2ZF2Q0zvmtBsCloV9qi4=
+
+Name: org/overture/ide/debug/ui/launchconfigurations/DebugTypeSelectio
+ nDialog.class
+SHA-256-Digest: 0ERh8/uwyDPSdvjdSnAXuuO/j9xyX7hHSrDRnPKQnSE=
+
+Name: org/overture/ide/debug/core/dbgp/internal/IDbgpTermination.class
+SHA-256-Digest: NM5eDEEA1LOX/s02yjRxqSXDRWv8y8LX+9zc8kkGM0A=
+
+Name: org/overture/ide/debug/core/model/SetVdmType.class
+SHA-256-Digest: hFNSKq45LsQxndsClFDfEe8qbFG21951ggBhUEv+Pgk=
+
+Name: org/overture/ide/debug/core/model/internal/VdmVariable.class
+SHA-256-Digest: Rv8Y8kOtKDA/QhKotwaSpbC47BM0eRy3C3rJkHSKUX8=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab$1$1ProjectContentProvider.class
+SHA-256-Digest: oSZu8NKPdD30W9dJmSBPyEMclGSsPomN9/DcT/M3Xr8=
+
+Name: org/overture/ide/debug/core/model/eval/IVdmEvaluationEngine.clas
+ s
+SHA-256-Digest: WRar7PwNbYt04uk/OThINPUEmnh3gtV9MKOGeflAJ+Q=
+
+Name: org/overture/ide/debug/utils/xml/XMLTagNode.class
+SHA-256-Digest: Aqjj0p0M03Ve9CVYnJ48Ha+F83FB38Deu3FUSoukv2o=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpSpawnpoin
+ tCommands$DbgpSpawnpoint.class
+SHA-256-Digest: OulXQdpfGEWqS8FZZdWOkyJx0QGZS/2xI4YdLA34lEY=
+
+Name: org/overture/ide/debug/core/model/CollectionVdmType.class
+SHA-256-Digest: x2dnl8RTCUloMXW5+eNQEnrujXdRL6yczrd9kOnLiEQ=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpStackCommands.cla
+ ss
+SHA-256-Digest: 20N8no70/nlERQBaZf5LOdrpQBb3c+RQzw4fSaYzivU=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpFeatureCommands.c
+ lass
+SHA-256-Digest: xf1uTCCQyA6j4dSCKM4WXNzJ62GvsncMCA04oh7jYXk=
+
+Name: org/overture/ide/debug/core/model/internal/operations/DbgpTermin
+ ateOperation.class
+SHA-256-Digest: JXivbACx4jZ3GeXPpgiESjQI402FVQUzX+Ksl8Ux2R8=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpNotificationListener.class
+SHA-256-Digest: S56vOKwEoU4v5z+g5MGbHOFIUQLTyEep4y//uomijWM=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpFeature.class
+SHA-256-Digest: Tq7PVsQWHPFF4XOq1p7uL/IgB3yWyOey4Ax+cfVWSj0=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab$4.class
+SHA-256-Digest: 35+seyyq6QCOyJqVPuPLcd1QZrMV9qPX/rjbuaTL4YU=
+
+Name: org/overture/ide/debug/core/dbgp/exceptions/DbgpTimeoutException
+ .class
+SHA-256-Digest: LxLKdkfndGPYPKLb9/TWN9xV+5vMtQCniS1dUqm8mdM=
+
+Name: org/overture/ide/debug/core/IDebugOptions.class
+SHA-256-Digest: UzmE09zURv/yF+ukb7VM1tN1j+Ed9ntXpZOa2ObQxe0=
+
+Name: org/overture/ide/debug/ui/propertypages/VdmBreakpointPropertyPag
+ e$1.class
+SHA-256-Digest: qSUZItx8o3v5oQOV1Xh99vdPeNDwU0N/mwdeztpnUaQ=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogView$2.class
+SHA-256-Digest: v2kTYpDm5Sxd1qoHjPba5qBtF6flX6ya1E95HTko1Yk=
+
+Name: org/overture/ide/debug/core/model/internal/VdmDebugModel.class
+SHA-256-Digest: k6l2O8/IEtUc+drDsKZJjqQ/LkkOGZSuj0JgrtluSzE=
+
+Name: org/overture/ide/debug/ui/launchconfigurations/VdmLaunchShortcut
+ .class
+SHA-256-Digest: Il5ckQkMRkXRMI5ozFHYuJP1E0nlscISivBoViAR+2M=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpStreamListener.class
+SHA-256-Digest: WiVsc+tjkJ2LydQxz/XBoM7RcSyWCE7rQLN/xyOMhrM=
+
+Name: org/overture/ide/debug/core/IDebugOptions$Option.class
+SHA-256-Digest: 9qzJh56VBQs0Te2M5coqVij0sgb8oKhoKsWTy1VQyI4=
+
+Name: org/overture/ide/debug/core/dbgp/breakpoints/IDbgpExceptionBreak
+ point.class
+SHA-256-Digest: PYxJDkXwkHOH+pfezh0ih1aWpkQe0FctCFfrP2hD8Ps=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpBreakpointCommand
+ s.class
+SHA-256-Digest: GOOygpS31Xv7jCIF7K/DnFsgHDPfcW9CgZMcZtgmpVg=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpStatusInterpreterThreadSta
+ te$InterpreterThreadStatus.class
+SHA-256-Digest: UEoLlZJyKbyueAAo52kxM13mT4LIGgII5zZRYN5Kqnw=
+
+Name: org/overture/ide/debug/core/model/internal/VdmDebugElement.class
+SHA-256-Digest: MSFlA7mHTwq3JobdVg3YVrp7z9skmisnls0ab5GTCCU=
+
+Name: org/overture/ide/debug/core/VdmDebugPlugin.class
+SHA-256-Digest: vkFUrXiBAHY80F6te2EjBEkQBrXQ3Nmf0V7jzJNXigU=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpSpawnpoin
+ tCommands.class
+SHA-256-Digest: yANRh2VMQcsgtXfHBrs7tAUt8SosVva51WJ+bvqOh4o=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpTermination$1.clas
+ s
+SHA-256-Digest: bhKa25HGN19MRe7ngHnio0Ja2HOEmNB5gjsTTDeMPQA=
+
+Name: org/overture/ide/debug/utils/ExecutableAnalysisException.class
+SHA-256-Digest: fPw6PjZXLuqsvYDtjy8RYj+IuQ2u/688Ly86QJ2NR4k=
+
+Name: org/overture/ide/debug/core/model/internal/IVdmBreakpointPathMap
+ perExtension.class
+SHA-256-Digest: F30BPtC9Czvbz8eMbleg5cYMCYAGeHcwWVFWwaX3hPc=
+
+Name: org/overture/ide/debug/core/dbgp/internal/utils/Base64Helper.cla
+ ss
+SHA-256-Digest: CjN9lmD4yctfuOWeYSIpPvJR7bC+BibL6n66mBAZomo=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogView$3.class
+SHA-256-Digest: lOGqb0Ru8JkMn+TcUw3rXo/wqVLFmnaUr+TGy7VpRto=
+
+Name: org/overture/ide/debug/core/model/internal/VdmWatchExpressionRes
+ ult.class
+SHA-256-Digest: eMzzG87sqAs97Jd+TKmRq54JlzgOIEw0CtEysCBqF/8=
+
+Name: org/overture/ide/debug/ui/Messages.class
+SHA-256-Digest: WmuCl32xZL2/wCE7HHFCc8Mss+rNBmMUsJc7GkLNj8k=
+
+Name: org/overture/ide/debug/core/model/internal/VdmThreadManager.clas
+ s
+SHA-256-Digest: Niwn9XybMPpdO7ZFIOcHLVBCrr6RaMKBTKpWqienhvg=
+
+Name: org/overture/ide/debug/core/model/internal/VdmBreakpointUtils.cl
+ ass
+SHA-256-Digest: WCIj3NcZMaK0CxPIUtQ5TBvZ3MZo1tiqPekdbPV+sf8=
+
+Name: org/overture/ide/debug/utils/xml/XMLParser$Token.class
+SHA-256-Digest: 0pnZE+PvGNDwqI3cgC4lwyjR3s1eAKpDCiWXRQicqaQ=
+
+Name: org/overture/ide/debug/core/model/IVdmTypeFactory.class
+SHA-256-Digest: huhH8lSGjpD0vQZz6odq0o7pk4AKeYAiTi9RdzOxd1M=
+
+Name: org/overture/ide/debug/core/dbgp/internal/breakpoints/DbgpCondit
+ ionalBreakpoint.class
+SHA-256-Digest: dwlZ+uowkaYybF0edjLkP3K7Ex1Kr6oBOliECjDV0DQ=
+
+Name: org/overture/ide/debug/ui/propertypages/BreakpointConditionEdito
+ r$1.class
+SHA-256-Digest: awN0YsbFjyeWnESJwGcKDEd6Wq4L6BR5JOOI2BBqTiU=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpCommunicator.class
+SHA-256-Digest: 7DRfsBlNst9BoigIIrRASgg4dke5LHX/LbiRgLP9clM=
+
+Name: org/overture/ide/debug/core/dbgp/breakpoints/IDbgpReturnBreakpoi
+ nt.class
+SHA-256-Digest: xqkGNnhmrWalUVsC0Ti3JGjPTFLkuGOqLGhl9FjUkBM=
+
+Name: org/overture/ide/debug/core/dbgp/DbgpSessionIdGenerator.class
+SHA-256-Digest: lU6BSN3JYKlMeJoRMq9sgOHvVLIL306X65hnVJhhZXw=
+
+Name: org/overture/ide/debug/ui/ConsoleTerminateAction.class
+SHA-256-Digest: kLEp4Yo98RyiFgGLDrUKe2hVLTI8UMN61fjnX5xq6bU=
+
+Name: org/overture/ide/debug/ui/DebugConsoleManager.class
+SHA-256-Digest: Fm5YVbBnZPnDbg13BCb+/72ZBm3g/jllAAXwARGP7jk=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab$6.class
+SHA-256-Digest: Y7a2t1gvp8/h/91QCpa/ySLVmZi1H9zssbvG7P3iwag=
+
+Name: org/overture/ide/debug/core/model/StringVdmType.class
+SHA-256-Digest: 6F+wI7JHWGpEz2vRhIOY105XGZAv3qXNzztGlp4G2/A=
+
+Name: org/overture/ide/debug/core/model/internal/eval/VdmEvaluationEng
+ ine.class
+SHA-256-Digest: i2JE+TS1n2qqsaTHhiceTC2mVzz2oCkYGxrH6BAaHzw=
+
+Name: org/overture/ide/debug/internal/ui/viewers/update/VdmThreadEvent
+ Handler.class
+SHA-256-Digest: Ckg4HRBMc6AzcxHzgtbpX8SjcVYy4oNCOM4EloNT8WE=
+
+Name: org/overture/ide/debug/core/ConsoleFactoryLogging.class
+SHA-256-Digest: 9SlVejEJk4wuSejYkuBm9+NjocIUzwrd0TCNuOHc/B4=
+
+Name: org/overture/ide/debug/core/model/internal/VdmConsoleInputListen
+ er$1.class
+SHA-256-Digest: qmNRuPldGGxAofEPD50oJghIBpS6/Dmjs7GYLOhg9Gk=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab$3.class
+SHA-256-Digest: qFd2PZdVzmFKn/wh9SUur8bfYyt8sZgozBF88TrLag8=
+
+Name: org/overture/ide/debug/core/dbgp/internal/utils/Base64.class
+SHA-256-Digest: i3w5jmqrNYVF6H7ZcTiCfafFoZktcMhrJaHiKX2hFUo=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogView$1.class
+SHA-256-Digest: HGikTBvSPnp9slImXkjWwkp7GsUeAeYVXVLXQ81Qor8=
+
+Name: org/overture/ide/debug/ui/propertypages/VdmBreakpointPropertyPag
+ e$2.class
+SHA-256-Digest: Z8o1oFaqRWsAmoTgAVzHYNfcLPi/LnGOKpv1cYRXPoA=
+
+Name: plugin.properties
+SHA-256-Digest: mo5P916zpa63LllgbxYxxY+HMshv2aaTpn6JvBw8J48=
+
+Name: org/overture/ide/debug/core/dbgp/internal/commands/DbgpPropertyC
+ ommands.class
+SHA-256-Digest: tkOMtuWBycSZ39jgMmqj/9RqNj4tqD+/SOmqmPXJp4A=
+
+Name: org/overture/ide/debug/core/model/IVdmDebugTarget.class
+SHA-256-Digest: 6Ll4XdnZJEEL6qFETD71JYyEpGXNCtMDFFL76xO5TFQ=
+
+Name: org/overture/ide/debug/core/IDebugConfigurable.class
+SHA-256-Digest: 0+oY22BS+Jo7N0WLwK+rxBvgU/eWXdGHYxN8pU2sN4M=
+
+Name: org/overture/ide/debug/utils/ui/DebuggerPropertiesManager.class
+SHA-256-Digest: geAZTX0qpk5TRhFfrKOqTT5NreEoJx6zML5Mjhn7IPs=
+
+Name: org/overture/ide/debug/core/model/internal/IThreadManagement.cla
+ ss
+SHA-256-Digest: nlihpFxCVJikmuyQCI6u8fUy/v7ohL0D5ycVCiQkWSk=
+
+Name: org/overture/ide/debug/core/model/internal/NopVdmbreakpointPathM
+ apper.class
+SHA-256-Digest: hIieVeXSQTw8oysfEvP+qjN08XU3GjB1KwO98tuTAiQ=
+
+Name: org/overture/ide/debug/core/model/internal/VdmThreadManager$4.cl
+ ass
+SHA-256-Digest: gRerf2tdeDUMIazOUN/mRUYzOgWY9rJEgF0Sc8xLA58=
+
+Name: org/overture/ide/debug/core/dbgp/DbgpRequest.class
+SHA-256-Digest: w7my+Hx0uWXztI0aT88RV03Oey6ZiFBwEB6PfL8JQVQ=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpStatusInterpreterThreadSta
+ te.class
+SHA-256-Digest: mPaDLs9cZbKMUp7N/H9R0gjak9Mlx33/DPxm+Bd36BI=
+
+Name: org/overture/ide/debug/core/model/eval/InspectEvaluatedVdmExpres
+ sion.class
+SHA-256-Digest: IFGD5I3lZoRSR7DDMbyY43oDxH9AF+huB0FyH8gjk6A=
+
+Name: org/overture/ide/debug/core/model/internal/eval/FailedVdmEvaluat
+ ionResult.class
+SHA-256-Digest: rVkCVGeBFoD4YmrWaL0b4q4H1AulnxMFUlQISVuyS0A=
+
+Name: org/overture/ide/debug/ui/log/VdmDebugLogExecutionFilter.class
+SHA-256-Digest: YmamutP7mt9w1H1fYkO/RU03Zx9EFGLCM+yvyDGw+EU=
+
+Name: org/overture/ide/debug/core/dbgp/commands/IDbgpPropertyCommands.
+ class
+SHA-256-Digest: JzoNpk+JDvDuXXSNGp98UQZVYvOS4BWRHnXrsAdIcqM=
+
+Name: org/overture/ide/debug/core/dbgp/internal/managers/IDbgpStreamMa
+ nager.class
+SHA-256-Digest: 86CILimFm7DzFA1JMPhY7Df3sFxFr5zdY7LFQ1Z8aK8=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpStackLevel.class
+SHA-256-Digest: gOvNZNcpxcyTUTC5qmmNxTakAGGAOJnUsuyTnzDztTw=
+
+Name: org/overture/ide/debug/core/launching/VdmSourcePathComputerDeleg
+ ate.class
+SHA-256-Digest: udVif10SG4khTKFGwGDqL8DNsuzxVhKcraFcOLXAM4I=
+
+Name: org/overture/ide/debug/core/dbgp/internal/utils/DbgpXmlPacketPar
+ ser.class
+SHA-256-Digest: tkYY3z6Cm8SikEsBDOOxvZ0IAdH4AUt67SEfIGr8L+g=
+
+Name: org/overture/ide/debug/ui/launching/AbstractVdmMainLaunchConfigu
+ rationTab$5.class
+SHA-256-Digest: I5r4lC3vCt4tOr9KzZUmvkWYvfe3NLHlr0IOqnLWhf0=
+
+Name: org/overture/ide/debug/core/IDebugPreferenceConstants.class
+SHA-256-Digest: U0rRlRu/ldYwD7hwXXNyob+Hz1WJjT3KeweRINqXh04=
+
+Name: org/overture/ide/debug/core/model/IVdmWatchpoint.class
+SHA-256-Digest: d0/zEmoP89Ah5myAgq9s9+EWz/shBK3AqjGkGA7T4Ds=
+
+Name: org/overture/ide/debug/core/model/internal/VdmMethodEntryBreakpo
+ int.class
+SHA-256-Digest: AR1C4jk5WRxQJ4146Qw9tIKXWCwjFTbYUaLM/FUXOIs=
+
+Name: jars/interpreter.jar
+SHA-256-Digest: E+770enOhK0gh70o8YImQQw9ilgeODbulcohRRCS3Rw=
+
+Name: org/overture/ide/debug/ui/propertypages/VdmLineBreakpointPropert
+ yPage.class
+SHA-256-Digest: Lk8GaMC3l/moIxRDSDW5KaEwmmaAYMpc2c+ID9sY/Ak=
+
+Name: org/overture/ide/debug/utils/xml/XMLParser.class
+SHA-256-Digest: ZNtcTG53Mfzn/4V/QoZxO5RUQ0BOLrUTheSekRXgjEc=
+
+Name: org/overture/ide/debug/core/dbgp/internal/DbgpWorkingThread$1.cl
+ ass
+SHA-256-Digest: pOaAAy35xkF3NuNAggGMaxBEJQ92YKWx5HeB7r90wak=
+
+Name: org/overture/ide/debug/core/model/DebugEventHelper.class
+SHA-256-Digest: tvZMUyJhPkwN3Do9kRvC/FVl1j0s0y2MTQAtpYb4INc=
+
+Name: org/overture/ide/debug/core/dbgp/breakpoints/IDbgpBreakpoint.cla
+ ss
+SHA-256-Digest: 1dnJx4KI4mxzvozhQp55/Pfcilqtzn8cbtx+l4f4cxU=
+
+Name: org/overture/ide/debug/utils/ui/DebuggerPropertiesManager$2.clas
+ s
+SHA-256-Digest: J7h+3QXkbfXBa0vVICiYj9LL/d9IVvsXgUDllbvAqIg=
+
+Name: org/overture/ide/debug/utils/xml/XMLDataNode.class
+SHA-256-Digest: FviozaJO+oP32o9KHYOrFui3XbpLrJI49fF1sdmzW1s=
+
+Name: jars/pog.jar
+SHA-256-Digest: C3ELfeRhSdr8U79ZJGVug/xBrliTuGovVl/5RdoTrsQ=
+
+Name: org/overture/ide/debug/core/dbgp/IDbgpProperty.class
+SHA-256-Digest: I9SqLXwc6T5ZxWznz29UMB+ZzVpnC8woiGKSy5wjEw0=
+
+Name: icons/eview16/debug_view.gif
+SHA-256-Digest: /PZqhHgedV+B8SXY8GNbmU7lz1zNFutdFY4TdDRy79g=
+

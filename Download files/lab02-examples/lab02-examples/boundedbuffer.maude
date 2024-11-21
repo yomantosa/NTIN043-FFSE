@@ -1,0 +1,31 @@
+fmod BOUNDED-BUFFER-MAX4-PRECISE is
+	protecting INT .
+
+	--- we define a specific type for each possible size of the bounded buffer
+	--- the type Buffer2 contains all possible buffers with some two elements
+	sorts Buffer0 Buffer1 Buffer2 Buffer3 Buffer4 .
+	op empty : -> Buffer0 [ctor] .
+	op buf1 : Int -> Buffer1 [ctor] .
+	op buf2 : Int Int -> Buffer2 [ctor] .
+	op add : Buffer0 Int -> Buffer1 [ctor] .
+	op add : Buffer1 Int -> Buffer2 [ctor] .
+	op add : Buffer2 Int -> Buffer3 [ctor] .
+	op add : Buffer3 Int -> Buffer4 [ctor] .
+	op remove : Buffer4 -> Buffer3 .
+	op remove : Buffer3 -> Buffer2 .
+	op remove : Buffer2 -> Buffer1 .
+	op remove : Buffer1 -> Buffer0 .
+
+	var E : Int .
+	vars E1 E2 E3 : Int .
+	var B0 : Buffer0 .
+	var B1 : Buffer1 .
+	var B2 : Buffer2 .
+	var B3 : Buffer3 .
+
+	eq add(B0,E) = buf1(E) .
+	eq add(add(B0,E1),E2) = buf2(E1, E2) .
+	eq remove(add(B0,E)) = B0 .
+	--- eq add(add(add(empty, E1), E2), E3) = B3 .
+endfm
+

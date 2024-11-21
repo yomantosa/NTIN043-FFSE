@@ -1,0 +1,4 @@
+op _+_ : Nat Nat -> Nat [assoc comm id: 0] .
+
+op _+_ : List List -> List [assoc comm id: empty] .
+

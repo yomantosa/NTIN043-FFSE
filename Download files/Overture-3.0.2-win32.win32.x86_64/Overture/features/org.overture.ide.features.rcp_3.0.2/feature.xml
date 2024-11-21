@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.overture.ide.features.rcp"
+      label="Overture RCP"
+      version="3.0.2">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyURL">
+      %copyNotice
+   </copyright>
+
+   <license url="%licenseURL">
+      %agreement
+   </license>
+
+   <includes
+         id="org.overture.ide.features.core"
+         version="3.0.2"/>
+
+   <includes
+         id="org.overture.ide.plugins.features.latex"
+         version="3.0.2"/>
+
+   <includes
+         id="org.overture.ide.plugins.features.poviewer"
+         version="3.0.2"/>
+
+   <includes
+         id="org.overture.ide.plugins.features.coverageeditor"
+         version="3.0.2"/>
+
+   <includes
+         id="org.overture.ide.plugins.features.csk"
+         version="3.0.2"/>
+
+   <includes
+         id="org.overture.ide.plugins.features.combinatorialtesting"
+         version="3.0.2"/>
+
+   <includes
+         id="org.overture.ide.plugins.features.rttraceviewer"
+         version="3.0.2"/>
+
+   <includes
+         id="org.overture.ide.plugins.features.quickinterpreter"
+         version="3.0.2"/>
+
+   <includes
+         id="org.overture.ide.plugins.features.uml2"
+         version="3.0.2"/>
+
+   <includes
+         id="org.overture.ide.plugins.features.javagen"
+         version="3.0.2"/>
+
+
+  <!-- <includes
+         id="org.overture.ide.plugins.features.isatrans"
+         version="0.0.0"/>-->
+
+
+   <includes
+         id="org.overture.ide.plugins.features.developerutils"
+         version="3.0.2"/>
+
+   <requires>
+      <import feature="org.eclipse.platform" version="4.2.1.v20130118-173121-9MF7GHYdG0B5kx4E_SkfZV-1mNjVATf67ZAb7"/>
+      <import feature="org.eclipse.equinox.p2.user.ui" version="2.2.0.v20121212-204731-62DG9JXTlTj-UXcQ2y3NLn6U4Z3H"/>
+      <import plugin="org.eclipse.ui.views.log"/>
+      <import plugin="org.eclipse.ui.workbench.texteditor"/>
+   </requires>
+
+</feature>

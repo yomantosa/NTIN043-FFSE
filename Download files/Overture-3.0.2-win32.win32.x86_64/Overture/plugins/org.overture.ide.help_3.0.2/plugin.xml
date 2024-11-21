@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.help.toc">
+      <toc
+            file="toc/overture.xml"
+            primary="true">
+      </toc>
+   </extension>
+   
+   
+    <extension
+       point="org.eclipse.ui.importWizards">
+   
+    <wizard
+          category="org.overture.ide.ui.wizard"
+          class="org.overture.ide.help.wizard.ImportExamplesWizard"
+          icon="platform:/plugin/org.overture.ide.platform/icons/ctool16/overture_misc.png"
+          id="org.overture.ide.help.wizardImportExamples"
+          name="Overture Examples">
+    </wizard>
+    <category
+          id="org.overture.ide.ui.wizard"
+          name="Overture">
+    </category>
+ </extension>
+    <extension
+          point="org.eclipse.ui.commands">
+          
+           <command
+          defaultHandler="org.overture.ide.help.handlers.ReportBugHandler"
+          id="org.overture.ide.ui.commandReportBug"
+          name="%org.overture.ide.ui.commandReportBug.name">
+    </command>
+    </extension>
+    <extension
+          point="org.eclipse.ui.menus">
+           <menuContribution
+          allPopups="false"
+          locationURI="menu:help?after=intro">
+       <command
+             commandId="org.overture.ide.ui.commandReportBug"
+             label="%org.overture.ide.ui.commandReportBug.label"
+             style="push">
+       </command>
+    </menuContribution>
+    </extension>
+
+</plugin>

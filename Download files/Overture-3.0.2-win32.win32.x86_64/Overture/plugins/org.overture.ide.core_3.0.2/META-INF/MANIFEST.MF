@@ -1,0 +1,231 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.overture.ide.core
+Bundle-SymbolicName: org.overture.ide.core;singleton:=true
+Require-Bundle: org.eclipse.core.runtime;visibility:=reexport,org.ecli
+ pse.core.expressions,org.eclipse.core.resources;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BuddyPolicy: registered
+Bundle-Vendor: Overture
+Export-Package: org.overture.ast.analysis,org.overture.ast.analysis.in
+ tf,org.overture.ast.assistant,org.overture.ast.assistant.definition,o
+ rg.overture.ast.assistant.pattern,org.overture.ast.assistant.type,org
+ .overture.ast.definitions,org.overture.ast.definitions.relations,org.
+ overture.ast.definitions.traces,org.overture.ast.expressions,org.over
+ ture.ast.factory,org.overture.ast.intf.lex,org.overture.ast.lex,org.o
+ verture.ast.messages,org.overture.ast.modules,org.overture.ast.node,o
+ rg.overture.ast.node.tokens,org.overture.ast.patterns,org.overture.as
+ t.preview,org.overture.ast.statements,org.overture.ast.typechecker,or
+ g.overture.ast.types,org.overture.ast.util,org.overture.ast.util.defi
+ nitions,org.overture.ast.util.modules,org.overture.config,org.overtur
+ e.ide.core,org.overture.ide.core.ast,org.overture.ide.core.builder,or
+ g.overture.ide.core.parser,org.overture.ide.core.propertytester,org.o
+ verture.ide.core.resources,org.overture.ide.core.utility,org.overture
+ .parser.config,org.overture.parser.lex,org.overture.parser.messages,o
+ rg.overture.parser.syntax,org.overture.parser.util,org.overture.util,
+ org.overture.ast.annotations
+Bundle-Version: 3.0.2
+Bundle-Name: org.overture.ide.core
+Bundle-Localization: plugin
+Eclipse-AutoStart: true
+Bundle-ClassPath: .,jars/ast.jar,jars/parser.jar
+Bundle-Activator: org.overture.ide.core.VdmCore
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.0
+Eclipse-BundleShape: dir
+
+Name: plugin.xml
+SHA-256-Digest: 4QsKYSpZJMLkWwGraoxKBYf8oenlRisCjPgpAs6FHOs=
+
+Name: org/overture/ide/core/builder/VdmCoreBuilder$DeltaFileVisitor.cl
+ ass
+SHA-256-Digest: WhPuqPbHbNgqA2ENt1y3HYtzCo7Nte8Lf/lQdsYr64M=
+
+Name: org/overture/ide/core/utility/Language.class
+SHA-256-Digest: dcapvfOV2eNvkWW/CqoH7Wxbfnj4qsv+QLT9tTphnA4=
+
+Name: org/overture/ide/internal/core/ast/IVdmModelManager.class
+SHA-256-Digest: 0nR5V6i/4kfpTrtC3Avvv2ZB1EFxTbXLD8l0B/sGwjc=
+
+Name: org/overture/ide/core/IVdmElement.class
+SHA-256-Digest: Hx1VfN1bl1lYpdy74Qf3yG4zKw9Lx22DaILS93jvCj4=
+
+Name: org/overture/ide/core/parser/AbstractParserParticipant.class
+SHA-256-Digest: JCbDHKxZnyalHztz8qfG2v6M2jzjvSYI6JLr5AU6hrI=
+
+Name: org/overture/ide/core/ISourceReference.class
+SHA-256-Digest: 1H1jup4TTjE+lSeoU5wnmD4Tq9+DxnchA03ROk0Pjlo=
+
+Name: org/overture/ide/core/VdmElementDelta.class
+SHA-256-Digest: Ebm0OMQHGpXCvvryUG1udCaJF0OqW9uAHoEIsS3LIko=
+
+Name: org/overture/ide/core/resources/VdmProjectAdapterFactory.class
+SHA-256-Digest: kvEu79LcnN42E63XHvXwmrph+Q2DCW96C8O0Cj8TfvI=
+
+Name: org/overture/ide/core/VdmCore.class
+SHA-256-Digest: +CMKJqBWzHXBCWxu+GxI2rWv8zZLG7VPIAC0Kvywgbo=
+
+Name: build.properties
+SHA-256-Digest: GWYeG6ojw25tUxJ5uJ3ak1zvZ6/VI+/MEpGbVYMwgNU=
+
+Name: plugin.properties
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: org/overture/ide/core/resources/VdmSourceUnitWorkingCopy.class
+SHA-256-Digest: BgFq9p1xNlIaSiN9U6ABDya52idTFy/MVJ3kRR5VB5Y=
+
+Name: org/overture/ide/core/VdmModelException.class
+SHA-256-Digest: QP1x2Dr38NR5BPuuEgeGbWqvkw0EGINzxntSSTv9tJ0=
+
+Name: org/overture/ide/core/IParent.class
+SHA-256-Digest: EkwckUoTKhfMDz0mg6mBxUjQzUISZBMPtvuhzT6c02M=
+
+Name: org/overture/ide/core/parser/ISourceParser.class
+SHA-256-Digest: z1lV3fv3PUv0wAJObQjRg6t57/5MCTZ8ltvk7jcsS7U=
+
+Name: org/overture/ide/core/ast/NotAllowedException.class
+SHA-256-Digest: qomXY8PCNb8HGIg9KRT+fPFlIIcK2o9SiGEzxjdQ1jw=
+
+Name: org/overture/ide/internal/core/ResourceManager$DeltaPrinter.clas
+ s
+SHA-256-Digest: L3E0i5p8BAo/B+q0pkRGSC3nKl42i8nuXSypW92HEiY=
+
+Name: org/overture/ide/internal/core/DeltaProcessingState.class
+SHA-256-Digest: H0SqPvVcn2e29W5ir0mTjrA7uVS4MUHQCT5CI9HobEk=
+
+Name: org/overture/ide/core/resources/ModelBuildPath.class
+SHA-256-Digest: gSVPu+8fP0htlo3l32IZX18qeS6JYO5t2FASmUUtbU8=
+
+Name: org/overture/ide/core/builder/VdmBuilder.class
+SHA-256-Digest: dMQpD4bvYDg0uy8s0tFwf7YM+3cw26llwJtvrNQDifE=
+
+Name: org/overture/ide/core/builder/AbstractVdmBuilder.class
+SHA-256-Digest: Vk+jRX/02Z7ToF8ls3b/cETFVdoHjLIsZVZKEOJ+TO4=
+
+Name: jars/ast.jar
+SHA-256-Digest: +ZJCllY+An3zzA1EdurOU2jSM70omgZK+/l9arGEV14=
+
+Name: org/overture/ide/core/parser/AbstractParserParticipant$ParseResu
+ lt.class
+SHA-256-Digest: BDljZqFUDCixf4KuMRfiLHsLCj70ylXivqKwq3FnpWQ=
+
+Name: org/overture/ide/core/propertytester/IsInBuildPathPropertyTester
+ .class
+SHA-256-Digest: O/IZkD3mNYMpfP/aAmFTR9LydG8y+6h7Xxf4Wd7GG0M=
+
+Name: org/overture/ide/core/resources/VdmSourceUnit.class
+SHA-256-Digest: YgQfc5SZMmQujvopleYoBPq5soOdxy9VcaDpk/e8/As=
+
+Name: org/overture/ide/core/resources/IVdmProject.class
+SHA-256-Digest: QT0i+XR0LgW+eW8/lI/QDIQ7Bpf2GG/1X2ZOx4qzCds=
+
+Name: org/overture/ide/core/builder/VdmCoreBuilder.class
+SHA-256-Digest: X67a3nmnsd+Rb1xTQwvo2Wxin8I265qnbExjYBfRyVw=
+
+Name: org/overture/ide/core/IVdmModel.class
+SHA-256-Digest: FkpOLe3Q4M5WY7p8YAlOFiLBhJyW99zNbvl75ZktGgQ=
+
+Name: org/overture/ide/core/ElementChangedEvent$DeltaType.class
+SHA-256-Digest: rcCtX1gSTea6zh2wT+s7Qd3pEQGcHt7mW/sCVc4h8to=
+
+Name: org/overture/ide/core/builder/SafeBuilder.class
+SHA-256-Digest: G4wa46OcySz6gBl5d9h88qDEFwdHarrkVtq53cQy4BI=
+
+Name: org/overture/ide/internal/core/resources/VdmProject.class
+SHA-256-Digest: SQmfiYl+gWzqN1H66H6Du/T+0aHadkcfyIPcTjsvoZI=
+
+Name: org/overture/ide/core/ast/VdmModelWorkingCopy.class
+SHA-256-Digest: yiucuoPf5eOZpwjPkTj4TpubXEbV1euDmGazPqBDEEw=
+
+Name: org/overture/ide/internal/core/ResourceManager$1.class
+SHA-256-Digest: y9xdyilHowBQDESy/X+1oZoWShRj2qqycH2eaByzlgA=
+
+Name: org/overture/ide/core/resources/AdapterFactoryNode.class
+SHA-256-Digest: amXKRcM8O5ezhLcA++2hw/oEuT9soW+Hjc4waROjTc0=
+
+Name: org/overture/ide/core/utility/LanguageManager.class
+SHA-256-Digest: jETK7ENecHeaoBg5vD5cnLhzYIwFQ6B3Vj4iVy9ZQsg=
+
+Name: org/overture/ide/core/ICoreConstants.class
+SHA-256-Digest: OwT66VNMPqmbX/IOVDQm+6kpHlBeFK9WPYCHtD3lsDM=
+
+Name: org/overture/ide/core/ast/VdmModel.class
+SHA-256-Digest: VZLZZ4YEHyyXcEFhhchKmrI61DQ3v5oLMyBBSMYit8Q=
+
+Name: org/overture/ide/core/resources/VdmProjectNature.class
+SHA-256-Digest: 1po/JakUL801LyVV9pgyInmHgXZoIcwjKsmnGwcXmrk=
+
+Name: org/overture/ide/core/IVdmElementDelta.class
+SHA-256-Digest: V/Vk0UuofXn2pOICycqsk0n5AxgGg7ofYP5PSVZmtIs=
+
+Name: org/overture/ide/internal/core/ResourceManager$AddBuilderThread$
+ 1.class
+SHA-256-Digest: IqbInVqmswYqOUmrJtGW9Ye4AdJ+hJ93NV5AwxTLkWo=
+
+Name: org/overture/ide/core/IElementChangedListener.class
+SHA-256-Digest: 3gZ7T9c50ihw+B+6dlif47MCxJPjaoGPfLM2j1p8ePA=
+
+Name: org/overture/ide/core/resources/AdapterFactoryVdmSourceUnit.clas
+ s
+SHA-256-Digest: WIxI1047WxY1qnMVYodWe6Uq8fm3IhF5cH875EqM/yA=
+
+Name: org/overture/ide/core/propertytester/VdmResourcePropertyTester.c
+ lass
+SHA-256-Digest: OVQ9KaZ+znYCfbHv33cVotgd8o32xJpcA/F5LRB3rbI=
+
+Name: org/overture/ide/internal/core/ResourceManager$AddBuilderThread.
+ class
+SHA-256-Digest: 82oK/MBC/AyolcaELEAXEcC+WKxQmW3YXI4yeRa60v4=
+
+Name: org/overture/ide/internal/core/resources/VdmProject$1.class
+SHA-256-Digest: TS41DlZdsESmj681yD3d+N8fL6+0ANDbNys2D6eYKnE=
+
+Name: org/overture/ide/internal/core/DeltaProcessingState$1.class
+SHA-256-Digest: gicXIheAYs9dP6TqM0SdwDe/nlwoX5jx3IYYETZSX7g=
+
+Name: org/overture/ide/core/resources/IVdmSourceUnit.class
+SHA-256-Digest: wOp0ZsXYEPkAoEs0oYs65GzNM9Dd7n5A2NNc5cI8I7M=
+
+Name: org/overture/ide/core/ElementChangedEvent.class
+SHA-256-Digest: vq3u7wSqC0BU9zemR1a9UR0b/LVxrZRKeZhQnGSaTCE=
+
+Name: org/overture/ide/core/utility/ClasspathUtils.class
+SHA-256-Digest: XgwvIwKso5XuDIpJfh3zyqIPQARF+gDNco6gGG2R7Hs=
+
+Name: org/overture/ide/internal/core/ast/VdmModelManager.class
+SHA-256-Digest: lCciporj0e+5Z0qt7pDvptJfLZUIrvyIdnax9NkWtCo=
+
+Name: org/overture/ide/internal/core/resources/OptionGroup.class
+SHA-256-Digest: 8ehX1fD3WJEMdfv2BkIQi92oT8fm76IWBAOqyURSxMI=
+
+Name: org/overture/ide/core/resources/Options.class
+SHA-256-Digest: AIKrnHa73Rij13+kgxZI02mXHvCzDU0M7PF9kl40vFE=
+
+Name: org/overture/ide/internal/core/DeltaProcessor.class
+SHA-256-Digest: omjgYKPAg+IPtR7cAjAXzsWRdiv8eWmlZwXpq5PKvss=
+
+Name: org/overture/ide/core/utility/ILanguage.class
+SHA-256-Digest: VRl0xklz/RLHItgX3dKAPaLeZgpvRrO90CVCNvMGa94=
+
+Name: org/overture/ide/core/parser/SourceParserManager.class
+SHA-256-Digest: QAdvsZ9dYJGR6gO76d02cuTCqVhAmdmInov7SOAgjKo=
+
+Name: org/overture/ide/internal/core/ResourceManager.class
+SHA-256-Digest: wFVjUbWsQqE/fCf1r/oJk3/AfIX++as9KqtNBSkzJBk=
+
+Name: org/overture/ide/core/resources/IOptionGroup.class
+SHA-256-Digest: gcAHbSqlEwb5mK8Nv9HI22yrZLT1ez4+6zVIZ7RET1I=
+
+Name: org/overture/ide/core/builder/SafeBuilder$1.class
+SHA-256-Digest: n0W8JnlaM6DomXpW41swmLeO5reIo4gfduy0f0bZitQ=
+
+Name: org/overture/ide/core/utility/FileUtility.class
+SHA-256-Digest: f1S/08MkZI6tKa8O/vtehOtI2mVnf4dsrA6vErwSywI=
+
+Name: org/overture/ide/internal/core/resources/VdmProject$2.class
+SHA-256-Digest: DRyecWR4AGL5XsesOO+E/4QPVNNSv4sAhXy4j4ZyF0o=
+
+Name: jars/parser.jar
+SHA-256-Digest: fwxw1kBj7gm7YL/pRdpxvC9jHx6AJCHUgAMw5xBX720=
+

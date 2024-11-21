@@ -1,0 +1,88 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: apUGKhen4O/tlVcCtcOECcjZsnv6P
+ qy5laPy89l+KYs=
+SHA-256-Digest-Manifest: sDNaphByIitq7SF45y8gizK81PgrOVnvFLJtGhe3ckM=
+Created-By: 1.8.0_212 (Oracle Corporation)
+
+Name: plugin.xml
+SHA-256-Digest: OlcTc0cOUkcmTHxQfxgbtmRSc0ifbwRkEX3x2OQzoBY=
+
+Name: html/VDM10_lang_man.pdf
+SHA-256-Digest: mo6CbRvfy6DXpUmcPAdqTPNn/zB8l1qDM/oCLPYOtp4=
+
+Name: html/documentation.html
+SHA-256-Digest: rf7u4mT8mzm6FMKQVlWXemw+hYdZildEW4FU1ZqN/pM=
+
+Name: src/main/java/org/overture/ide/help/IVdmHelpConstants.java
+SHA-256-Digest: 6yGj6SIm7MXPV7TysP+XO5QMaCvJfLiD3P4KzAx3YqI=
+
+Name: html/examples.html
+SHA-256-Digest: OEFO7v97sa5ROglRCasu7X2wEqdjCKDEL/2YlAaoEEg=
+
+Name: build.properties
+SHA-256-Digest: GsYCPuk/X/hF5zDzVA1y9zW5khwscfysUYkQ8Stz58E=
+
+Name: plugin.properties
+SHA-256-Digest: cg6RAO8CAu6Hdf4RAu4rCy5QNyrJKDZKdiFFwlWQjnI=
+
+Name: html/QuickOverviewofVDMOperators.pdf
+SHA-256-Digest: zNbreZc1sR8U+srQHxTI7lKNQHW+Mkb8HM4z7Qn5IiQ=
+
+Name: src/main/java/org/overture/ide/help/VdmHelpPlugin.java
+SHA-256-Digest: DyQFlAlaZIS96KMMCd52McSuo+bPQH0LlMvdyM5KqAQ=
+
+Name: org/overture/ide/help/wizard/SelectDialectWizardPage.class
+SHA-256-Digest: 72LAzF4XLGUpM1foQEfBzZRO0DRfltSX1PvuXAXPkIo=
+
+Name: org/overture/ide/help/wizard/SelectDialectWizardPage$DialectSele
+ ctedHandler.class
+SHA-256-Digest: yHqsDAxss2F4qBNbmp8yFZiVGN8A6a2JlX+X0KNdSFs=
+
+Name: org/overture/ide/help/handlers/ReportBugHandler.class
+SHA-256-Digest: gXYc/y5LJo4M0/Jiz23FRLrPCSi+PAFdbWIaOg64u7Y=
+
+Name: src/main/java/org/overture/ide/help/wizard/ImportExamplesWizard.
+ java
+SHA-256-Digest: +tZBkrp7M5rv+mOIJhoWpyarwgufZf/+WwW9pAnRc6w=
+
+Name: html/Example_package_VDMRT.zip
+SHA-256-Digest: BihswT6CbcNd3NqdaraXrlzlVXnQiCYtFRI1RYLm/Zw=
+
+Name: org/overture/ide/help/VdmHelpPlugin.class
+SHA-256-Digest: i2RUroDWKGf4IE23KphnNcFTNSji618fy3OHY7XUeAU=
+
+Name: html/overture.html
+SHA-256-Digest: cyc6dvk8N9Ntz/F5zOepz5/jY0owNrbY7NuJFvMxesw=
+
+Name: src/main/java/org/overture/ide/help/handlers/ReportBugHandler.ja
+ va
+SHA-256-Digest: Rx6UHjeC/r0E+9la7g1kKGk7LWysyj0dG6I2MVtESGQ=
+
+Name: org/overture/ide/help/wizard/SelectDialectWizardPage$1.class
+SHA-256-Digest: WilYdLzrZH9B4JsTqo6E8Zxu+1vWBcOWtE/oW+Zsjkc=
+
+Name: html/OvertureIDEUserGuide.pdf
+SHA-256-Digest: n06dltfbWWB2EUR1HaQO8NVMkNp0yWAL3Cx/soLwbNk=
+
+Name: org/overture/ide/help/wizard/ImportExamplesWizard.class
+SHA-256-Digest: vdYRqdeYla2gtsgLCMOOXmN19ogm5Q7wKETJ7sj8nwo=
+
+Name: org/overture/ide/help/IVdmHelpConstants.class
+SHA-256-Digest: KsA8z5hWleA8ynaz1Ppv+FvlkS6JdbjaDhpklbGxLHw=
+
+Name: org/overture/ide/help/wizard/ImportExamplesWizard$1.class
+SHA-256-Digest: bJb04q0RcB9iKuw6pu9p0W6xqmzBPmKm0B8tKjBBGpw=
+
+Name: html/Example_package_VDMSL.zip
+SHA-256-Digest: 97DSHWeeFu5n1FIKHkrzO5wep/qK9uuU/t2bJtIq3zQ=
+
+Name: toc/overture.xml
+SHA-256-Digest: rb3+uboJcvJr48Gr01VQctjmS4Y6f9UNWYcRshi2B5g=
+
+Name: html/Example_package_VDM++.zip
+SHA-256-Digest: pXgAxyYbW1/rCgaLZHfckEwCXTRFbYK+y+whrBSDihg=
+
+Name: src/main/java/org/overture/ide/help/wizard/SelectDialectWizardPa
+ ge.java
+SHA-256-Digest: 2+IdMSIu4/RNkAXYWVyq+muisR/2/rnr9YnjchaIMh0=
+

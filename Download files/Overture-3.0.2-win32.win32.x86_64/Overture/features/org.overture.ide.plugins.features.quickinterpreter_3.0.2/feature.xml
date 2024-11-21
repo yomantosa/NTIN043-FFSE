@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.overture.ide.plugins.features.quickinterpreter"
+      label="VDM Quick Interpreter"
+      version="3.0.2">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyURL">
+      %copyNotice
+   </copyright>
+
+   <license url="%licenseURL">
+      %agreement
+   </license>
+
+   <requires>
+      <import feature="org.overture.ide.features.core" version="0.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="org.overture.ide.plugins.quickinterpreter"
+         download-size="14"
+         install-size="20"
+         version="3.0.2"
+         unpack="false"/>
+
+</feature>

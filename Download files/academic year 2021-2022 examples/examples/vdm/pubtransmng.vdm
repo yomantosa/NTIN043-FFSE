@@ -1,0 +1,237 @@
+module Common
+
+exports all
+
+definitions
+
+types
+	GPS = token ;
+
+	Time ::
+		hour : nat
+		minute: nat
+		inv mk_Time(h,m) == h <= 23 and m <= 59 
+
+functions
+	timeDiff(t1:Time, t2:Time)r:Time
+	post r.hour = t1.hour - t2.hour -- just example
+
+end Common
+
+
+--------------------
+--------------------
+
+
+module VehicleFleet
+
+exports all
+
+definitions
+
+types
+	VehicleModel = <T3> | <T6A5> | <T14> | <T15> | <B732> | <M12> | <M18> ;
+	
+	Vehicle ::
+		model : VehicleModel
+		capacity : nat
+		barrier_free : bool
+		inv mk_Vehicle(m,c,bf) == c >= 10
+
+state fleet of
+	trams : set of Vehicle
+	buses : set of Vehicle
+	inv mk_fleet(ts,bs) == ( forall t in set ts & (t.model = <T3> or t.model = <T6A5>) ) and (forall b in set bs & (b.model = <B732> or b.model = <M12>) )
+	init mk_fleet(ts,bs) == ( ts = { mk_Vehicle(<T3>, 80, false), mk_Vehicle(<T15>, 110, true) } ) and ( bs = { mk_Vehicle(<M12>, 55, true) } )
+end
+
+operations
+	getAvailableVehicles : set of VehicleModel ==> set of Vehicle
+	getAvailableVehicles(mds) == return { v | v : Vehicle & (v in set trams or v in set buses) and v.model in set mds }
+
+end VehicleFleet
+
+
+--------------------
+--------------------
+
+
+module TransportNetwork
+
+imports
+	from Common all
+
+exports
+	types LineNumber ; struct Stop
+	operations getRoute: LineNumber ==> Route
+
+definitions
+
+types
+	LineNumber = nat
+	inv line_no == line_no <= 1000 ;
+
+	Stop ::
+		name : seq of char
+		location : Common`GPS
+		-- which lines are stopping there
+		line_numbers : set of LineNumber 
+		;
+	
+	Route = seq of Stop
+
+values
+	MAX_TRAM_LINE_NO : nat = 91 ;
+	MAX_BUS_LINE_NO : nat = 515
+
+state plans of
+	tram_network : Stop * Stop
+	bus_network : Stop * Stop
+end
+
+operations
+	getRoute(ln : LineNumber)rt : Route
+		ext rd tram_network : Stop * Stop
+			rd bus_network : Stop * Stop
+		pre ln <= MAX_TRAM_LINE_NO or ln <= MAX_BUS_LINE_NO
+		post forall i:nat & i <= len rt and ln in set rt(i).line_numbers
+
+end TransportNetwork
+
+
+--------------------
+--------------------
+
+
+module Personnel
+
+imports
+	from VehicleFleet
+		types VehicleModel
+
+definitions
+
+types
+	Driver ::
+		full_name : seq of char
+		id : seq of char
+		-- what he/she is allowed to drive
+		license : set of VehicleFleet`VehicleModel 
+		;
+	
+	Technician::
+		full_name : seq of char
+
+state employees of
+	drivers : set of Driver
+	technicians : set of Technician
+end
+
+operations
+	addDriver(fn : seq of char, nid : seq of char, nlc : set of VehicleFleet`VehicleModel)
+		ext wr drivers : set of Driver
+		pre len nid = 8 and (forall d in set drivers & d.id <> nid)
+		post (card drivers = card drivers~ + 1) and (exists d in set drivers & d.id = nid)
+
+end Personnel
+
+
+--------------------
+--------------------
+
+
+module DailySchedule
+
+imports
+	from Common all,
+	from TransportNetwork all,
+	
+	from VehicleFleet
+		types VehicleModel
+
+exports
+	types TimeTableItem
+
+definitions
+
+types
+	TimeTableItem ::
+		stop : TransportNetwork`Stop
+		departure_time : Common`Time
+		;
+
+	-- single journey that start at a particular time
+	Journey ::
+		time_table : seq of TimeTableItem
+		start_stop : TransportNetwork`Stop
+		end_stop : TransportNetwork`Stop
+		-- what types of vehicle are possible (buses or trams, only barrier_free, etc)
+		allowed_vehicles : set of VehicleFleet`VehicleModel
+		;
+
+	LineSchedule ::
+		line_number : TransportNetwork`LineNumber
+		journeys : set of Journey
+		;
+
+-- TODO restrict allowed vehicles (models) for selected lines
+	-- for example, the so-called "metropolitan" lines of trams (9, 17, 22, etc) must always use the long train (two carriages in case of <T3> and <T6A5>)
+	-- try to use set comprehension for this
+
+	NetworkSchedule = map TransportNetwork`LineNumber to LineSchedule
+
+end DailySchedule
+
+
+--------------------
+--------------------
+
+
+module CurrentStatus
+
+imports
+	from Common all,
+	from TransportNetwork
+		types Stop; LineNumber
+		operations getRoute,
+	from DailySchedule
+		types TimeTableItem
+
+definitions
+
+types
+	RunningVehicle ::
+		departure_time : Common`Time -- from the current stop
+		next_stop : TransportNetwork`Stop
+		timed_route : seq of DailySchedule`TimeTableItem
+		delay : int -- given in seconds, negative value means that the vehicle is running ahead of time
+		inv mk_RunningVehicle(dt,ns,r,d) == d > -180 and d < 180
+
+state situation of
+	vehicles : seq of RunningVehicle
+end
+
+functions
+	getRemainingJourneyTime : RunningVehicle -> Common`Time
+	getRemainingJourneyTime(rv) ==
+		if len rv.timed_route = 0
+		then mk_Common`Time(0,0)
+		else Common`timeDiff(rv.timed_route(len rv.timed_route - 1).departure_time, rv.departure_time)
+
+operations
+	computeMaxDelay : () ==> int
+	computeMaxDelay() ==
+		(dcl max : int := 0;
+		for i = 0 to len vehicles by 1 do
+			if vehicles(i).delay > max
+			then max := vehicles(i).delay ;
+		return max
+		);
+
+-- TODO values of certain attributes of "RunningVehicle" should be changed in every stop based on "timed_route"
+-- TODO gradual shortening of "timed_route" (the list of remaining stops) during the current journey by operators "hd" and "tl"
+-- TODO when the vehicle is about to leave the start stop, get the full route for the given line from the daily schedule
+-- TODO you could define a function that always computes the departure time necessary to satisfy the current schedule
+
+end CurrentStatus
+

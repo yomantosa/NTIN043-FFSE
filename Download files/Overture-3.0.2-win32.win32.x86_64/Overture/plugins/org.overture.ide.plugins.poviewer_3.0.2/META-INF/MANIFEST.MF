@@ -1,0 +1,121 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.overture.ide.plugins.poviewer
+Bundle-SymbolicName: org.overture.ide.plugins.poviewer;singleton:=true
+Require-Bundle: org.eclipse.ui.console,org.overture.ide.core,org.overt
+ ure.ide.ui,org.overture.ide.parsers.vdmj,org.overture.ide.builders.vd
+ mj
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BuddyPolicy: registered
+Bundle-Vendor: Overture
+Import-Package: org.overture.ide.vdmsl.ui.editor.syntax
+Export-Package: org.overture.ide.plugins.poviewer,org.overture.ide.plu
+ gins.poviewer.commands,org.overture.ide.plugins.poviewer.view,org.ove
+ rture.pof,org.overture.pog.contexts,org.overture.pog.obligation,org.o
+ verture.pog.pub,org.overture.pog.utility,org.overture.pog.visitors
+Bundle-Version: 3.0.2
+Bundle-Name: org.overture.ide.plugins.poviewer
+Bundle-Localization: plugin
+Bundle-ClassPath: .,jars/pog.jar
+Bundle-Activator: org.overture.ide.plugins.poviewer.Activator
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.0
+Eclipse-BundleShape: dir
+
+Name: plugin.xml
+SHA-256-Digest: PGl5uMQyEKYk4+nm4b5L64Y39tLxsKepFlb4ulkuXSY=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView$4.cla
+ ss
+SHA-256-Digest: gPUNIatm0z+ehZ2YTLRnDwILWczqDOhU8+FDrYVAo0o=
+
+Name: icons/cview16/unproved.png
+SHA-256-Digest: tFmJHZDeDhE+sVdyOOX71XVOHgHKBXXALXK8l7WPx+A=
+
+Name: org/overture/ide/plugins/poviewer/PoGeneratorUtil$2.class
+SHA-256-Digest: ek55XJmrVgDZvbFzwiklKAZAz6bxMUda7B6/8ONqAPk=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView$ViewC
+ ontentProvider.class
+SHA-256-Digest: pVn+b6LAYXGC4Bj4Tueg8O1Ai0WXLtLG33WkBoP7nOU=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView$1$1$1
+ .class
+SHA-256-Digest: T/zYuv5k6FoD8F9fCTrTDkeDoZ/ELOix4beoIbaLta0=
+
+Name: org/overture/ide/plugins/poviewer/view/PoTableView$1.class
+SHA-256-Digest: XlFpvxx2ek4MYz3ZzqjrYf8xljprZjsT+QSb5fsi3Vw=
+
+Name: org/overture/ide/plugins/poviewer/PoGeneratorUtil.class
+SHA-256-Digest: NvS4nKfCnfo4zwA65Zgb55/2hgrZHcEfHnW8fzk4S7s=
+
+Name: icons/cview16/po_tsk.png
+SHA-256-Digest: ABag/QswXWJcpV8HyhxZ4VNZFSJB28jpUjXjoaI8XRM=
+
+Name: plugin.properties
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView$2.cla
+ ss
+SHA-256-Digest: BsP3PJCrg8T36lTIjJCUVgOfPCHWmmi0MFElES28rJ0=
+
+Name: org/overture/ide/plugins/poviewer/PoGeneratorUtil$1.class
+SHA-256-Digest: Nkv17ZiNi8GWW+QY7jclQ0Yb1rTSQZEPyCvnfb7ZY4o=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView$5.cla
+ ss
+SHA-256-Digest: S6INlewh+/35FobEEpVLro/2HMeqgdzspwgedSVUuDM=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView$ViewL
+ abelProvider.class
+SHA-256-Digest: 0CmQgERpUZDuh0pzZ+4oW0oCO3rFQY5Oro8IVlljpFg=
+
+Name: org/overture/ide/plugins/poviewer/IPoviewerConstants.class
+SHA-256-Digest: fGeM1+jC9oN1WZRPJk+UwgqEqvVzjInTgmhdhm0vYOk=
+
+Name: icons/cview16/caution.png
+SHA-256-Digest: 6J1ZYM8QinZMMvbnmrXvk6O/i8H5hYnhzWd/ViLDq1s=
+
+Name: icons/cview16/trivial.png
+SHA-256-Digest: qjm5vdpvMZG86XNZXHUbnVDjYQWNkDWVQRG04BeXSO0=
+
+Name: org/overture/ide/plugins/poviewer/ProofObligationPerspectiveFact
+ ory.class
+SHA-256-Digest: 47DbWnO62hMXDBJhamRt9Rd4g92SQm1hUO6QOk1Ll1c=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView$1$1.c
+ lass
+SHA-256-Digest: QiO7xp7C39xra+NA7F/UnY89P5fhcMWY0OOmoDP9R2U=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView$3.cla
+ ss
+SHA-256-Digest: CMdPun0KNPW2wr14F0w5BPZaSKSYHMnzTq7wjelrwWE=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView.class
+SHA-256-Digest: Ub0k5fPr7q3bZngj6AwsQkn5pb0wkzOosn/JQFfbLMk=
+
+Name: icons/cview16/proved.png
+SHA-256-Digest: aT53GlDRCZgyW1cdQ38Lu+SlGufkq6jlNu0DU8ZLmSs=
+
+Name: org/overture/ide/plugins/poviewer/view/PoTableView.class
+SHA-256-Digest: /G1hYCoYlFNFooswjq/8Zj9GfLHYHTuH6YIv+7ie6KU=
+
+Name: org/overture/ide/plugins/poviewer/commands/GenerateProofObligati
+ onsCommand.class
+SHA-256-Digest: Bk9sPwewHLong9lKyORwAWR72693lNVmLK2ZOgazKr4=
+
+Name: jars/pog.jar
+SHA-256-Digest: C3ELfeRhSdr8U79ZJGVug/xBrliTuGovVl/5RdoTrsQ=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView$6.cla
+ ss
+SHA-256-Digest: DB6BGgxA0tvJs8L3L0joQUl7KHMBLvRJv9QWZaG1qEo=
+
+Name: org/overture/ide/plugins/poviewer/Activator.class
+SHA-256-Digest: IbIf0zu7ht92DmS32jtfSgJ6IhftquJ79g2NXwqwTSs=
+
+Name: org/overture/ide/plugins/poviewer/view/PoOverviewTableView$1.cla
+ ss
+SHA-256-Digest: OFRK47+BYwL3Oi4VD9ne7x5FWE1ThwqmIZiTRTaEJVo=
+

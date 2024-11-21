@@ -1,0 +1,37 @@
+fth TOSET< is
+	protecting BOOL .
+	sort Elt .
+	ops _<_ _>_ : Elt Elt -> Bool .
+	vars E1 E2 E3 : Elt .
+	eq E1 < E1 = false . --- anti-reflexive
+	ceq E1 < E3 = true if E1 < E2 and E2 < E3 [nonexec] . --- transitive
+	ceq E1 < E2 or E2 < E1 = true if E1 =/= E2 . --- antisymmetric
+	eq E1 > E2 = E2 < E1 . --- alternative writing
+endfth
+
+fth TOSET<= is
+	including TOSET< .
+	op _<=_ : Elt Elt -> Bool .
+	vars X Y : Elt .
+	eq X <= Y = X < Y or X == Y .
+endfth
+
+fmod ORD-LIST{X :: TOSET<=} is
+	protecting LIST{X} .
+	sorts OrdList{X} NeOrdList{X} .
+	subsort NeOrdList{X} < OrdList{X} .
+	subsort NeList{X} < List{X} .
+	op insertion-sort : List{X} -> OrdList{X} .
+	op insert-list : OrdList{X} X$Elt -> OrdList{X} .
+	op empty : -> OrdList{X} .
+	vars N M : X$Elt .
+	var L : List{X} .
+	var OL : OrdList{X} .
+	var NEOL : NeOrdList{X} .
+	eq insertion-sort(empty) = empty .
+	eq insertion-sort(N L) = insert-list(insertion-sort(L), N) .
+	eq insert-list(empty, M) = M empty .
+	ceq insert-list(N OL, M) = M N OL if M <= N .
+	ceq insert-list(N OL, M) = N insert-list(OL, M) if M > N .
+endfm
+

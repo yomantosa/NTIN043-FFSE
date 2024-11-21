@@ -1,0 +1,69 @@
+fmod BANK is
+	protecting NAT .
+
+	sorts Card Account .
+
+	--- retrieving account information from the central database of this bank
+	op getAccountForCard : Card -> Account .
+	op getAccountBalance : Account -> Nat .
+
+	--- second argument is the requested amount
+	--- returns the new account balance
+	op withdrawFromAccount : Account Nat -> Nat .
+
+endfm
+
+fmod ATM is
+	protecting INT .
+	protecting STRING .
+	protecting BANK .
+
+	sort Atm .
+
+	var vCard : Card .
+	var vAmount : Nat .
+
+	--- number of available banknotes
+	vars vA100 vA200 vA500 : Int .
+
+	--- arguments represent the state of ATM (numbers of available banknotes for values 100, 200, 500)
+	op atm : Int Int Int -> Atm .
+
+	--- modeling input from an external entity (human, client)
+	op readPinFromKeyboard : -> Nat .
+
+	--- arguments: state of ATM, card, desired amount of cash
+	op withdrawCash : Atm Card Nat -> Atm .
+
+	--- arguments: card, pin
+	op validateCard : Card Nat -> Bool .
+
+	--- arguments: state of ATM, desired amount
+	op deliverBanknotes : Atm Nat -> Atm .
+
+	--- auxiliary functions (we use "abstraction" for them)
+	op reportWrongState : String -> Atm .
+	op getCountOf : Nat Nat -> Int .
+
+	eq withdrawCash(atm(vA100, vA200, vA500), vCard, vAmount) =
+		if validateCard(vCard, readPinFromKeyboard) and getAccountBalance(getAccountForCard(vCard)) >= vAmount
+			then deliverBanknotes(atm(vA100, vA200, vA500), withdrawFromAccount(getAccountForCard(vCard), vAmount))
+			else reportWrongState("invalid")
+		fi .
+
+	eq deliverBanknotes(atm(vA100, vA200, vA500), vAmount) =  atm(vA100 - getCountOf(vAmount, 100), vA200 - getCountOf(vAmount, 200), vA500 - getCountOf(vAmount, 500)) .
+
+endfm
+
+fmod TEST is
+	protecting BANK .
+	protecting ATM .
+
+	--- argument is PIN
+	op card : Nat -> Card .
+
+	op testWithdrawCash1 : -> Atm .
+	eq testWithdrawCash1 = withdrawCash(atm(8, 6, 5), card(1234), 1700) .
+
+endfm
+

@@ -1,0 +1,272 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.0
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.2.0_abbrev.md
+SHA-256-Digest: uTBgC8ucQ/kONAZ4xHhw4l9S0zyLePdJFaF1AUG92EU=
+
+Name: target/rootfiles/commandline/overture
+SHA-256-Digest: 6XQ+flkwoMZmWs8IpbGpdfcMv9JGu1zhXtpaj3QDkc8=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.1.txt
+SHA-256-Digest: ba2VGlfjf0owgPUnQLXDzRmX1Rq4IzoK+2RmnaC9cdc=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.1.0_abbrev.md
+SHA-256-Digest: VF+jkqNQdDW5G59mhdvqq+YdcotVC5aqcOunIyOpX2I=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.0.1_abbrev.md
+SHA-256-Digest: GxR/SZQgAIE06696Nsn4PX/QU09HwKR3RjcnUmFVK1s=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.2.2.md
+SHA-256-Digest: cZTF27Lc/J1voUoYjJOjJQbDQVabZXFcZYvs1mi84/o=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.4.4.md
+SHA-256-Digest: iNzSuXfRi9qG2a4/lA9zHFzddZXcNnGhIUbuc0J1x/w=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.5.0.md
+SHA-256-Digest: x0FF/0M8SFhMui/WlaQMRVPjW78hTuypaUJeNxlV4xo=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.4.0_abbrev.md
+SHA-256-Digest: 1KXooqLqRZ+reOyQciwlruN1233w70GQS68d3rkWCFc=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.4.8.md
+SHA-256-Digest: rx8RZH4oImf/BwIiPwtFubh8Xn9sX6DQUS9rN8akmFU=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.2.md
+SHA-256-Digest: Ou7xlkaMN3lpk3ub7luEO6nsnoxhyi+Et99OH6HNoiE=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.7.2.md
+SHA-256-Digest: qmkGMJo1wcfUTGa707qjyw5elUPslTPSYhVkZJD1rqE=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.1.1_abbrev.md
+SHA-256-Digest: B79JQjCkrlWqQHz57ZOo/Gu55JeUNd00Z9gUjo7v9vo=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_VDM-10_abbrev.md
+SHA-256-Digest: tdUm6tYwU7QmZcSwpj6Kgfm/8//zCSYshmM95LBUjy4=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.3.0_abbrev.md
+SHA-256-Digest: XH6UW9i7gTpzufIoMLp/mjfLJamSQnxGytyUyaLr6JQ=
+
+Name: target/rootfiles/commandline/overture.bat
+SHA-256-Digest: +JsXrUbVvrOR8xa/sLiKnLeBBrnfsPRnv3cEA2V3CzI=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.4.0.md
+SHA-256-Digest: 1KXooqLqRZ+reOyQciwlruN1233w70GQS68d3rkWCFc=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.1.2.md
+SHA-256-Digest: NVI4bIkM/EpMHdiddW5Byp4xKDnz+XpygR4XJ/q9JJs=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.2.6.md
+SHA-256-Digest: 4RyNpq6JldDHfkgwe2fQqI/dfsgEvCXOr06q7g1mGy4=
+
+Name: build.properties
+SHA-256-Digest: maXlWwmBsd6Z2irkWAI+vc1SgPeUwnSCfrUUgSbab+g=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.5.4.md
+SHA-256-Digest: nUp8ZL+PxlrRSfYc34kQcJrkePxPoR9FEEc0jTe+EfY=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.0.txt
+SHA-256-Digest: PJc9a+r84XO0uD1OODx8YlmGYtM4tkrY3dEYPZbp6QU=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.1.6.md
+SHA-256-Digest: abPKGHwsy1fk2Z8DErITJmUTCpdwNVrSPM3IESSMcsg=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.4_abbrev.md
+SHA-256-Digest: mQ7vuTDlNWhTCD6CBOcpxAz0jMWfntuVofik2mQ2S4c=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes-template.md
+SHA-256-Digest: ialfonMBtunJ92rJGfsa1DLk1/c8PG9L/OC2sTepnSA=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.1.1.txt
+SHA-256-Digest: T5c+9WZCYiaXS42HECn4fz2zv5YAePNBIH//oKfe1I4=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.0.4.md
+SHA-256-Digest: 6EWWrp6w6Dl1VhWpdFFRkXqeErtURNFZO81a6ZSYNNA=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.6.4.md
+SHA-256-Digest: znk913L3aJKtL5RkwGsWFaz8VWT1f9hIaRVW7ny+oZY=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_3.0.2.md
+SHA-256-Digest: DnX1vzPBN3NaKxeAIORrdiK6CugzwnMr/n6HDuYsiTA=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.0.0.md
+SHA-256-Digest: YSfDkSKk0pyFPmhQQtIwDRB9A8ibz/v4bnHBT6u4rzk=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_no-version_abbrev.md
+SHA-256-Digest: zNPXIv0ElZD3Voq80ifQC2LfJsYvUGcq+Cob0nna5h0=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.3.md
+SHA-256-Digest: JtbGP7s3Mv0gHRPCvjgBmPvxlCOm7C595Jc3EUhWrgk=
+
+Name: feature.properties
+SHA-256-Digest: EfjZ5LPwYs/i/hNoq28Oci3MqW0ZSVwmlHu2V1me878=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.0.8_abbrev.md
+SHA-256-Digest: mTRP90jy/I5qaZJ1bqyEcT7NrHubTc5aoeUzf4qLByM=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes-template-abbrev.md
+SHA-256-Digest: hfggRFV+4gEpF3ul5aX4S9d+vnC0exxT2F3479/3Dn8=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.1.4_abbrev.md
+SHA-256-Digest: trFyxc4y9Pj9h6/tliPQtgknEd2o2UowPYqadWV+i24=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.2.4_abbrev.md
+SHA-256-Digest: r2zop3qgFhjnHkSkYMWN5Kpf0DTVo8u0I7F6aoS4tjc=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.0.4_abbrev.md
+SHA-256-Digest: PiQAtVqMnHNbq4Ida4PnHpbI62hyW3C5ABxIqRoAwf0=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.1.1.md
+SHA-256-Digest: B79JQjCkrlWqQHz57ZOo/Gu55JeUNd00Z9gUjo7v9vo=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.1_abbrev.md
+SHA-256-Digest: QhC+FLjWbARJ/ClQ7rrSz8PaFbpq0GAtncv+niPqmzo=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.3.0.md
+SHA-256-Digest: 8F6u9rEv12IldTjMcrlWS3Q1n3I8egQGVd9/vCry5bc=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.0.8.md
+SHA-256-Digest: zdh6JDAJMD6y7X+PuQF0lf2WJWceXMB7gCtaneV1ICM=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.6.0.md
+SHA-256-Digest: 8L1DjXiLDaHBP88L8IauAQHbVmwTRUAuR05rE6dhkG4=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.3.8.md
+SHA-256-Digest: waYy/vrgGRwAIBzW0eDCt6N2nD+l96W0JXEXFKxRZcw=
+
+Name: target/rootfiles/releasenotes/README.md
+SHA-256-Digest: JJ746LDIY2F4YrvHqHhKMijLh3rg4c7YglDktfdh8kY=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.4.md
+SHA-256-Digest: mQ7vuTDlNWhTCD6CBOcpxAz0jMWfntuVofik2mQ2S4c=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.7.4.md
+SHA-256-Digest: cMKjZEam8tuDyzLd24OnBDxfg7506vfE7lw9Xt6gSAI=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.5.2.md
+SHA-256-Digest: URDujksJWx8DzSKwBvz8DOpcevNBZ4NxuqlKjS6YeQw=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.1.2_abbrev.md
+SHA-256-Digest: lb3c6kh8VEFFqDUgJ4kG55MDDTLfeWji+Q6UAV+IsrY=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.4.6.md
+SHA-256-Digest: qCXePagiJ6BMlGGn7ZcpTuXhbFzR88JWtE9sv2Hywe8=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.2.4.md
+SHA-256-Digest: fRZfMltjbRv6Wt0ceDfGIYmduM6BbEA3HRugX8oNcQQ=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.2.0.md
+SHA-256-Digest: rCIlNLMjAqiUAPygS8htFL9xlx5wR8PdYtSH7AMLMao=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.0.md
+SHA-256-Digest: VsEQgg3Ete+0/v85aiE5lxYQcPBDIclnp0HbSH4gAic=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.2_abbrev.md
+SHA-256-Digest: Ou7xlkaMN3lpk3ub7luEO6nsnoxhyi+Et99OH6HNoiE=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.7.0.md
+SHA-256-Digest: Cuc/gltbG/SSbEtFD8Hm8cfHj1XJZF07VWLB3Qhbi6A=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.1.0.md
+SHA-256-Digest: jCk2eHXoNUppnnajPNU4/1IytwtznG4AbW7u9WTRAzA=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.1.0.md
+SHA-256-Digest: vPprOHRNMA/kpZEeraJcTuCesoGj4cE2PlJosn7S0QM=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.4.txt
+SHA-256-Digest: qHylnKO/wbdaTSsX+/PQGVygv5CFnz6j+UVMqsfWqIs=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.1.4.md
+SHA-256-Digest: kF0eOyMKhu61rmlbsy/u20p5XGr8dXDdwVqva6ld4rA=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.4.2.md
+SHA-256-Digest: B/17wsBgMvviVi3CMoOF4MhRx0CMzq6BED9CvdcHTVY=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.5.6.md
+SHA-256-Digest: UfJvXNCCw64iNRAKTvfPNDx7hUmVwG1nJXDJTGa1ozk=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_VDM-10.md
+SHA-256-Digest: tdUm6tYwU7QmZcSwpj6Kgfm/8//zCSYshmM95LBUjy4=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.0.1.md
+SHA-256-Digest: GxR/SZQgAIE06696Nsn4PX/QU09HwKR3RjcnUmFVK1s=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.3.8_abbrev.md
+SHA-256-Digest: waYy/vrgGRwAIBzW0eDCt6N2nD+l96W0JXEXFKxRZcw=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_no-version.md
+SHA-256-Digest: zNPXIv0ElZD3Voq80ifQC2LfJsYvUGcq+Cob0nna5h0=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.6.2.md
+SHA-256-Digest: FatO9M8YqIHJJpiQar5Kf4ztzxFZzAW9ijNO0ZIxSec=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.0.6.md
+SHA-256-Digest: +EFdkXjJhp+yeYz6I/if3ysVII5QJB+BgG1exj5zDAQ=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.0.2.md
+SHA-256-Digest: zh5OoVqxeMXg6xj74XIrA09t/zHp2GIRQXRzo6hU6lA=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.0.0_abbrev.md
+SHA-256-Digest: 93XcRLKm9ejq2asJt896N0i1c806l2sZfNPzlsOzhyM=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.3.txt
+SHA-256-Digest: GAdpbAdWlCu/eoR6kGBVpsyPxDxdA37PJW4IXlzM8x8=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_3.0.0.md
+SHA-256-Digest: 1Vi25wU6MZ5XxzzduCgWxdF7+/KawizxXV7RTb6vVgE=
+
+Name: target/rootfiles/commandline/commandlinetool-3.0.2-jar-with-depe
+ ndencies.jar
+SHA-256-Digest: n8Iry66M1rui9tP+c+nPiOxV46LpaiE9ziB9v5pfyuM=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.1.6_abbrev.md
+SHA-256-Digest: 9Eu0t9nn5dxx4fmh4HfFTi7RjXWxES1tSEr0V8z+2X0=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.2.6_abbrev.md
+SHA-256-Digest: JwjiuFMeyPZ5yMv+MsnaKUXHT7LG1emLavCAEQ19Ggc=
+
+Name: feature.xml
+SHA-256-Digest: px9RBQJHW26oq9m11WuY46ixeU4oLgRcbJJSrAkjZpI=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.1.0_abbrev.md
+SHA-256-Digest: jCk2eHXoNUppnnajPNU4/1IytwtznG4AbW7u9WTRAzA=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.1.md
+SHA-256-Digest: QhC+FLjWbARJ/ClQ7rrSz8PaFbpq0GAtncv+niPqmzo=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.3.6_abbrev.md
+SHA-256-Digest: fALnhBBv9vuwcN7Bm+8DEH8hReUIawphKx0xf8Yumjc=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.0_abbrev.md
+SHA-256-Digest: VsEQgg3Ete+0/v85aiE5lxYQcPBDIclnp0HbSH4gAic=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.0.0.txt
+SHA-256-Digest: mArXjvpZ5QXCukfz8oOxBpppF2JICYRq8x+DgXyNV+c=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.3.2_abbrev.md
+SHA-256-Digest: CHBdi5OAoU+hwhX5hbVM/gbeV9c/IqUkjJQWAfOklOM=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.0.6_abbrev.md
+SHA-256-Digest: 6C1OkB9U04BKdMWWEhUBtBGFpvbt7k8zaPFbswF6EKg=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.2.txt
+SHA-256-Digest: UQi6AdSKP3PXVPchDWvX+dwAnJR2mFdR4RXMKc4Q7Iw=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.2.2_abbrev.md
+SHA-256-Digest: JA2V4OBjSlJTz0z93T3DFvqNv8+jcsFhIPVagbfMWHo=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.0.0.md
+SHA-256-Digest: 93XcRLKm9ejq2asJt896N0i1c806l2sZfNPzlsOzhyM=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_1.2.3_abbrev.md
+SHA-256-Digest: JtbGP7s3Mv0gHRPCvjgBmPvxlCOm7C595Jc3EUhWrgk=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.3.2.md
+SHA-256-Digest: CHBdi5OAoU+hwhX5hbVM/gbeV9c/IqUkjJQWAfOklOM=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.4.2_abbrev.md
+SHA-256-Digest: B/17wsBgMvviVi3CMoOF4MhRx0CMzq6BED9CvdcHTVY=
+
+Name: target/rootfiles/releasenotes/ReleaseNotes_2.3.6.md
+SHA-256-Digest: fALnhBBv9vuwcN7Bm+8DEH8hReUIawphKx0xf8Yumjc=
+

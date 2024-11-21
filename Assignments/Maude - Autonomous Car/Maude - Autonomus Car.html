@@ -1,0 +1,458 @@
+<!DOCTYPE html><html><head>
+      <title>Maude - Autonomus Car</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\tosab\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.15\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h3 id="task-1-create-algebraic-specification-of-a-control-system-for-autonomous-cars">Task 1: Create algebraic specification of a control system for autonomous cars. </h3>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>fmod CORE-TYPES is
+  protecting STRING .
+
+  sorts SensorData Object Action State Component PriorityQueue .
+
+  subsort PriorityQueue &lt; Action .
+
+  ops GPS Camera Radar Lidar TrafficSignal SpeedLimit : -&gt; SensorData .
+  ops Lane Obstacle Vehicle Pedestrian GreenLight RedLight StopSign Collision : -&gt; Object .
+  ops KeepSpeed Accelerate Decelerate Stop TurnLeft TurnRight AdjustSpeed Override : -&gt; Action .
+  ops EmergencyBrake HandleCollision CombinedAction : -&gt; Action .
+  ops Active Manual Emergency : -&gt; State .
+  ops engine brake wheels lights : -&gt; Component .
+endfm
+
+fmod PROCESSING is
+  protecting CORE-TYPES .
+
+  op process : SensorData -&gt; Object .
+  op prioritize : Object Object -&gt; Object .
+
+  vars O1 O2 : Object .
+
+  eq process(GPS) = Lane .
+  eq process(Camera) = Pedestrian .
+  eq process(Radar) = Vehicle .
+  eq process(Lidar) = Obstacle .
+  eq process(TrafficSignal) = RedLight .
+  eq process(SpeedLimit) = Lane .
+
+  eq prioritize(O1, O2) = 
+    if O1 == Pedestrian or O1 == Obstacle 
+    then O1 
+    else O2 
+    fi .
+endfm
+
+fmod DECISION is
+  protecting CORE-TYPES .
+
+  op decide : Object State -&gt; String .
+
+  vars O1 : Object .
+  vars S : State .
+
+  eq decide(O1, Active) =
+    if O1 == Pedestrian 
+    then "Car is stopping due to pedestrian detection."
+    else if O1 == Obstacle 
+        then "Emergency brake activated due to obstacle."
+        else if O1 == RedLight 
+              then "Car is stopping at the red light."
+              else "Car is maintaining speed."
+        fi 
+    fi 
+  fi .
+
+  eq decide(O1, Emergency) =
+    if O1 == Collision 
+    then "Car is handling a collision."
+    else "Emergency brake activated."
+    fi .
+
+  eq decide(O1, Manual) = "Driver override: manual control enabled." .
+endfm
+
+fmod EXECUTION is
+  protecting CORE-TYPES .
+
+  op execute : PriorityQueue Component -&gt; String .
+  op reportState : String -&gt; String .
+
+  vars A : Action .
+  vars C : Component .
+  var Msg : String .
+
+  eq execute(A, C) =
+    if A == Stop and C == brake 
+    then "Car is stopping using brakes."
+    else if A == EmergencyBrake and C == brake 
+         then "Emergency brake applied."
+         else if A == KeepSpeed and C == engine 
+              then "Maintaining current speed."
+              else if A == TurnLeft and C == wheels 
+                   then "Turning left using wheels."
+                   else if A == HandleCollision and C == lights 
+                        then "Activating hazard lights for collision."
+                        else if A == Stop and C == engine
+                          then "Car has shut off."
+                            else reportState("Invalid action-component combination.")
+                            fi
+                        fi 
+                   fi 
+              fi 
+         fi 
+    fi .
+
+  eq reportState(Msg) = "Error: " + Msg .
+endfm
+
+fmod COMBINE is
+  protecting CORE-TYPES .
+
+  op combine : PriorityQueue PriorityQueue -&gt; PriorityQueue .
+
+  vars A B : Action .
+
+  eq combine(A, B) = 
+    if A == Stop or B == Stop 
+    then Stop 
+    else if A == EmergencyBrake or B == EmergencyBrake 
+         then EmergencyBrake 
+         else A 
+         fi 
+    fi .
+endfm
+
+fmod TEST is
+  protecting PROCESSING .
+  protecting DECISION .
+  protecting EXECUTION .
+  protecting COMBINE .
+
+  op testObject : -&gt; Object .
+  op testState : -&gt; State .
+
+  eq testObject = RedLight .
+  eq testState = Active .
+
+  op testProcess : -&gt; Object .
+  eq testProcess = process(GPS) .
+
+  op testDecide : -&gt; String .
+  eq testDecide = decide(testObject, testState) .
+
+  op testDecideObstacle : -&gt; String .
+  eq testDecideObstacle = decide(Obstacle, Active) .
+
+  op testExecuteBrake : -&gt; String .
+  eq testExecuteBrake = execute(Stop, brake) .
+
+  op testCombine : -&gt; PriorityQueue .
+  eq testCombine = combine(Stop, Accelerate) .
+endfm
+</code></pre><hr>
+<h3 id="task-2-document-the-solution">Task 2: Document the solution </h3>
+<h4 id="key-decisions">Key Decisions: </h4>
+<p><strong>1. Modular Design:</strong></p>
+<ul>
+<li>The system is divided into modules (<code>CORE-TYPES</code>, <code>PROCESSING</code>, <code>DECISION</code>, <code>EXECUTION</code>, <code>COMBINE</code>, and <code>TEST</code>) to ensure maintainability, scalability, and clarity.</li>
+</ul>
+<p><strong>2. State-Aware Decisions:</strong></p>
+<ul>
+<li>The <code>decide</code> operation tailors responses based on the car's state (<code>Active</code>, <code>Emergency</code>, <code>Manual</code>) for appropriate action in various scenarios.</li>
+</ul>
+<p><strong>3. Action Prioritization:</strong></p>
+<ul>
+<li>The <code>combine</code> operation ensures safety-critical actions like <code>Stop</code> or <code>EmergencyBrake</code> override others like <code>Accelerate</code>.</li>
+</ul>
+<p><strong>4. Traceable Execution:</strong></p>
+<ul>
+<li>The <code>execute</code> operation provides descriptive outputs (Example: <code>"Car is stopping using brakes."</code>) to enhance traceability and debugging.</li>
+</ul>
+<p><strong>5. Error Handling:</strong></p>
+<ul>
+<li>Invalid action-component combinations are reported explicitly using <code>reportState</code>.</li>
+</ul>
+<h4 id="high-level-design">High-Level Design: </h4>
+<p><strong>1. CORE-TYPES:</strong></p>
+<ul>
+<li>Defines foundational data types (<code>SensorData</code>, <code>Object</code>, <code>Action</code>, <code>State</code>, <code>Component</code>) used across the system.</li>
+</ul>
+<p><strong>2. PROCESSING:</strong></p>
+<ul>
+<li><code>process</code>: Translates sensor data (e.g., <code>GPS</code>, <code>Camera</code>) into actionable objects like <code>Lane</code> or <code>Pedestrian</code>.</li>
+</ul>
+<p><strong>3. DECISION:</strong></p>
+<ul>
+<li><code>decide</code>: Determines the car's action based on detected objects and the state, returning descriptive strings.</li>
+</ul>
+<p><strong>4. EXECUTION:</strong></p>
+<ul>
+<li><code>execute</code>: Links actions to components and outputs feedback.</li>
+</ul>
+<p><strong>5. COMBINE:</strong></p>
+<ul>
+<li><code>combine</code>: Merges multiple actions, ensuring safety-critical ones take precedence.</li>
+</ul>
+<p><strong>6. TEST:</strong></p>
+<ul>
+<li>
+<p>Provides test cases to validate the system's functionality, including:</p>
+<ul>
+<li><code>process</code>: Ensures correct object translation.</li>
+<li><code>decide</code>: Verifies decision-making for specific states.</li>
+<li><code>execute</code>: Tests proper action execution.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="task-3-prepare-some-test-cases-scenarios-inputs">Task 3: Prepare some test cases (scenarios, inputs) </h3>
+<p><strong>1. <code>testObject</code> and <code>testState</code></strong><br>
+Represents the initial inputs to the system.<br>
+Description</p>
+<ul>
+<li><code>testObject</code> is set to <code>RedLight</code>, simulating a traffic signal detection.</li>
+<li><code>testState</code> is set to <code>Active</code>, representing the car's current state.</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Maude&gt; red testObject .
+reduce in TEST : testObject .
+rewrites: 1 in 0ms cpu (0ms real) (~ rewrites/second)
+result Object: RedLight
+
+Maude&gt; red testState .
+reduce in TEST : testState .
+rewrites: 1 in 0ms cpu (0ms real) (~ rewrites/second)
+result State: Active
+</code></pre><ul>
+<li><code>testObject</code> provides the object being processed (<code>RedLight</code>).</li>
+<li><code>testState</code> provides the car's state (<code>Active</code>).</li>
+</ul>
+<p><strong>2. <code>testProcess</code></strong><br>
+Validates the <code>process</code> operation for sensor data.<br>
+- Processes <code>GPS</code> data and translates it into an object.</p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Maude&gt; red testProcess .
+reduce in TEST : testProcess .
+rewrites: 2 in 0ms cpu (0ms real) (~ rewrites/second)
+result Object: Lane
+</code></pre><ul>
+<li><code>GPS</code> data is interpreted as detecting a <code>Lane</code>.</li>
+</ul>
+<p><strong>3. <code>testDecide</code></strong><br>
+Validates the <code>decide</code> operation for decision-making based on objects and state.</p>
+<ul>
+<li>Determines the car's action based on <code>testObject</code> (<code>RedLight</code>) and <code>testState</code> (<code>Active</code>).</li>
+<li>The car's action based on <code>object</code> (<code>Pedestrian</code>) and <code>state</code> (<code>Active</code>).</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Maude&gt; red testDecide​​ .
+reduce in TEST : testDecide .
+rewrites: 10 in 0ms cpu (0ms real) (~ rewrites/second)
+result String: "Car is stopping at the red light."
+
+Maude&gt; red decide(Pedestrian, Active) . 
+reduce in TEST : decide(Pedestrian, Active) .
+rewrites: 3 in 0ms cpu (0ms real) (~ rewrites/second)
+result String: "Car is stopping due to pedestrian detection."
+</code></pre><ul>
+<li>The car stops upon detecting the <code>RedLight</code> in the <code>Active</code> state.</li>
+<li>The car stops when detecting the <code>Pedestrian</code> in the <code>Active</code> state.</li>
+</ul>
+<p><strong>4. <code>testDecideObstacle</code></strong><br>
+Tests the car's decision when encountering an obstacle</p>
+<ul>
+<li>Evaluates the decision-making logic when the <code>object</code> is <code>Obstacle</code> and the <code>state</code> is <code>Active</code>.</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Maude&gt; red testDecideObstacle .
+reduce in TEST : testDecideObstacle .
+rewrites: 6 in 0ms cpu (0ms real) (~ rewrites/second)
+result String: "Emergency brake activated due to obstacle."
+</code></pre><ul>
+<li>The car applied Emergency brake to avoid <code>Obstacle</code>.</li>
+</ul>
+<p><strong>5.<code>testExecuteBrake​​</code></strong><br>
+Verifies the <code>execute</code> operation for stopping the car.</p>
+<ul>
+<li>Executes the Stop action using the brake component.</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Maude&gt; red testExecuteBrake .
+reduce in TEST : testExecuteBrake .
+rewrites: 6 in 0ms cpu (0ms real) (~ rewrites/second)
+result String: "Car is stopping using brakes."
+</code></pre><ul>
+<li>The car stops using its brake.</li>
+</ul>
+<p><strong>6. <code>testCombine​​</code></strong><br>
+Validates the combination of two actions using <code>combine</code>.</p>
+<ul>
+<li>Combine the action <code>Stop</code> and <code>Accelerate</code>.</li>
+</ul>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Maude&gt; red testCombine .
+reduce in TEST : testCombine .
+rewrites: 9 in 0ms cpu (0ms real) (~ rewrites/second)
+result Action: Stop
+</code></pre><ul>
+<li>The <code>Stop</code> action takes priority over <code>Accelerate</code>.</li>
+</ul>
+<p><strong>7. Test Case Summary</strong></p>
+<table>
+<thead>
+<tr>
+<th>Test Case</th>
+<th>Operation</th>
+<th>Inputs</th>
+<th>Expected Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>testObject</code></td>
+<td>N/A</td>
+<td>N/A</td>
+<td><code>RedLight</code></td>
+</tr>
+<tr>
+<td><code>testState</code></td>
+<td>N/A</td>
+<td>N/A</td>
+<td><code>Active</code></td>
+</tr>
+<tr>
+<td><code>testProcess</code></td>
+<td><code>process</code></td>
+<td><code>GPS</code></td>
+<td><code>Lane</code></td>
+</tr>
+<tr>
+<td><code>testDecide</code></td>
+<td><code>decide</code></td>
+<td><code>RedLight</code>, <code>Active</code></td>
+<td><code>"Car is stopping at the red light."</code></td>
+</tr>
+<tr>
+<td><code>decide</code></td>
+<td><code>decide</code></td>
+<td><code>Pedesritan</code>, <code>Active</code></td>
+<td><code>"Car is stopping due to pedestrian detection."</code></td>
+</tr>
+<tr>
+<td><code>testDecideObstacle</code></td>
+<td><code>decide</code></td>
+<td><code>Obstacle</code>, <code>Active</code></td>
+<td><code>"Emergency brake activated due to obstacle."</code></td>
+</tr>
+<tr>
+<td><code>testExecuteBrake</code></td>
+<td><code>execute</code></td>
+<td><code>Stop</code>, <code>brake</code></td>
+<td><code>"Car is stopping using brakes."</code></td>
+</tr>
+<tr>
+<td><code>testCombine</code></td>
+<td><code>combine</code></td>
+<td><code>Stop</code>, <code>Accelerate</code></td>
+<td><code>Stop</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="task-4-evaluation-of-the-autonomous-car-system">Task 4: Evaluation of the Autonomous Car System </h3>
+<p><strong>1. Level of Abstraction</strong></p>
+<ul>
+<li>
+<p><strong>Details Ignored:</strong> Internal sensor operations, environmental factors (e.g., weather, road conditions), and physical mechanics (e.g., brake force).</p>
+</li>
+<li>
+<p><strong>Strength:</strong> Focuses on decision-making and execution without unnecessary complexity.</p>
+</li>
+<li>
+<p><strong>Limitation:</strong> Cannot simulate real-world imperfections or failures.</p>
+</li>
+</ul>
+<p><strong>2. Level of Approximation</strong></p>
+<ul>
+<li>
+<p><strong>Over-Specification:</strong> Ensures safety with strict prioritization of critical actions (e.g., Stop, EmergencyBrake).</p>
+</li>
+<li>
+<p><strong>Under-Specification:</strong> Assumes perfect sensor data, lacks handling of conflicting or missing inputs.</p>
+</li>
+<li>
+<p><strong>Balance:</strong> Skews towards safety by being more restrictive.</p>
+</li>
+</ul>
+<p><strong>3. Ambiguity vs. Precision</strong></p>
+<ul>
+<li>
+<p><strong>Precision:</strong> Operations (process, decide, execute) and priorities are explicitly defined, ensuring clarity.</p>
+</li>
+<li>
+<p><strong>Ambiguity:</strong> Undefined behaviors for sensor failures or conflicting inputs.</p>
+</li>
+<li>
+<p><strong>Assessment:</strong> High precision within scope but ambiguous for unhandled edge cases.</p>
+</li>
+</ul>
+<p><strong>4. Completeness</strong></p>
+<ul>
+<li>
+<p><strong>Coverage:</strong> Covers core scenarios (e.g., stopping for pedestrians, responding to obstacles).</p>
+</li>
+<li>
+<p><strong>Missing:</strong> Handling sensor failures, environmental factors, and equally critical actions.</p>
+</li>
+<li>
+<p><strong>Assessment:</strong> Functionally complete for its scope but not exhaustive for real-world complexities.</p>
+</li>
+</ul>
+<hr>
+<h3 id="task-5-opinion-about-the-modeling-language-tool-and-the-whole-approach-methodology-based-on-your-personal-experience">Task 5: Opinion about the modeling language, tool, and the whole approach (methodology) based on your personal experience </h3>
+<p><strong>1. Modeling Language (Maude)</strong></p>
+<ul>
+<li><strong>Strengths:</strong> Highly expressive, modular, and supports executable specifications for testing.</li>
+<li><strong>Limitations:</strong> Steep learning curve and cryptic error messages make debugging challenging.</li>
+</ul>
+<p><strong>2. Tool (Maude Interpreter)</strong></p>
+<ul>
+<li><strong>Strengths:</strong> Efficient for prototyping and rule-based rewriting.</li>
+<li><strong>Limitations:</strong> Lacks IDE support (e.g., syntax highlighting, visualization) and can be hard to debug large models.</li>
+</ul>
+<p><strong>3. Methodology</strong></p>
+<ul>
+<li><strong>Strengths:</strong> Ensures precision, modularity, and rigorous validation for safety-critical systems.</li>
+<li><strong>Limitations:</strong> Models can become complex, and adoption is limited by the expertise required.</li>
+</ul>
+<p><strong>4. Practical Use</strong></p>
+<ul>
+<li><strong>Feasibility:</strong> Practical for safety-critical systems with proper IDE support; otherwise, limited to niche or academic projects.</li>
+<li><strong>Scenarios:</strong> Validating complex designs, ensuring requirement consistency, and precise system documentation.</li>
+</ul>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

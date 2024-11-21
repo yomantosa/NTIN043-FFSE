@@ -1,0 +1,8 @@
+fmod 3-LOGIC is
+	extending BOOL .
+	op third : -> Bool [ctor] .
+	var X : Bool .
+	eq not(third) = third .
+	eq third and X = third .
+	eq X and third = third .
+endfm

@@ -1,0 +1,39 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: kUZ6TRRh04PWxDv/F5+/B9uaAynh3
+ 0wVUm4ZzwoVbdQ=
+SHA-256-Digest-Manifest: woqiBHmncE0Qo5cGBUMGYVMlNIjV43LgX2oiBVLozu4=
+Created-By: 1.8.0_212 (Oracle Corporation)
+
+Name: org/overture/ide/builders/vdmj/Activator.class
+SHA-256-Digest: 7zhrVzhB64JX92o+d8eqTLdQdvoh6UjkdCdscg8RuAU=
+
+Name: plugin.xml
+SHA-256-Digest: h2hoTFtdh9QUekyr3Lld0NmTdcdU4vjzbuq+UV0eEp8=
+
+Name: org/overture/ide/builders/vdmj/BuilderRt.class
+SHA-256-Digest: anPG7E34G003W2Lbpcb+VEprrdW/ZTVpQO3KiMoRy4g=
+
+Name: build.properties
+SHA-256-Digest: FVnkw+otFOkxLXSMEbxKtXh1U8VqUZM/Fau9tZfpV/g=
+
+Name: jars/typechecker.jar
+SHA-256-Digest: UzwCPIhbic8OAzXhsCRcUO9/A6GNBppNNyWk1SN+sUg=
+
+Name: org/overture/ide/builders/vdmj/BuilderPp.class
+SHA-256-Digest: pX17JZ9/wOdtjMAWo2Qr4BO7H2r2HmDqNZ6CoMvsiBw=
+
+Name: org/overture/ide/builders/vdmj/ExitStatus.class
+SHA-256-Digest: QhG8h9riFFsoXSi849f7C4N9yPqhkfaLAErhgxVRCEo=
+
+Name: plugin.properties
+SHA-256-Digest: MjrwXel8M79loUgvPAINflJxhCsc+WeYMXLzvZN73n4=
+
+Name: org/overture/ide/builders/vdmj/IBuilderVdmjConstants.class
+SHA-256-Digest: VqX00oBli7VVkpwh+7EwG03/A4z1GTZ906tysqam4jE=
+
+Name: org/overture/ide/builders/vdmj/BuilderSl.class
+SHA-256-Digest: FvFKn/sxN4vz5akzRR9cWWCYYpcy1wg/Uh53P0d0ZRs=
+
+Name: org/overture/ide/builders/vdmj/VdmjBuilder.class
+SHA-256-Digest: Z/foGgS9RYtQNttYxOERAce5NgC2yNgMe0GlZj37G1M=
+

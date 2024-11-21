@@ -1,0 +1,22 @@
+fth TRIV is
+	sort Elt .
+endfth
+
+fth POSET is
+	protecting BOOL .
+	including TRIV .
+	op _<=_ : Elt Elt -> Bool .
+	vars X Y Z : Elt .
+	eq X <= X = true [nonexec] .
+	ceq X <= Z = true if X <= Y /\ Y <= Z [nonexec] .
+	ceq X = Y if X <= Y /\ Y <= X [nonexec] .
+endfth
+
+fth TOTAL-ORDER is
+	including POSET .
+	vars X Y : Elt .
+	eq X <= Y or Y <= X = true [nonexec] .
+endfth
+
+max(M,N) = if N > M then N else M fi .
+

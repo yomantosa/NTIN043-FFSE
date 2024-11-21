@@ -1,0 +1,3 @@
+sort Rational Integer Negative Positive .
+subsort Integer < Rational .
+subsorts Positive Negative < Integer .

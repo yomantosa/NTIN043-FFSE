@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: 1.8.0_212 (Oracle Corporation)
+
+Name: Overture.exe
+SHA-256-Digest: 63+xKAupseelZqH+yAW0zeX6Qki/mkq/skiBQZuSU1o=
+
+Name: eclipsec.exe
+SHA-256-Digest: fFf6PdB7LmPoxk2N14T7Ztx6gpmJzHKxOmDvTW4d0ak=
+

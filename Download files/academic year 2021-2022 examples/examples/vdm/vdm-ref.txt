@@ -1,0 +1,68 @@
+sets: additional supported operators
+	e not in set s
+	s1 union s2
+	s1 inter s2
+	s1 \ s2 -- set difference
+	s1 subset s2
+	card s -- size, cardinality
+
+set comprehension: { x | x:T & P(x) }
+	- the set of "x" from type "T" such that "P(x)"
+
+sequences: additional supported operators
+	[] -- empty sequence
+	hd s -- head (first element)
+	tl s -- tail (remaining sequence after removal of head)
+	len s -- length
+	s(i) -- selection of elements
+	s1^s2 -- concatenation
+
+maps: some operators
+	dom m
+	rng m
+	m(x) -- return value for "x"
+
+sequence enumeration: { e1, ..., eN }
+	- example: [ 1, 2, 3, 4 ]
+
+map enumeration: { k1 |-> v1, ..., kN |-> vN }
+	- example: m = { 1 |-> 2, 3 |-> 4, 5 |-> 6 };
+
+template for implicit specification of functions and operations
+	f(p:T_p)r:T_r
+		pre pre-f(p)
+		post post-f(p, r)
+
+template for explicit definition of functions
+	f:T_p -> T_r
+	f(p) == ...
+
+template for explicit definition of operations (note the "==>" instead of "->")
+	f:T_p ==> T_r
+	f(p) == ...
+
+symbol "()" is used to represent an empty list of operation arguments or no return value
+
+creating instances of token types
+	location : GPS = mk_token("50.105402,19.287645");
+
+types with possible value "nil" (representing undefined)
+	temperature : [int]
+
+while loops
+	(dcl max:int := 0;
+	while <condition> do
+		( stmt1;
+		  ...
+		  stmtN;
+ 		);
+	return max
+	);
+
+pattern matching
+	cases <branching expr>:
+		<option expr 1> -> stmt,
+		...
+		<option expr N> -> stmt
+	end;
+

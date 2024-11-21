@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1605020065056" transient="false">
+	<site updateable="true" url="platform:/base/" enabled="true" policy="USER-EXCLUDE">
+		<feature id="org.eclipse.equinox.p2.extras.feature" version="1.4.900.v20200828-0839" url="features/org.eclipse.equinox.p2.extras.feature_1.4.900.v20200828-0839/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.rcp.feature" version="1.4.900.v20200813-0739" url="features/org.eclipse.equinox.p2.rcp.feature_1.4.900.v20200813-0739/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.feature" version="3.14.1400.v20200812-2314" url="features/org.eclipse.ecf.filetransfer.feature_3.14.1400.v20200812-2314/">
+		</feature>
+		<feature id="org.eclipse.emf.ecore" version="2.23.0.v20200630-0516" url="features/org.eclipse.emf.ecore_2.23.0.v20200630-0516/">
+		</feature>
+		<feature id="org.overture.ide.plugins.features.combinatorialtesting" version="3.0.2" url="features/org.overture.ide.plugins.features.combinatorialtesting_3.0.2/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.ssl.feature" version="1.1.400.v20200812-2314" url="features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.400.v20200812-2314/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.core.feature" version="1.6.700.v20200813-0739" url="features/org.eclipse.equinox.p2.core.feature_1.6.700.v20200813-0739/">
+		</feature>
+		<feature id="org.eclipse.e4.rcp" version="4.17.0.v20200831-1002" url="features/org.eclipse.e4.rcp_4.17.0.v20200831-1002/">
+		</feature>
+		<feature id="org.overture.ide.plugins.features.javagen" version="3.0.2" url="features/org.overture.ide.plugins.features.javagen_3.0.2/">
+		</feature>
+		<feature id="org.overture.ide.features.core" version="3.0.2" url="features/org.overture.ide.features.core_3.0.2/" plugin-identifier="org.overture.ide.platform">
+		</feature>
+		<feature id="org.eclipse.emf.common" version="2.20.0.v20200822-0801" url="features/org.eclipse.emf.common_2.20.0.v20200822-0801/">
+		</feature>
+		<feature id="org.eclipse.equinox.p2.user.ui" version="2.4.900.v20200828-0839" url="features/org.eclipse.equinox.p2.user.ui_2.4.900.v20200828-0839/">
+		</feature>
+		<feature id="org.eclipse.ecf.core.ssl.feature" version="1.1.500.v20200812-2314" url="features/org.eclipse.ecf.core.ssl.feature_1.1.500.v20200812-2314/">
+		</feature>
+		<feature id="org.eclipse.platform" version="4.17.0.v20200902-1800" url="features/org.eclipse.platform_4.17.0.v20200902-1800/">
+		</feature>
+		<feature id="org.eclipse.help" version="2.3.300.v20200902-1800" url="features/org.eclipse.help_2.3.300.v20200902-1800/" plugin-identifier="org.eclipse.help.base">
+		</feature>
+		<feature id="org.overture.ide.features.rcp" version="3.0.2" url="features/org.overture.ide.features.rcp_3.0.2/">
+		</feature>
+		<feature id="org.overture.ide.plugins.features.coverageeditor" version="3.0.2" url="features/org.overture.ide.plugins.features.coverageeditor_3.0.2/">
+		</feature>
+		<feature id="org.overture.ide.plugins.features.developerutils" version="3.0.2" url="features/org.overture.ide.plugins.features.developerutils_3.0.2/">
+		</feature>
+		<feature id="org.eclipse.rcp" version="4.17.0.v20200902-1800" url="features/org.eclipse.rcp_4.17.0.v20200902-1800/">
+		</feature>
+		<feature id="org.eclipse.ecf.filetransfer.httpclient45.feature" version="1.0.600.v20200816-1842" url="features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.600.v20200816-1842/">
+		</feature>
+		<feature id="org.overture.ide.plugins.features.latex" version="3.0.2" url="features/org.overture.ide.plugins.features.latex_3.0.2/">
+		</feature>
+		<feature id="org.overture.ide.plugins.features.quickinterpreter" version="3.0.2" url="features/org.overture.ide.plugins.features.quickinterpreter_3.0.2/">
+		</feature>
+		<feature id="org.eclipse.ecf.core.feature" version="1.5.700.v20200812-2314" url="features/org.eclipse.ecf.core.feature_1.5.700.v20200812-2314/">
+		</feature>
+		<feature id="org.overture.ide.plugins.features.uml2" version="3.0.2" url="features/org.overture.ide.plugins.features.uml2_3.0.2/">
+		</feature>
+		<feature id="org.overture.ide.plugins.features.csk" version="3.0.2" url="features/org.overture.ide.plugins.features.csk_3.0.2/">
+		</feature>
+		<feature id="org.overture.ide.plugins.features.poviewer" version="3.0.2" url="features/org.overture.ide.plugins.features.poviewer_3.0.2/">
+		</feature>
+		<feature id="org.overture.ide.plugins.features.rttraceviewer" version="3.0.2" url="features/org.overture.ide.plugins.features.rttraceviewer_3.0.2/">
+		</feature>
+	</site>
+</config>

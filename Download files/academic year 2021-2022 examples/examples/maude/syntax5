@@ -1,0 +1,6 @@
+view IntAsToset from TOSET to MACHINE-INT is
+	sort Elt to MachineInt .
+	vars X Y : Elt .
+	op _<=_ to lte . --- less than or equal
+	op X < Y to term X <= Y and X =/= Y .
+endv

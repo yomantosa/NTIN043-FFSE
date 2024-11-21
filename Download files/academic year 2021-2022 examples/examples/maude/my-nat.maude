@@ -1,0 +1,21 @@
+fmod MY-NAT is
+	sort Nat .
+
+	--- constants
+	op 0 : -> Nat .
+	op 1 : -> Nat .
+
+	*** prefix notation
+	op s : Nat -> Nat .
+
+	*** mixfix notation
+	op _+_ : Nat Nat -> Nat .
+
+	vars x y : Nat .
+	var z : Nat .
+
+	--- some equations
+	eq x + 0 = x .
+	eq x + s(y) = s(x + y) .
+	*** eq s(z) = z + 1 .	
+endfm

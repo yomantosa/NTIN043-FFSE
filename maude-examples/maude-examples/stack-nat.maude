@@ -1,0 +1,16 @@
+fmod STACK-NAT is
+	protecting NAT .
+	sorts NeStk Stk .
+	subsort NeStk < Stk .
+	op empty : -> Stk [ctor] .
+	op push : Stk Nat -> NeStk [ctor] .
+	op pop : NeStk -> Stk .
+	op top : NeStk -> Nat .
+	op is-empty? : Stk -> Bool .
+	var X : Nat .
+	var S : Stk .
+	eq top(push(S,X)) = X .
+	eq pop(push(S,X)) = S .
+	eq is-empty?(empty) = true .
+	eq is-empty?(push(S,X)) = false .
+endfm

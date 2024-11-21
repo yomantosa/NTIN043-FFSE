@@ -1,0 +1,58 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.overture.ide.builders.vdmj
+Bundle-SymbolicName: org.overture.ide.builders.vdmj;singleton:=true
+Require-Bundle: org.overture.ide.core
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BuddyPolicy: registered
+Bundle-Vendor: Overture
+Export-Package: org.overture.ast.factory,org.overture.ide.builders.vdm
+ j,org.overture.typechecker,org.overture.typechecker.assistant,org.ove
+ rture.typechecker.assistant.definition,org.overture.typechecker.assis
+ tant.module,org.overture.typechecker.assistant.pattern,org.overture.t
+ ypechecker.assistant.type,org.overture.typechecker.util,org.overture.
+ typechecker.utilities,org.overture.typechecker.utilities.type,org.ove
+ rture.typechecker.visitor
+Bundle-Version: 3.0.2
+Bundle-Name: org.overture.ide.builders.vdmj
+Bundle-Localization: plugin
+Bundle-ClassPath: .,jars/typechecker.jar
+Bundle-Activator: org.overture.ide.builders.vdmj.Activator
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.0
+Eclipse-BundleShape: dir
+
+Name: org/overture/ide/builders/vdmj/Activator.class
+SHA-256-Digest: ocl3nUXaUTNgGlE46MgJ3Xt/3LHDB15edxBMeJvwOF4=
+
+Name: plugin.xml
+SHA-256-Digest: /E+Bxbo/JAinWmMgDRGnM4x3FnnUblOyUKRsn61uMFs=
+
+Name: org/overture/ide/builders/vdmj/BuilderRt.class
+SHA-256-Digest: SQhBffxc8iojVlZaraqT8D5o6f7e3f+Fjx74RhVUG0Q=
+
+Name: build.properties
+SHA-256-Digest: 4H/8zDs6grtwbNUOxTN/+mD/UmtbnO6IWToFOVrtrIo=
+
+Name: jars/typechecker.jar
+SHA-256-Digest: ae7OCE3g+0ETBtEK5PrU3qGCG0N0HEcK9rifxqklbKQ=
+
+Name: org/overture/ide/builders/vdmj/BuilderPp.class
+SHA-256-Digest: Iv+ho37c4oTuGKDThgK9QsBerpeb+VJYjhwJ0NtTRsE=
+
+Name: org/overture/ide/builders/vdmj/ExitStatus.class
+SHA-256-Digest: HlSwh/lCePT9oVNrSvTxiR2MG5uKO0S9Sf/BTV0cECI=
+
+Name: plugin.properties
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: org/overture/ide/builders/vdmj/IBuilderVdmjConstants.class
+SHA-256-Digest: s2b7PAdBbN18PbOc/vgfjh7xKOZfO64lI7/r38pvUWY=
+
+Name: org/overture/ide/builders/vdmj/BuilderSl.class
+SHA-256-Digest: qHzc9tirvtUVugBt+NnH48H4qw9JjGNWv1dI4HOC0cM=
+
+Name: org/overture/ide/builders/vdmj/VdmjBuilder.class
+SHA-256-Digest: pCBAHangRjsXp6CJZYHx0lY1w1YPStrWtCbjR5q9JmE=
+

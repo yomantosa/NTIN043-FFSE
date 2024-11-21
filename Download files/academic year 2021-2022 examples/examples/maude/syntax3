@@ -1,0 +1,21 @@
+--- definition
+sorts Zero NzNat Nat .
+subsorts Zero NzNat < Nat .
+op 0 : -> Zero [ctor] .
+op _/_ : Nat NzNat -> Nat .
+
+--- chain of division operations
+3 / (3 / 1)
+
+--- solution 1 (conditional membership axiom)
+var N : Nat .
+var M : NzNat .
+cmb N / M : NzNat if (N =/= 0) .
+
+--- solution 2 (membership axiom)
+vars N M : NzNat .
+mb N / M : NzNat .
+
+--- another example (graph edges and paths)
+cmb E ; P : Path if target(E) = source(P)
+

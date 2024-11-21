@@ -1,0 +1,414 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.overture.ide.plugins.combinatorialtesting
+Bundle-SymbolicName: org.overture.ide.plugins.combinatorialtesting;sin
+ gleton:=true
+Require-Bundle: org.eclipse.ui.console,org.overture.ide.core,org.overt
+ ure.ide.ui,org.overture.ide.debug,org.overture.ide.vdmpp.core,org.ove
+ rture.ide.vdmrt.core,org.overture.ide.vdmsl.core,org.overture.ide.vdm
+ pp.debug,org.overture.ide.vdmrt.debug,org.overture.ide.vdmsl.debug,or
+ g.overture.ide.builders.vdmj,org.overture.ide.parsers.vdmj
+Bundle-ActivationPolicy: lazy
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-BuddyPolicy: registered
+Bundle-Vendor: Overture
+Bundle-Version: 3.0.2
+Bundle-Name: Combinatorial Testing
+Bundle-Localization: plugin
+Bundle-ClassPath: .,jars/ctruntime.jar,jars/ctutils.jar
+Bundle-Activator: org.overture.ide.plugins.combinatorialtesting.Overtu
+ reTracesPlugin
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.5.0
+Eclipse-BundleShape: dir
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceTest$Vi
+ ewLabelProvider.class
+SHA-256-Digest: VR/Wb9dFma0KITkdOaVBQjj6Bq3h0IMWqUiuC+LkpDA=
+
+Name: icons/cview16/faild_obj.png
+SHA-256-Digest: tFmJHZDeDhE+sVdyOOX71XVOHgHKBXXALXK8l7WPx+A=
+
+Name: plugin.xml
+SHA-256-Digest: 3xoBAwCuWa5w5eXbuzLvzuzy6d0A0/CKCUa2vvhzqos=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/treeView/Tre
+ eParent.class
+SHA-256-Digest: n5URNfTom1Ft0A6ANrMpQ6mTtFEt8uqnRwHY0kcSCaQ=
+
+Name: org/overture/combinatorialtesting/vdmj/server/xml/XMLTagNode.cla
+ ss
+SHA-256-Digest: e68F0LIsjtAHScKaHG7Fu2Z0qyZCUybABzF9AgyHjyI=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$6.class
+SHA-256-Digest: MFJmzwxXaKTcFgREitNXEwqeqHW2mcothoFlbA/jVTI=
+
+Name: icons/cview16/skipped_obj.png
+SHA-256-Digest: vN9v9P3gwDvxYCBQSyKSEaTjOme09dbZ37n3UVgcOqw=
+
+Name: org/overture/ide/plugins/combinatorialtesting/TracesXmlStoreRead
+ er$TraceInfo.class
+SHA-256-Digest: rHSPVXfxG/7OCt8AeUtQUt2vxTNe0bv35We2k22KXII=
+
+Name: org/overture/ide/plugins/combinatorialtesting/store/StorageManag
+ er.class
+SHA-256-Digest: 9lbhRwR1ajI0K5acCSFHqeHbZPldizpJexhlPk5CLkc=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/treeView/Tra
+ ceTestTreeNode.class
+SHA-256-Digest: w5B1q/D+wG728NTpGKiWp84DBeOf6Gi8lw4n0oPakrQ=
+
+Name: org/overture/combinatorialtesting/vdmj/server/xml/XMLDataNode.cl
+ ass
+SHA-256-Digest: ohlTGzGSHEqN28rl2+iyyxTh6+tTZ8d+UGrYGX1UssM=
+
+Name: icons/cview16/search_obj.png
+SHA-256-Digest: Nohe4HKV9t6KKDw6/Yab8NNHmMONCVghD9T9L5q3Kuc=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceTest$Na
+ meSorter.class
+SHA-256-Digest: A/zRTF9iBDUBy8ytJ2baxwYtWnmKvYjuF4hONPuEohU=
+
+Name: org/overture/ide/plugins/combinatorialtesting/internal/ITracesDi
+ splay.class
+SHA-256-Digest: 2tMvF3WfHD9FMtJYHFIXE/up9fkn4ODVWbrk+sDdy60=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$12.class
+SHA-256-Digest: tDtDkGZT7WfXpB8CLwu/l/tW3tYyRpRa44qZcMS7muo=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$9.class
+SHA-256-Digest: TASk25vDAZf/g/x5y7GN4qLsyhnRC3UHnDRg8ecGB6Y=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/internal/OkT
+ raceViewerFilter.class
+SHA-256-Digest: 5rfhmonQSkCdo5f3bLCH1JbIkaR1PbL4uR5Ry52zsl8=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/ViewContentP
+ rovider.class
+SHA-256-Digest: dslJbvGAPnHQrjtl4JUn1K8P4EduTl9gZz0SO9NrUQs=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/treeView/Not
+ YetReadyTreeNode.class
+SHA-256-Digest: 5ZlSnql4lj8Qps272I9I226SXUhH/A90WkYKGhnHUCI=
+
+Name: org/overture/ide/plugins/combinatorialtesting/debug/TraceDebugLa
+ uncher.class
+SHA-256-Digest: vdBXjj/4RmV0MzTMnWvFzOuHAsOKaqjOfEW/gusERV0=
+
+Name: org/overture/ide/plugins/combinatorialtesting/perspectives/Combi
+ natorialTestingPerspective.class
+SHA-256-Digest: P7H7iCd6GfXBnGV95EsFFj9BwoxfJhqPPRHlFJhFxl4=
+
+Name: org/overture/ide/plugins/combinatorialtesting/ITracesConstants.c
+ lass
+SHA-256-Digest: /MoMOZXB/Sb3GDGmhc2y7ORb0SfE1u/8XFPL45p9tm4=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/treeView/ITr
+ eeNode.class
+SHA-256-Digest: gYPqLcWD585JsVYhEWMXU6L0y8t0ElIA336T4sdjJPU=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/NameSorter.c
+ lass
+SHA-256-Digest: 8k0TByySM/CyLDqkhZWT8VoKKG1LnKdsGcOMcz9GhYw=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/internal/Tra
+ ceViewerSorter.class
+SHA-256-Digest: 3eu//bxJEdb5U0YU6emO9T/35zD6Tn+itnkqEKmGfd0=
+
+Name: org/overture/ide/plugins/combinatorialtesting/OvertureTracesPlug
+ in.class
+SHA-256-Digest: 2zZr+ejCQU1KD/3IDqT9LX7HwSBapuf/SXf9Gl47vvA=
+
+Name: icons/ctool16/ct_tsk.png
+SHA-256-Digest: 4Vd5udRDGn396bRITMDBghYeki/M6+UiuFvMLEiVshg=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceOptions
+ Dialog$3.class
+SHA-256-Digest: AUVoXkzaJU15gBF7f68P6TOhMk8mHHqe4PfZ0Wp6PHE=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/treeView/Tra
+ ceTreeNode$1.class
+SHA-256-Digest: Eh+Cgpl7BIm/+KuYlyJ8QawWJzbyvFh2Q1+FhESc8yA=
+
+Name: icons/cview16/trace_obj.png
+SHA-256-Digest: FqTfTSRGFnQRpzlNa6osoJ0LOCannCpQ6MU3+HVVpvE=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$1.class
+SHA-256-Digest: Twqhqz4+bjDmxzGZX6Q5RnfR+DEtjPq7Mm9wu1DCyKc=
+
+Name: org/overture/combinatorialtesting/vdmj/server/common/Utils.class
+SHA-256-Digest: IBvVwyhmAvd6QRCvKiUgwtVyrxZQTl8opFHB8+U35Q8=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/internal/Inc
+ onclusiveTraceViewerFilter.class
+SHA-256-Digest: +Sb4IWlsMsTjaRvHpFplgmj3dzrMrBl0Gfa8HWbDwrM=
+
+Name: icons/clcl16/oml_menu.png
+SHA-256-Digest: dBjdAPMf4524/7YKOS1C7PVyUo87KIVD5pcSgID8iHo=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceTest$3.
+ class
+SHA-256-Digest: enc54Fv/qEUn7Mewdii+gg7rI2Odl+Z0dJ84r1+mWY4=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$14.class
+SHA-256-Digest: iqfL4mWO65amIHarKVwVl1yAOk/jdP3DbEGaTe4n98E=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/ViewContentP
+ rovider$TraceSearch.class
+SHA-256-Digest: wBZgRlfVCE45gybZxf+sj0OP1974b+hR4+gD38Q3/70=
+
+Name: org/overture/combinatorialtesting/vdmj/server/xml/XMLOpenTagNode
+ .class
+SHA-256-Digest: CjtuiSW0hURPixSqKU5T4bFBx+bIYY0KrxG9VAHrYRs=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceOptions
+ Dialog$2.class
+SHA-256-Digest: 8LNPeLcusLdLysPJioHYFRdWeU+qkQa8C+Jzwv6hCSU=
+
+Name: org/overture/combinatorialtesting/vdmj/server/IClientMonitor.cla
+ ss
+SHA-256-Digest: 9CkIlr9+9WRsbuepa68M6708CYOVRh9K9z7DdMhkvGM=
+
+Name: icons/clcl16/sort_menu.png
+SHA-256-Digest: IRnULhLLriUkXoeCxwKgMSoq872pXTgSPC+zwJ2W3Z4=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/ViewContentP
+ rovider$TraceContainerSearch.class
+SHA-256-Digest: lH3ujksmipFYOHHOktu/gHWhutvGeuwKsGdUEh2/1CE=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceTest$4.
+ class
+SHA-256-Digest: MDgiJcufWOHqUEovM9cbV1lU6fM4OMVoQN8YkVI67D8=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$15.class
+SHA-256-Digest: 9DsFEi6+Vx0Jn2DlyrOROilxU9mhtKPCGwNNVLosKYQ=
+
+Name: icons/cview16/undetermined_obj.png
+SHA-256-Digest: BykhVUBFU9SqnW0Krj8Lf2JhRudakV1dH64ove1rxto=
+
+Name: icons/clcl16/run_s_menu.png
+SHA-256-Digest: ZVmbukHy89k+nxaOdfS0QSq/5mRHc04Pp19Z/s4mKv8=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/treeView/Pro
+ jectTreeNode.class
+SHA-256-Digest: u2OJy2CZMfV+f2/K4ASNoEiWe1M7PdG3MVshFh6Fldo=
+
+Name: org/overture/combinatorialtesting/vdmj/server/xml/XMLNode.class
+SHA-256-Digest: Uh3nSnlcQOYG5emh7B127iRCh5qX79LKfLSRbbQx8T4=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$7.class
+SHA-256-Digest: SOFcu7EmCviy4Q1x7eZsSbxi0P88Srj4u99ZCrjbWQE=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceOptions
+ Dialog$1.class
+SHA-256-Digest: hgk3+g8jYTHDbG9oICqmq4Ke14AXdzXDNZkV5iFGpHI=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceAstUtil
+ ity.class
+SHA-256-Digest: OEvvZL++OHckuR4o2uULviTS9XQWFBEdeB/wGR3Ch6Q=
+
+Name: org/overture/ide/plugins/combinatorialtesting/internal/TraceTest
+ Engine$1$1.class
+SHA-256-Digest: SIdjXoU3ADvUaYzXt8cEAvcLaMRP6m3gw/cDM2+GNto=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$2$1$1.class
+SHA-256-Digest: MxFBlgqGIeM2F9c+U+j+Xm4q06X5btexabhGcSHnlgY=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceTest$Vi
+ ewContentProvider.class
+SHA-256-Digest: MfQdeyf8sUzO9mdzl7T5/Oeo2ii+3ELM842OG/LZDNY=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/ViewLabelPro
+ vider.class
+SHA-256-Digest: OEOmwVj1+NB+OLSe5tc2qnkiTwQCqJDL+8e43RWrCJA=
+
+Name: org/overture/ide/plugins/combinatorialtesting/internal/TraceExec
+ utionSetup.class
+SHA-256-Digest: UUNilOcaEGasWFM1+s8JVhsL1vxC/cQYxURVF5rAWvk=
+
+Name: icons/cview16/class_obj.png
+SHA-256-Digest: acnPoUz2bai8YJ1gKnZbufLpj+fjyBX00spOnzjdSXQ=
+
+Name: org/overture/ide/plugins/combinatorialtesting/TracesXmlStoreRead
+ er$TraceStatusXml.class
+SHA-256-Digest: J/nYRxvp/VxyrRSlttNFHi2+sLvk2Mdr0sAOWZYd4yk=
+
+Name: org/overture/combinatorialtesting/vdmj/server/ConnectionListener
+ .class
+SHA-256-Digest: zackzL4oP1VHSnxKvI0PjESo3tm5z84T/8DmPEI6pw8=
+
+Name: org/overture/ide/plugins/combinatorialtesting/internal/TraceTest
+ Engine.class
+SHA-256-Digest: A3dEbTdTWPS2/f2ATw/4kiahsJDKG68di+a924BTY4U=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceOptions
+ Dialog.class
+SHA-256-Digest: vXkWHPxMYlOyKHxWgkl4l/8hI7Q233QHIqVZ+x/8hHE=
+
+Name: plugin.properties
+SHA-256-Digest: 47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceTest$2.
+ class
+SHA-256-Digest: iSjWKQ1QXZkZysSdO5spfIDGLdkYpwp2xMVJU0pkzUo=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/treeView/Gro
+ upSizeCalculator.class
+SHA-256-Digest: 6LU39K4c01VoBFOr3x842Vje4SvHQzaN5XG+bUBEC5g=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceTest$5.
+ class
+SHA-256-Digest: PibsgcTdFNe99+226cD3IpsJsgGYq6S2pHULYVyiYs0=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/internal/Tra
+ ceNodeSorter.class
+SHA-256-Digest: 7zZ6pRWFZ0NdOjXKjz1hz4oXVEiLgFjfazzeuh84OGI=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceTest$Da
+ ta.class
+SHA-256-Digest: 8aC7KCazFFmC/l9I3d9e4fAgWHQA/U928gJi6Oyn7XQ=
+
+Name: org/overture/combinatorialtesting/vdmj/server/ConnectionThread.c
+ lass
+SHA-256-Digest: HZUJCBx89Mt02/a6ygv7YBnwCcj13bM3naao0rt/cSk=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$13.class
+SHA-256-Digest: S1bqKrn6989+0+ltr8yD/AUgsBbJ/bvkAeVLj4tLIu4=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/ViewContentP
+ rovider$HasTraceAnalysis.class
+SHA-256-Digest: WMosnpv1fLgxmkRCboB3HZ1h1Ep5g2x0/4eta4xma4s=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$10.class
+SHA-256-Digest: z9Xae96RpZsIHJQ/CS9Y4Tb/IqVzCMnUrItmy0WKvLw=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$2$1.class
+SHA-256-Digest: OOEXMoZcEaBAd4etfX6pSwIQYBBHxa0S3cQqK6Pi9m8=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$2.class
+SHA-256-Digest: +J8n3MNPDsWJNrSuriiQpeSdNwWgZGTGs5KiKpJ4eBA=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceTest.cl
+ ass
+SHA-256-Digest: ChIeysC2ccTf+qTLLBIMxRkTf7+m5QSH68XY6MAEe6M=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew.class
+SHA-256-Digest: oOw2EE8/kGrcSkCAxJw9G6p4+nxhMhPOk4DrNqMtu3w=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$8.class
+SHA-256-Digest: u+Js+M/g9qUpM7mYpxoctwtqaMmTIMKLMcpnfJ9GXWo=
+
+Name: icons/clcl16/ok_filter_menu.png
+SHA-256-Digest: WAqELLdSc95IJo1j4wRZKXbADDtpwT4nwFjKSlJSatY=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$5.class
+SHA-256-Digest: Zgx2SWl1ov4eBowfMVwKDygGNqKZGA6biTKsFKNEFj4=
+
+Name: org/overture/combinatorialtesting/vdmj/server/xml/XMLParser.clas
+ s
+SHA-256-Digest: I0gDlXjoKFrHgJAerVRWfqHsM3TWKsmXcWMW0a8oyZM=
+
+Name: icons/clcl16/undetermined_filter_menu.png
+SHA-256-Digest: g+vAlzJgQnKpOp5ZR+dIWVVWuGHmyJtRgWmh0gTq2+U=
+
+Name: jars/ctruntime.jar
+SHA-256-Digest: A1miihRpk272qQJL9r3SPH1T/Q6DSqF1X+wh/bVkF2s=
+
+Name: jars/ctutils.jar
+SHA-256-Digest: ngMzsJLvfT5dbjwNXWaoZ5H+od5cSif66FUm8EUg1x0=
+
+Name: icons/clcl16/save_menu.png
+SHA-256-Digest: Eq7fWmGzmW96NZ4SoO8aawrxK0njICnHnmb1hEtS9Q8=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/treeView/Tra
+ ceTreeNode$2.class
+SHA-256-Digest: bP0oDnI5LwrPiH+XRXhUgHhZ/7WG3y3dMH/xdN/8H4o=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$4.class
+SHA-256-Digest: kqY8xsUa4vEkU9ykY1Ego+/+cckjGzjEIStBcSCtk8Q=
+
+Name: org/overture/ide/plugins/combinatorialtesting/preferences/Workbe
+ nchPreferencePageMain.class
+SHA-256-Digest: W2ywk6UxsUfhjIp6HkowJIGGFpaipQFnSpc8+0MojZo=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/treeView/Tra
+ ceTestGroup.class
+SHA-256-Digest: 05gKvck8SVBtDAsLa99T/DrA8AvvEYW4CmFdulpAnLw=
+
+Name: org/overture/ide/plugins/combinatorialtesting/internal/TraceTest
+ Engine$1.class
+SHA-256-Digest: ZjhxKoepwhsVj3kS5P44EIUOdNRCNJ4gKJTD/ULMtiI=
+
+Name: org/overture/ide/plugins/combinatorialtesting/TracesXmlStoreRead
+ er.class
+SHA-256-Digest: T/zM84uk5CyQ5h5zvPMkPWB/hKg5uAnnndRO+Wz/WsU=
+
+Name: icons/cview16/succes_obj.png
+SHA-256-Digest: aT53GlDRCZgyW1cdQ38Lu+SlGufkq6jlNu0DU8ZLmSs=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceOptions
+ Dialog$4.class
+SHA-256-Digest: f4dD0MljUg2cf1NkQyPVxyLUPRTxa96FmTqb0HJOKTY=
+
+Name: org/overture/combinatorialtesting/vdmj/server/common/Utils$1.cla
+ ss
+SHA-256-Digest: erwZQg/cfql0YwsL0Oj1ptupJq/KYkUgfKuA5ZupD3I=
+
+Name: org/overture/ide/plugins/combinatorialtesting/internal/VdmjTrace
+ sHelper.class
+SHA-256-Digest: A+0vI26rxlWAG1ePXAVKkwhCyLTJ0JGjyrRo9UDxNbI=
+
+Name: icons/clcl16/refresh.gif
+SHA-256-Digest: UNrXeNFeLP0C3wBxRhio8pcw09z35sw60VyMsfAZTJY=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceOptions
+ DisplayState.class
+SHA-256-Digest: SyI5YyWo7AVckkZjYP0zWjiXmMrierni3dHbJGxM0Ls=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$11.class
+SHA-256-Digest: OtYEeAb4+rq21wWvE+AUjDTI7aGabQqBRltEfORkbFg=
+
+Name: org/overture/combinatorialtesting/vdmj/server/xml/XMLParser$Toke
+ n.class
+SHA-256-Digest: m6bV/E29ZwtIvYIFhepKwIsxNsdCqu5UpIKPhhZG5Qs=
+
+Name: icons/clcl16/run_all_menu.png
+SHA-256-Digest: 66EnOxoJWHZmzGDH7g7qukev87OtEtiMGaV1SP9BJgY=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TracesTreeVi
+ ew$3.class
+SHA-256-Digest: o3+iLzX5JjbPc9PRDnFTk7R+lVoXy2u4V1RWf+phYNk=
+
+Name: org/overture/ide/plugins/combinatorialtesting/internal/TestEngin
+ eDelegate.class
+SHA-256-Digest: 4f8rWyFLg1cE1x0mQMVuE0lZajt+G6AbjVehOPJxNj8=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/treeView/Tra
+ ceTreeNode.class
+SHA-256-Digest: 48R9j6LvOgB7NEmm5n4yib5U5O75sKeblL6IaTG633o=
+
+Name: org/overture/combinatorialtesting/vdmj/server/xml/XMLTextNode.cl
+ ass
+SHA-256-Digest: sUO/bIBVf/JJ6QSI3uYYXvAcDJDLRJc+imJ2bIBr2B4=
+
+Name: org/overture/ide/plugins/combinatorialtesting/views/TraceTest$1.
+ class
+SHA-256-Digest: VG87j+tWhTV6Q1Gvnq8trqbltsAUaIqZREfktIcq5ug=
+

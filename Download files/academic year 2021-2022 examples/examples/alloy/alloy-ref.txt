@@ -1,0 +1,52 @@
+set operators:
+	union +
+	intersection &
+	difference -
+	set membership "in"
+	subset "in"
+
+boolean operators:
+	not !
+	and &&
+	or ||
+	implies else
+		- usage: "A implies B else C"
+			- equivalent to: "A => B else C"
+	iff <=>
+
+quantifiers:
+	all (universal)
+	some (1 or more, existential)
+	one (exactly 1)
+	lone (0 or 1)
+	no (just zero)
+
+template for logic formulas: "<quantifier> x:X | <formula>"
+
+how to write a formula with quantifiers:
+	all x: X | ...
+	all x: X { ... }
+
+restricting cardinality of sets (signatures):
+	one sig X { ... }
+	lone sig Y { ... }
+	some sig Z { ... }
+
+operator "++": overwrites the current value (tuple) in a given relation
+
+reflexive transitive closure: "*"
+	- example: recursive traversal of the whole tree
+		fact { MyData in TreeRoot.*children }
+	- creates the set of objects reachable from "TreeRoot" by following the "children" relation zero or more times
+
+non-reflective transitive closure: "^"
+
+predicates
+	- functions that may return only "true" or "false"
+	- syntax: pred p[x1: e1, ..., xn: en] { F }
+	- body is a formula F
+
+functions
+	- syntax: fun f[x1: e1, ..., xN: eN] : e { E }
+	- parameters "x1,...,xN", return value "e", and body expression "E"
+

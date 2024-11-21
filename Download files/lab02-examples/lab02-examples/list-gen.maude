@@ -1,0 +1,55 @@
+fth TRIV is
+	sort Elt .
+endfth
+
+fmod LIST{X :: TRIV} is
+	protecting NAT .
+	sort List{X} .
+	subsort X$Elt < List{X} .
+	op empty : -> List{X} [ctor] .
+
+	vars E E1 E2 : X$Elt .
+	vars A L : List{X} .
+	var C : Nat .
+
+	*** concatenation (two operands without any operator symbol between them)
+	op __ : List{X} List{X} -> List{X} [ctor assoc id: empty] .
+	
+	*** operation append
+	op append : List{X} List{X} -> List{X} .
+	eq append(A, L) = A L .
+
+	*** various operations upon lists
+	op head : List{X} -> X$Elt .
+	eq head(E L) = E .
+	op tail : List{X} -> List{X} .
+	eq tail(E L) = L .
+	op last : List{X} -> X$Elt .
+	eq last(L E) = E .
+
+	*** search
+	op contains : X$Elt List{X} -> Bool .
+	eq contains(E, empty) = false .
+	eq contains(E1, E2 L) =
+	if E1 == E2 then true else contains(E1, L) fi .
+	
+	*** reversing the order
+	--- we use so-called "tail-recursive method of definition"
+	op reverse : List{X} -> List{X} .
+	eq reverse(L) = $reverse(L, empty) .
+	op $reverse : List{X} List{X} -> List{X} .
+	eq $reverse(empty, A) = A .
+	eq $reverse(E L, A) = $reverse(L, E A).
+
+	*** length/size
+	op size : List{X} -> Nat .
+	eq size(L) = $size(L, 0) .
+	op $size : List{X} Nat -> Nat .
+	eq $size(empty, C) = C .
+	eq $size(E L, C) = $size(L, C + 1) .
+endfm
+
+fmod INT-LIST is
+	protecting LIST{Int} .
+endfm
+
