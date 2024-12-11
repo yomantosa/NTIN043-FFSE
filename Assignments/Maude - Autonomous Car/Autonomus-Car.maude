@@ -1,47 +1,81 @@
 fmod CORE-TYPES is
   protecting STRING .
+  --- Protecting STRING allows reuse of string-related functionality.
 
   sorts SensorData Object Action State Component PriorityQueue .
+  --- Defining sorts (types) for sensor data, objects, actions, states, components, and priority queues.
 
   subsort PriorityQueue < Action .
+  --- A priority queue is a specialized type of Action.
 
   ops GPS Camera Radar Lidar TrafficSignal SpeedLimit : -> SensorData .
+  --- Declaring constants representing various types of sensor data inputs.
+
   ops Lane Obstacle Vehicle Pedestrian GreenLight RedLight StopSign Collision : -> Object .
+  --- Declaring constants representing detected objects in the system.
+
   ops KeepSpeed Accelerate Decelerate Stop TurnLeft TurnRight AdjustSpeed Override : -> Action .
+  --- Declaring constants representing basic driving actions.
+
   ops EmergencyBrake HandleCollision CombinedAction : -> Action .
+  --- Declaring constants for special emergency or combined actions.
+
   ops Active Manual Emergency : -> State .
+  --- Declaring constants representing the vehicle's operating states: Active, Manual, or Emergency.
+
   ops engine brake wheels lights : -> Component .
+  --- Declaring constants for various vehicle components.
 endfm
 
 fmod PROCESSING is
   protecting CORE-TYPES .
+  --- Importing CORE-TYPES to use its definitions.
 
   op process : SensorData -> Object .
+  --- Defining a function to process sensor data into detected objects.
+
   op prioritize : Object Object -> Object .
+  --- Defining a function to prioritize between two detected objects.
 
   vars O1 O2 : Object .
+  --- Declaring variables for objects to be used in equations.
 
   eq process(GPS) = Lane .
+  --- Processing GPS data to detect lanes.
+
   eq process(Camera) = Pedestrian .
+  --- Processing camera data to detect pedestrians.
+
   eq process(Radar) = Vehicle .
+  --- Processing radar data to detect vehicles.
+
   eq process(Lidar) = Obstacle .
+  --- Processing lidar data to detect obstacles.
+
   eq process(TrafficSignal) = RedLight .
+  --- Processing traffic signal data to detect red lights.
+
   eq process(SpeedLimit) = Lane .
+  --- Processing speed limit data to identify lanes (potentially redundant information).
 
   eq prioritize(O1, O2) = 
     if O1 == Pedestrian or O1 == Obstacle 
     then O1 
     else O2 
     fi .
+  --- Prioritizing detected objects. Pedestrians and obstacles are given higher priority.
 endfm
 
 fmod DECISION is
   protecting CORE-TYPES .
+  --- Importing CORE-TYPES to use its definitions.
 
   op decide : Object State -> String .
+  --- Defining a function to decide the vehicle's action based on detected object and state.
 
   vars O1 : Object .
   vars S : State .
+  --- Declaring variables for detected objects and states.
 
   eq decide(O1, Active) =
     if O1 == Pedestrian 
@@ -54,25 +88,33 @@ fmod DECISION is
         fi 
     fi 
   fi .
+  --- Decision logic in the Active state: Respond to pedestrians, obstacles, and red lights, otherwise maintain speed.
 
   eq decide(O1, Emergency) =
     if O1 == Collision 
     then "Car is handling a collision."
     else "Emergency brake activated."
     fi .
+  --- Decision logic in the Emergency state: Handle collisions or activate emergency brake.
 
   eq decide(O1, Manual) = "Driver override: manual control enabled." .
+  --- Decision logic in the Manual state: All decisions are overridden by manual control.
 endfm
 
 fmod EXECUTION is
   protecting CORE-TYPES .
+  --- Importing CORE-TYPES to use its definitions.
 
   op execute : PriorityQueue Component -> String .
+  --- Defining a function to execute an action on a specific vehicle component.
+
   op reportState : String -> String .
+  --- Defining a function to report the state of the system as a message.
 
   vars A : Action .
   vars C : Component .
   var Msg : String .
+  --- Declaring variables for actions, components, and messages.
 
   eq execute(A, C) =
     if A == Stop and C == brake 
@@ -94,16 +136,21 @@ fmod EXECUTION is
               fi 
          fi 
     fi .
+  --- Execution logic to perform actions on specific vehicle components. Reports errors for invalid combinations.
 
   eq reportState(Msg) = "Error: " + Msg .
+  --- Generates an error message when the execution fails.
 endfm
 
 fmod COMBINE is
   protecting CORE-TYPES .
+  --- Importing CORE-TYPES to use its definitions.
 
   op combine : PriorityQueue PriorityQueue -> PriorityQueue .
+  --- Defining a function to combine two priority queues into one.
 
   vars A B : Action .
+  --- Declaring variables for actions.
 
   eq combine(A, B) = 
     if A == Stop or B == Stop 
@@ -113,6 +160,7 @@ fmod COMBINE is
          else A 
          fi 
     fi .
+  --- Combination logic: Stop takes highest priority, followed by EmergencyBrake, and other actions.
 endfm
 
 fmod TEST is
@@ -120,25 +168,33 @@ fmod TEST is
   protecting DECISION .
   protecting EXECUTION .
   protecting COMBINE .
+  --- Importing all previous modules for testing.
 
   op testObject : -> Object .
   op testState : -> State .
+  --- Defining operations for testing objects and states.
 
   eq testObject = RedLight .
   eq testState = Active .
+  --- Assigning test values: Object is RedLight, and state is Active.
 
   op testProcess : -> Object .
   eq testProcess = process(GPS) .
+  --- Testing the process function with GPS data.
 
   op testDecide : -> String .
   eq testDecide = decide(testObject, testState) .
+  --- Testing the decide function with testObject and testState.
 
   op testDecideObstacle : -> String .
   eq testDecideObstacle = decide(Obstacle, Active) .
+  --- Testing the decide function with an obstacle in the Active state.
 
   op testExecuteBrake : -> String .
   eq testExecuteBrake = execute(Stop, brake) .
+  --- Testing the execute function with the Stop action and brake component.
 
   op testCombine : -> PriorityQueue .
   eq testCombine = combine(Stop, Accelerate) .
+  --- Testing the combine function with Stop and Accelerate actions.
 endfm

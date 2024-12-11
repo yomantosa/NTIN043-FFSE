@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Download files">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Download files/maude+strat-20241024-windows.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/academic year 2021-2022 examples.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/lab02-examples.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

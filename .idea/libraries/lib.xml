@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-commons-net.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-apache-bcel.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-jai.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-apache-bsf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-javamail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-junit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-apache-log4j.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-imageio.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-apache-resolver.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-apache-oro.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-junit4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-junitlauncher.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-jdepend.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-netrexx.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-jmf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-antlr.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-apache-regexp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-jsch.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-xz.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-launcher.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-testutil.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Download files/Overture-3.0.2-win32.win32.x86_64/Overture/plugins/org.apache.ant_1.10.8.v20200515-1239/lib/ant-apache-xalan2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

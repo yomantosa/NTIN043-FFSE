@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="org.alloytools.alloy.dist">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Download files/AlloyTool/org.alloytools.alloy.dist.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
