@@ -1,6 +1,4 @@
-sig Node {
-  zone: one Zone -- Zones within the warehouse (e.g., storage, staging, shipping)
-}
+sig Node {}
 
 sig Path {
   start: one Node,
@@ -11,7 +9,7 @@ sig Path {
 sig Package {
   id: Int,
   weight: Int,
-  location: lone Node -- Either a specific node or being carried by a robot
+  location: one Node
 }
 
 sig Robot {
@@ -24,7 +22,7 @@ sig Robot {
 }
 
 abstract sig Status {}
-one sig Idle, Moving, Loading, Unloading, Charging extends Status {}
+one sig Idle, Moving, Loading, Unloading extends Status {}
 
 sig Employee {
   id: Int,
@@ -40,9 +38,6 @@ sig Task {
   package: lone Package,
   destination: one Node
 }
-
-abstract sig Zone {}
-one sig Storage, Staging, Shipping extends Zone {}
 
 -- Facts
 fact PathCapacity {
@@ -69,37 +64,11 @@ pred PlanRoute[r: Robot, t: Task] {
   some p: Path | r.currentNode = p.start and t.destination = p.end
 }
 
-pred LoadPackage[r: Robot, p: Package] {
-  -- Robot must be at the same node as the package and not already carrying one
-  r.currentNode = p.location and no r.carrying
-
-  -- Robot picks up the package
-  p.location = none and r.carrying = p
-}
-
-pred DropPackage[r: Robot, p: Package] {
-  -- Robot must be carrying the package
-  r.carrying = p
-
-  -- Package is dropped at the robot's current location
-  p.location = r.currentNode and no r.carrying
-}
-
-pred AssignTask[e: Employee, r: Robot, t: Task] {
-  -- Supervisor assigns a task to a robot
-  e.role = Supervisor and t.robot = r
-}
-
-pred ChargeRobot[r: Robot] {
-  -- Robot must be idle or at a charging station
-  r.status = Charging
-}
-
--- Command to simulate warehouse behavior
-run SmartWarehouseSimulation {
-  some r: Robot, t: Task, e: Employee |
-    AssignTask[e, r, t] and
-    LoadPackage[r, t.package] and
-    PlanRoute[r, t] and
-    DropPackage[r, t.package]
+-- Command to check the system's behavior
+run AvoidTrafficJam {
+  -- Multiple robots move without collisions or exceeding path capacity
+  some r1, r2: Robot |
+    r1 != r2 and
+    some t1, t2: Task |
+      PlanRoute[r1, t1] and PlanRoute[r2, t2]
 }
