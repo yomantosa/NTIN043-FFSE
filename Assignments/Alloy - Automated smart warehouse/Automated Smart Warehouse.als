@@ -84,6 +84,20 @@ fact RobotsCarryAssignedPackages {
   all t: Task | t.packages in t.robot.carrying
 }
 
+-- Supervisors can only assign tasks to robots that are idle and at the same location.
+fact SupervisorsAssignTasks {
+  all t: Task, e: Employee |
+    e.role = Supervisor and e.location = t.robot.currentNode =>
+    t.robot.status = Idle
+}
+
+-- Operators assist robots only if they are at the same location and the robot has enough energy.
+fact OperatorAssistsRobots {
+  all r: Robot, e: Employee |
+    e.role = Operator and e.location = r.currentNode =>
+    r.energy > 0
+}
+
 -- Predicates
 pred LoadPackages[r: Robot, ps: set Package] {
   -- Packages must be at the robot's current node
@@ -107,6 +121,19 @@ pred DropPackages[r: Robot, ps: set Package] {
   all p: ps | p in r.carrying and p.location = r.currentNode
 }
 
+pred AssignTaskBySupervisor[e: Employee, t: Task] {
+  e.role = Supervisor -- Only Supervisors can assign tasks
+  t.robot.status = Idle -- Robot must be idle to receive a task
+  t.robot.energy > 0 -- Robot must have enough energy
+  t.robot.currentNode = e.location -- Robot must be at the same node as the supervisor
+}
+
+pred OperatorHandlesPackage[e: Employee, ps: set Package, n: Node] {
+  e.role = Operator -- Employee must be an operator
+  e.location = n -- Operator must be at the same node as the packages
+  all p: ps | p.location = n -- All packages must be at the operator's location
+}
+
 -- Commands to simulate the workflow
 run WarehouseSimulation {
   some r: Robot, ps: set Package, t: Task |
@@ -115,5 +142,20 @@ run WarehouseSimulation {
     -- Plan the route to destination
     PlanRoute[r, t] and
     -- Drop packages at the destination
-    DropPackages[r, ps]
+    DropPackages[r, ps] 
+
+}
+
+-- Command: Simulates the workflow where a supervisor assigns a task, 
+-- and an operator handles packages related to that task at the appropriate node.
+run EmployeeAssignTask {
+  some e1, e2: Employee, t: Task, ps: set Package, n: Node | -- There must exist employees, tasks, packages, and nodes
+
+    AssignTaskBySupervisor[e1, t] and -- A supervisor (e1) assigns a task (t) to a robot
+
+    OperatorHandlesPackage[e2, ps, n] and -- An operator (e2) handles packages (ps) at node (n)
+
+    t.robot.currentNode = n and -- The robot assigned to the task (t.robot) must currently be at the node (n)
+
+    all p: ps | p in t.packages -- All packages (ps) handled by the operator must belong to the task (t)
 }

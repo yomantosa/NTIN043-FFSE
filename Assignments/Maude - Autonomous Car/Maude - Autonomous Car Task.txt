@@ -1,0 +1,35 @@
+topic: algebraic specifications in Maude
+
+deadline: 26.11.2024
+
+
+Autonomous Car
+==============
+task 1: create algebraic specification of a control system for autonomous cars
+	- what you should capture in your model (specification, prototype):
+		- common input sensor devices (position/GPS, current speed, camera, lidar, radar, etc) that provide new data continuously (every unit of time)
+		- input processing subsystem that identifies: obstacles, road lanes, other cars, pedestrians, and so on
+			- ignore details about how the subsystem does that (just assume it is a magic black-box that notifies the control subsystem when it detects some object)
+		- control unit (subsystem) that decides about the next action (keep going with the same speed, accelerate, slow down, stop abruptly, turn right or left, ...)
+		- actual "hardware components" of the car (engine, wheels, brakes)
+	- focus on modeling the input sensors that provide data about environment, control unit (subsystem) that decides what action to take next, and physical "hardware" that really performs the desired actions
+		- design some abstraction of the input processing subsystem (ignore details)
+
+task 2: document your solution
+	- explain key decisions and high-level design
+
+task 3: prepare some test cases (scenarios, inputs)
+	- common scenarios that may occur in a real traffic on the road (street)
+
+task 4: evaluate your solution (model) according to the following criteria
+	- level of abstraction (in the sense "what details you ignored")
+	- level of approximation (over-, under-) in the sense "over-specification/over-constraining (specification is too restrictive) versus under-specification/under-constraining (model is too permissive)"
+	- ambiguity versus precision
+	- completeness (all scenarios)
+
+task 5: tell me your opinion about the modeling language, tool, and the whole approach (methodology) based on your personal experience
+	- specifically, can you imagine to use something like that (whole approach) in practice given proper tool support in some iDE
+	- possible usage scenarios to consider: validating the design of a complex system, capturing and validating requirements (maybe for consistency), precise documentation
+
+resources:
+	https://en.wikipedia.org/wiki/Self-driving_car
